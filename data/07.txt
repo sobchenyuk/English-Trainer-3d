@@ -1,0 +1,153 @@
+@A2|Чувства и эмоции
+feeling|чувство|an emotion|Эмоции|I have a good feeling about this.|У меня хорошее предчувствие.
+emotion|эмоция|a strong feeling|Эмоции|It's hard to control emotions.|Трудно контролировать эмоции.
+glad|рад|pleased|Эмоции|I'm glad to hear that.|Рад это слышать.
+excited|взволнованный (радостно)|very happy and eager|Эмоции|I'm so excited about the trip!|Я так жду эту поездку!
+angry|злой|feeling strong anger|Эмоции|Why are you angry?|Почему ты злишься?
+upset|расстроенный|unhappy or worried|Эмоции|She's upset about the news.|Она расстроена из-за новостей.
+worried|обеспокоенный|thinking about problems|Эмоции|I'm worried about the deadline.|Я беспокоюсь из-за дедлайна.
+nervous|нервный|a little afraid|Эмоции|I'm nervous before interviews.|Я нервничаю перед собеседованиями.
+afraid|боящийся|feeling fear|Эмоции|Don't be afraid.|Не бойся.
+scared|напуганный|frightened|Эмоции|I'm scared of heights.|Я боюсь высоты.
+surprised|удивлённый|feeling something unexpected|Эмоции|I was surprised to see him.|Я удивился, увидев его.
+proud|гордый|pleased with yourself|Эмоции|I'm proud of you.|Я горжусь тобой.
+calm|спокойный|relaxed, not angry|Эмоции|Stay calm.|Сохраняй спокойствие.
+relaxed|расслабленный|calm and comfortable|Эмоции|I feel relaxed on holiday.|В отпуске я чувствую себя расслабленным.
+lonely|одинокий|sad because you're alone|Эмоции|I feel lonely sometimes.|Иногда мне одиноко.
+confused|сбитый с толку|not understanding|Эмоции|I'm confused, can you explain?|Я запутался, объяснишь?
+disappointed|разочарованный|sad because something wasn't good|Эмоции|I was disappointed with the film.|Я разочаровался в фильме.
+annoyed|раздражённый|a little angry|Эмоции|I'm annoyed with the noise.|Меня раздражает шум.
+embarrassed|смущённый|feeling silly in front of others|Эмоции|I felt embarrassed.|Мне было неловко.
+jealous|ревнивый, завистливый|wanting what others have|Эмоции|Don't be jealous.|Не ревнуй.
+grateful|благодарный|thankful|Эмоции|I'm grateful for your help.|Я благодарен за помощь.
+hope|надеяться; надежда|to want something to happen|Эмоции|I hope you're well.|Надеюсь, у тебя всё хорошо.
+worry|волноваться|to think about problems|Эмоции|Don't worry about it.|Не переживай об этом.
+miss|скучать; пропускать|to feel sad someone is away|Эмоции|I miss you.|Я скучаю по тебе.
+hate|ненавидеть|to strongly dislike|Эмоции|I hate waiting.|Ненавижу ждать.
+care about|заботиться, переживать о|to think something is important|Эмоции|I care about my team.|Мне не всё равно на мою команду.
+mood|настроение|how you feel at a time|Эмоции|I'm in a good mood.|У меня хорошее настроение.
+smile|улыбка; улыбаться|happy expression|Эмоции|Keep smiling!|Продолжай улыбаться!
+laugh|смеяться|to make sounds when something is funny|Эмоции|We laughed a lot.|Мы много смеялись.
+cry|плакать|to have tears|Эмоции|Don't cry.|Не плачь.
+fear|страх|a feeling of danger|Эмоции|Fear of speaking is normal.|Страх говорить — это нормально.
+confident|уверенный|sure of your abilities|Эмоции|I feel more confident now.|Теперь я чувствую себя увереннее.
+stressed|в стрессе|worried and under pressure|Эмоции|I'm stressed about work.|У меня стресс из-за работы.
+fed up|сыт по горло|tired and annoyed|Неформально|I'm fed up with this bug.|Этот баг меня достал.
+in a hurry|в спешке|needing to go fast|Состояние|Sorry, I'm in a hurry.|Извини, я спешу.
+pleased|довольный|happy about something|Эмоции|I'm pleased with the result.|Я доволен результатом.
+satisfied|удовлетворённый|happy with what you got|Эмоции|Are you satisfied with the service?|Вы довольны обслуживанием?
+amazed|поражённый|very surprised|Эмоции|I was amazed by the view.|Я был поражён видом.
+shocked|шокированный|very surprised in a bad way|Эмоции|We were shocked by the news.|Мы были шокированы новостью.
+curious|любопытный|wanting to know|Эмоции|I'm curious how it works.|Мне любопытно, как это работает.
+patient|терпеливый|able to wait calmly|Характер|Be patient with yourself.|Будь терпелив к себе.
+honest|честный|telling the truth|Характер|To be honest, I don't like it.|Честно говоря, мне не нравится.
+friendly face|дружелюбное лицо|a kind-looking person|Эмоции|It's nice to see a friendly face.|Приятно видеть знакомое лицо.
+cheer up|взбодриться, не грусти|to become happier|Поддержка|Cheer up! It's not so bad.|Не грусти! Всё не так плохо.
+calm down|успокоиться|to become calm|Поддержка|Calm down, it's okay.|Успокойся, всё в порядке.
+it's a pity|жаль|it's sad|Сожаление|It's a pity you can't come.|Жаль, что ты не можешь прийти.
+I'm sorry to hear that|жаль это слышать|showing sympathy|Сочувствие|I'm sorry to hear that.|Мне жаль это слышать.
+what a shame|как жаль|it's sad|Сожаление|What a shame!|Как жаль!
+feel like|хотеть (чего-то)|to want to do something|Желания|I feel like a pizza.|Я бы съел пиццу.
+in love|влюблён|loving someone romantically|Отношения|They're in love.|Они влюблены.
+@A2|Учёба и язык
+study|учиться, изучать|to learn about a subject|Учёба|I study English every evening.|Я учу английский каждый вечер.
+lesson|урок|a period of learning|Учёба|My lesson starts at six.|Мой урок начинается в шесть.
+course|курс|a series of lessons|Учёба|I'm taking an online course.|Я прохожу онлайн-курс.
+teacher|учитель|a person who teaches|Учёба|My teacher is from London.|Мой учитель из Лондона.
+student|студент, ученик|a person who studies|Учёба|I'm a student again!|Я снова студент!
+school|школа|a place where children learn|Образование|I hated school.|Я ненавидел школу.
+university|университет|a place for higher education|Образование|I studied at university.|Я учился в университете.
+degree|степень (диплом)|a university qualification|Образование|I have a degree in computer science.|У меня диплом по информатике.
+exam|экзамен|a formal test|Учёба|I passed the exam!|Я сдал экзамен!
+pass|сдать|to succeed in a test|Учёба|Did you pass?|Ты сдал?
+fail|провалить|to not succeed|Учёба|I failed my driving test.|Я провалил экзамен по вождению.
+homework|домашнее задание|work to do at home|Учёба|Did you do your homework?|Ты сделал домашку?
+mistake|ошибка|something wrong|Обучение|Don't be afraid of mistakes.|Не бойся ошибок.
+correct|исправлять; правильный|to make right|Обучение|Please correct my mistakes.|Пожалуйста, исправляй мои ошибки.
+word|слово|a unit of language|Язык|What does this word mean?|Что значит это слово?
+sentence|предложение|a group of words with meaning|Язык|Make a sentence with this word.|Составь предложение с этим словом.
+grammar|грамматика|rules of a language|Язык|Grammar is not my favourite.|Грамматика — не моё любимое.
+vocabulary|словарный запас|all the words you know|Язык|I want to grow my vocabulary.|Хочу расширить словарный запас.
+pronunciation|произношение|how you say words|Язык|My pronunciation needs work.|Моё произношение нужно подтянуть.
+pronounce|произносить|to say a word correctly|Язык|How do you pronounce this?|Как это произносится?
+accent|акцент|a way of speaking|Язык|You have a nice accent.|У тебя приятный акцент.
+fluent|свободный (о языке)|speaking easily|Язык|I want to be fluent.|Я хочу говорить свободно.
+fluently|свободно|easily and well|Язык|She speaks fluently.|Она говорит свободно.
+native speaker|носитель языка|someone who learned a language as a child|Язык|I talk to native speakers online.|Я общаюсь с носителями онлайн.
+translate|переводить|to change into another language|Язык|Can you translate this?|Можешь перевести это?
+mean|значить|to have a meaning|Язык|What does it mean?|Что это значит?
+meaning|значение|what something means|Язык|What's the meaning of this word?|Какое значение у этого слова?
+spell|писать по буквам|to say the letters of a word|Язык|How do you spell your name?|Как пишется ваше имя?
+explain|объяснять|to make clear|Обучение|Can you explain it again?|Можешь объяснить ещё раз?
+example|пример|something that shows how|Обучение|Give me an example.|Приведи пример.
+practice|практика|doing something to improve|Обучение|Practice makes perfect.|Практика ведёт к совершенству.
+memorise|запоминать наизусть|to learn by heart|Обучение|I memorise ten phrases a day.|Я запоминаю десять фраз в день.
+remind|напоминать|to help someone remember|Память|Remind me tomorrow.|Напомни мне завтра.
+level|уровень|a stage of ability|Обучение|What's your English level?|Какой у тебя уровень английского?
+beginner|начинающий|someone who is starting|Обучение|I'm a beginner.|Я новичок.
+advanced|продвинутый|at a high level|Обучение|It's an advanced course.|Это продвинутый курс.
+knowledge|знание|what you know|Обучение|Knowledge is power.|Знание — сила.
+learn by heart|выучить наизусть|to memorise|Обучение|I learned it by heart.|Я выучил это наизусть.
+dictionary|словарь|a book of words and meanings|Язык|Look it up in the dictionary.|Посмотри в словаре.
+look up|посмотреть (в словаре)|to search for information|Обучение|I'll look it up.|Я посмотрю.
+subject|предмет|an area of study|Учёба|Math was my favourite subject.|Математика была моим любимым предметом.
+test|тест, контрольная|a short exam|Учёба|We have a test on Friday.|У нас тест в пятницу.
+score|результат, балл|the points you get|Учёба, игры|What was your score?|Какой у тебя результат?
+certificate|сертификат|an official paper of a skill|Образование|I got a certificate.|Я получил сертификат.
+conversation|разговор|talk between people|Общение|Let's have a conversation in English.|Давай поговорим по-английски.
+discuss|обсуждать|to talk about something|Общение|Let's discuss it tomorrow.|Давай обсудим это завтра.
+topic|тема|a subject of talk|Общение|Let's change the topic.|Давай сменим тему.
+question|вопрос|a sentence that asks|Общение|I have a quick question.|У меня короткий вопрос.
+note|заметка; записать|a short piece of writing|Учёба|Let me take notes.|Дай я запишу.
+motivation|мотивация|the reason to do something|Цели|Motivation is key.|Мотивация — это главное.
+@A2|Частые глаголы
+become|становиться|to begin to be|Изменения|I want to become a better speaker.|Я хочу стать лучше в разговоре.
+believe|верить|to think something is true|Мнение|I believe in you.|Я в тебя верю.
+build|строить|to make by putting parts together|Работа|We build web apps.|Мы делаем веб-приложения.
+buy|покупать|to get for money|Покупки|I bought a new phone.|Я купил новый телефон.
+carry|нести|to hold and move|Действия|Can you carry this?|Можешь это донести?
+catch|ловить, успеть|to take hold of; to get on in time|Действия|I need to catch the bus.|Мне нужно успеть на автобус.
+choose|выбирать|to pick|Решения|Choose any option.|Выбери любой вариант.
+continue|продолжать|to keep doing|Действия|Let's continue tomorrow.|Продолжим завтра.
+decide|решать|to make a choice|Решения|I can't decide.|Я не могу решить.
+describe|описывать|to say what something is like|Общение|Describe the problem.|Опиши проблему.
+die|умирать|to stop living|Жизнь|My phone battery died.|У меня сел телефон.
+drop|ронять|to let fall|Действия|I dropped my phone.|Я уронил телефон.
+fall|падать|to go down quickly|Действия|Be careful, don't fall.|Осторожно, не упади.
+fly|летать|to move through the air|Путешествия|We fly to Paris tomorrow.|Мы завтра летим в Париж.
+follow|следовать|to come after; to obey|Действия|Follow me.|Следуй за мной.
+grow|расти|to become bigger|Изменения|Our company is growing.|Наша компания растёт.
+happen|случаться|to take place|События|What happened?|Что случилось?
+hold|держать|to have in your hand|Действия|Hold on a second.|Подожди секунду.
+hope|надеяться|to want something to happen|Желания|I hope so.|Надеюсь, что так.
+keep|сохранять, продолжать|to continue having|Действия|Keep going!|Продолжай!
+lose|терять, проигрывать|to not have anymore|Действия|I lost my wallet.|Я потерял кошелёк.
+mean|иметь в виду|to intend to say|Общение|I didn't mean it.|Я не это имел в виду.
+offer|предлагать|to say you'll give or do|Работа|They offered me a job.|Мне предложили работу.
+pay attention|обращать внимание|to watch or listen carefully|Учёба|Pay attention to details.|Обращай внимание на детали.
+plan|планировать|to decide what to do|Планы|I plan to visit London.|Я планирую посетить Лондон.
+prefer|предпочитать|to like more|Вкусы|I prefer tea to coffee.|Я предпочитаю чай кофе.
+prepare|готовить(ся)|to get ready|Подготовка|I'm preparing for the interview.|Я готовлюсь к собеседованию.
+promise|обещать|to say you will surely do|Обещания|I promise I'll call you.|Обещаю, я позвоню.
+reach|достигать, связаться|to arrive at; to contact|Связь|How can I reach you?|Как с тобой связаться?
+realise|осознавать|to understand suddenly|Мысли|I didn't realise it was late.|Я не понял, что уже поздно.
+receive|получать|to get something sent|Переписка|Did you receive my email?|Ты получил моё письмо?
+return|возвращаться|to come back|Движение|When do you return?|Когда ты возвращаешься?
+seem|казаться|to appear to be|Мнение|It seems easy.|Кажется лёгким.
+share|делиться|to let others use or know|Общение|Thanks for sharing.|Спасибо, что поделился.
+spend|проводить (время)|to use time|Время|I spend a lot of time online.|Я провожу много времени онлайн.
+suggest|предлагать (идею)|to give an idea|Обсуждения|I suggest we start now.|Предлагаю начать сейчас.
+support|поддерживать|to help and encourage|Работа, отношения|Thanks for your support.|Спасибо за поддержку.
+teach|учить (кого-то)|to give lessons|Обучение|Can you teach me?|Научишь меня?
+throw away|выбрасывать|to put in the rubbish|Быт|Don't throw it away.|Не выбрасывай это.
+travel|путешествовать|to go to places|Путешествия|I travel for work.|Я езжу в командировки.
+turn|поворачивать|to change direction|Навигация|Turn around.|Развернись.
+win|побеждать, выигрывать|to be the best|Игры, спорт|We won the game!|Мы выиграли игру!
+wish|желать|to want something|Пожелания|I wish you luck.|Желаю тебе удачи.
+wonder|интересоваться, задаваться вопросом|to want to know|Мысли|I wonder why.|Интересно, почему.
+worry|беспокоиться|to feel anxious|Эмоции|Don't worry.|Не волнуйся.
+agree|соглашаться|to have the same opinion|Обсуждения|I agree with you.|Я с тобой согласен.
+allow|разрешать|to let someone do|Правила|Smoking isn't allowed here.|Здесь нельзя курить.
+appear|появляться|to start to be seen|События|A new message appeared.|Появилось новое сообщение.
+count|считать|to say numbers in order|Числа|Count to ten.|Сосчитай до десяти.
+complain|жаловаться|to say you're not happy|Сервис|I want to complain.|Я хочу пожаловаться.

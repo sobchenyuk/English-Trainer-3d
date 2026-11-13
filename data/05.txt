@@ -1,0 +1,153 @@
+@A2|IT и разработка
+code|код; писать код|instructions for a computer|Разработка|I write code every day.|Я пишу код каждый день.
+bug|баг|a mistake in a program|Разработка|I found a bug.|Я нашёл баг.
+fix|исправить; исправление|to repair|Разработка|I'll fix it today.|Я исправлю это сегодня.
+feature|функция, фича|a part of a product|Продукт|We're adding a new feature.|Мы добавляем новую функцию.
+release|релиз; выпускать|to make available to users|Продукт|The release is next week.|Релиз на следующей неделе.
+deploy|деплоить, развернуть|to put code on a server|DevOps|Let's deploy to production.|Давай задеплоим в прод.
+server|сервер|a computer that serves data|Инфраструктура|The server is down.|Сервер упал.
+database|база данных|organised stored data|Бэкенд|The database is too slow.|База данных слишком медленная.
+repository|репозиторий|a place where code is stored|Git|Clone the repository.|Склонируй репозиторий.
+branch|ветка|a separate line of code changes|Git|Create a new branch.|Создай новую ветку.
+merge|слить, смёржить|to combine code changes|Git|I merged your pull request.|Я смёржил твой пулл-реквест.
+commit|коммит; закоммитить|to save changes in git|Git|Don't forget to commit.|Не забудь закоммитить.
+pull request|пулл-реквест|a request to merge code|Git, ревью|Please review my pull request.|Посмотри, пожалуйста, мой пулл-реквест.
+review|ревью; проверить|to check work carefully|Код-ревью|Could you review my code?|Можешь проверить мой код?
+test|тест; тестировать|to check that something works|QA|All tests passed.|Все тесты прошли.
+build|сборка; собирать|to compile a project|CI/CD|The build failed.|Сборка упала.
+environment|окружение|a setup where code runs|DevOps|It works in the test environment.|В тестовом окружении работает.
+production|продакшен|the live system for users|DevOps|There's a bug in production.|На проде баг.
+staging|стейджинг|a test copy of production|DevOps|Check it on staging first.|Сначала проверь на стейдже.
+issue|задача, проблема|a reported problem|GitHub, трекеры|I opened an issue on GitHub.|Я открыл issue на GitHub.
+ticket|тикет, задача|a task in a tracker|Jira|Assign the ticket to me.|Назначь тикет на меня.
+crash|падение; падать|when a program stops suddenly|Баги|The app crashes on start.|Приложение падает при запуске.
+error|ошибка|something wrong in a program|Отладка|I get an error message.|У меня выходит сообщение об ошибке.
+debug|отлаживать|to find and fix bugs|Отладка|I spent two hours debugging.|Я два часа отлаживал.
+log|лог; логировать|a record of events|Отладка|Check the logs.|Проверь логи.
+install|устанавливать|to put software on a computer|Настройка|Install the dependencies.|Установи зависимости.
+update|обновлять|to make newer|Настройка|Update the package.|Обнови пакет.
+version|версия|one form of a product|Продукт|Which version do you use?|Какую версию ты используешь?
+framework|фреймворк|a base for building apps|Разработка|We use Vue as our framework.|Мы используем Vue как фреймворк.
+library|библиотека|reusable code|Разработка|Which library do you recommend?|Какую библиотеку посоветуешь?
+API|API, интерфейс|a way for programs to talk|Бэкенд|The API returns JSON.|API возвращает JSON.
+request|запрос|a message asking for data|Сеть|The request takes too long.|Запрос выполняется слишком долго.
+response|ответ|data sent back|Сеть|The response is empty.|Ответ пустой.
+frontend|фронтенд|the part users see|Разработка|I'm a frontend developer.|Я фронтенд-разработчик.
+backend|бэкенд|the server side|Разработка|The backend is in Node.js.|Бэкенд на Node.js.
+user|пользователь|a person who uses a product|Продукт|Users love the new design.|Пользователям нравится новый дизайн.
+interface|интерфейс|what users interact with|UI/UX|The interface is simple.|Интерфейс простой.
+design|дизайн; проектировать|how something looks or works|UI, архитектура|I like the new design.|Мне нравится новый дизайн.
+performance|производительность|how fast something works|Оптимизация|We need better performance.|Нам нужна производительность выше.
+security|безопасность|protection from attacks|Безопасность|Security is our priority.|Безопасность — наш приоритет.
+password|пароль|a secret word to log in|Безопасность|Change your password.|Смени пароль.
+log in|войти (в систему)|to enter an account|Приложения|I can't log in.|Я не могу войти.
+sign up|зарегистрироваться|to create an account|Приложения|Sign up for free.|Зарегистрируйтесь бесплатно.
+settings|настройки|options you can change|Приложения|Open the settings.|Открой настройки.
+download|скачать|to copy from the internet|Интернет|Download the app.|Скачай приложение.
+upload|загрузить|to send to the internet|Интернет|Upload the file here.|Загрузи файл сюда.
+backup|резервная копия|a copy for safety|Данные|Do you have a backup?|У тебя есть резервная копия?
+documentation|документация|written guide for software|Разработка|Read the documentation.|Почитай документацию.
+refactor|рефакторить|to improve code structure|Разработка|We need to refactor this module.|Нужно отрефакторить этот модуль.
+estimate|оценить; оценка|to guess time or size|Планирование|Can you estimate this task?|Можешь оценить задачу?
+@A2|Путешествия и отель
+travel|путешествовать|to go to other places|Путешествия|I love to travel.|Я люблю путешествовать.
+trip|поездка|a journey to a place and back|Путешествия|How was your trip?|Как прошла поездка?
+journey|путешествие, путь|travel from one place to another|Путешествия|It's a long journey.|Это долгий путь.
+abroad|за границей|in another country|Путешествия|I've never been abroad.|Я никогда не был за границей.
+passport|паспорт|an official travel document|Документы|Don't forget your passport.|Не забудь паспорт.
+visa|виза|permission to enter a country|Документы|Do I need a visa?|Мне нужна виза?
+flight|рейс, полёт|a journey by plane|Аэропорт|My flight is delayed.|Мой рейс задерживается.
+book|бронировать|to reserve|Отель, билеты|I booked a hotel.|Я забронировал отель.
+reservation|бронь|a booked place|Отель, ресторан|I have a reservation.|У меня есть бронь.
+hotel|отель|a place to stay for money|Путешествия|The hotel is near the beach.|Отель рядом с пляжем.
+check in|заселиться, зарегистрироваться|to arrive and register|Отель, аэропорт|What time can I check in?|Во сколько можно заселиться?
+check out|выселиться|to pay and leave a hotel|Отель|Check out is at noon.|Выезд в полдень.
+luggage|багаж|bags for travelling|Аэропорт|Where can I leave my luggage?|Где можно оставить багаж?
+suitcase|чемодан|a bag for clothes on a trip|Путешествия|My suitcase is too heavy.|Мой чемодан слишком тяжёлый.
+backpack|рюкзак|a bag carried on your back|Путешествия|I travel with a backpack.|Я путешествую с рюкзаком.
+boarding pass|посадочный талон|a ticket to get on a plane|Аэропорт|Show your boarding pass.|Покажите посадочный талон.
+gate|выход на посадку|where you get on a plane|Аэропорт|Our gate is B12.|Наш выход B12.
+delay|задержка; задерживать|a time when something is late|Транспорт|Sorry for the delay.|Извините за задержку.
+cancel|отменить|to stop a plan|Путешествия|My flight was cancelled.|Мой рейс отменили.
+arrive|прибывать|to reach a place|Путешествия|What time do we arrive?|Во сколько мы прибываем?
+depart|отправляться|to leave|Транспорт|The train departs at six.|Поезд отправляется в шесть.
+tourist|турист|a person on holiday|Туризм|The city is full of tourists.|Город полон туристов.
+sightseeing|осмотр достопримечательностей|visiting famous places|Туризм|Let's go sightseeing.|Пойдём смотреть достопримечательности.
+guide|гид; путеводитель|a person who shows places|Туризм|Our guide speaks English.|Наш гид говорит по-английски.
+beach|пляж|sand by the sea|Отдых|Let's go to the beach.|Пойдём на пляж.
+sea|море|a big area of salt water|Отдых|I want to swim in the sea.|Хочу искупаться в море.
+mountains|горы|very high land|Отдых|We hiked in the mountains.|Мы ходили в походы в горах.
+view|вид|what you can see from a place|Отель, туризм|The room has a great view.|Из номера отличный вид.
+souvenir|сувенир|a thing to remember a trip|Туризм|I bought a souvenir.|Я купил сувенир.
+currency|валюта|money of a country|Финансы|What currency do they use?|Какая там валюта?
+exchange|обменять|to change money|Финансы|Where can I exchange money?|Где можно обменять деньги?
+single room|одноместный номер|a room for one person|Отель|A single room, please.|Одноместный номер, пожалуйста.
+double room|двухместный номер|a room for two people|Отель|We'd like a double room.|Нам нужен двухместный номер.
+included|включено|part of the price|Отель, покупки|Is breakfast included?|Завтрак включён?
+reception|ресепшн|the front desk of a hotel|Отель|Ask at reception.|Спросите на ресепшене.
+towel|полотенце|cloth for drying yourself|Отель|Can I have more towels?|Можно ещё полотенец?
+lift|лифт|a machine that carries people up|Отель|The lift doesn't work.|Лифт не работает.
+holiday|отпуск, праздник|time for rest and travel|Отдых|We're on holiday in Spain.|Мы в отпуске в Испании.
+abroad trip|поездка за границу|travel to another country|Путешествия|It's my first abroad trip.|Это моя первая поездка за границу.
+destination|пункт назначения|the place you travel to|Путешествия|What's your final destination?|Какой ваш конечный пункт?
+rent a car|арендовать машину|to pay to use a car|Путешествия|We want to rent a car.|Мы хотим арендовать машину.
+map app|приложение-карта|navigation app on a phone|Навигация|I use a map app.|Я пользуюсь картами в телефоне.
+local|местный|from the area|Туризм|Try the local food.|Попробуй местную еду.
+foreign|иностранный|from another country|Путешествия|I like foreign languages.|Мне нравятся иностранные языки.
+customs|таможня|where bags are checked at a border|Аэропорт|We went through customs.|Мы прошли таможню.
+border|граница|a line between countries|Путешествия|We crossed the border.|Мы пересекли границу.
+pack|собирать вещи|to put things in a bag|Подготовка|I need to pack tonight.|Мне нужно собрать вещи сегодня вечером.
+jet lag|джетлаг|tiredness after a long flight|Перелёты|I have terrible jet lag.|У меня ужасный джетлаг.
+round trip|туда и обратно|travel there and back|Билеты|A round trip ticket, please.|Билет туда и обратно, пожалуйста.
+one way|в одну сторону|travel only there|Билеты|Just one way, please.|Только в одну сторону, пожалуйста.
+@A2|Здоровье и тело
+health|здоровье|the condition of your body|Здоровье|Health is the most important thing.|Здоровье — самое важное.
+healthy|здоровый, полезный|good for your body|Здоровье|I try to eat healthy food.|Стараюсь есть здоровую еду.
+sick|больной|ill|Здоровье|I feel sick.|Мне плохо.
+ill|больной|not well|Здоровье|He's been ill for a week.|Он болеет уже неделю.
+pain|боль|a bad feeling in your body|Врач|I have a pain in my back.|У меня болит спина.
+hurt|болеть; ранить|to cause pain|Врач|My leg hurts.|У меня болит нога.
+headache|головная боль|pain in your head|Врач|I have a headache.|У меня болит голова.
+cold|простуда|a common illness with a runny nose|Врач|I've caught a cold.|Я простудился.
+fever|температура, жар|high body temperature|Врач|She has a fever.|У неё температура.
+cough|кашель; кашлять|forcing air out of your throat|Врач|I have a bad cough.|У меня сильный кашель.
+doctor|врач|a person who treats sick people|Врач|You should see a doctor.|Тебе стоит сходить к врачу.
+appointment|запись (на приём)|a planned meeting|Врач, сервисы|I have a doctor's appointment.|У меня запись к врачу.
+medicine|лекарство|something to treat illness|Аптека|Take this medicine twice a day.|Принимай это лекарство дважды в день.
+pill|таблетка|small medicine you swallow|Аптека|Take one pill after meals.|Принимай одну таблетку после еды.
+prescription|рецепт|a doctor's note for medicine|Аптека|Do I need a prescription?|Нужен рецепт?
+feel better|чувствовать себя лучше|to be less ill|Здоровье|I hope you feel better soon.|Надеюсь, тебе скоро станет лучше.
+get well|выздоравливать|to become healthy again|Пожелания|Get well soon!|Скорее выздоравливай!
+rest|отдых; отдыхать|time to relax|Здоровье|You need some rest.|Тебе нужно отдохнуть.
+exercise|упражнения, тренировка|physical activity|Спорт|I exercise three times a week.|Я тренируюсь три раза в неделю.
+gym|спортзал|a place to train|Спорт|I go to the gym after work.|После работы я хожу в спортзал.
+fit|в хорошей форме|healthy and strong|Спорт|I want to stay fit.|Я хочу оставаться в форме.
+weight|вес|how heavy you are|Здоровье|I want to lose weight.|Я хочу похудеть.
+diet|диета, рацион|the food you usually eat|Питание|I'm on a diet.|Я на диете.
+body|тело|all of a person|Тело|Listen to your body.|Прислушивайся к своему телу.
+head|голова|the top part of the body|Тело|My head hurts.|У меня болит голова.
+eye|глаз|you see with it|Тело|My eyes are tired.|Мои глаза устали.
+ear|ухо|you hear with it|Тело|My ear hurts.|У меня болит ухо.
+nose|нос|you smell with it|Тело|I have a runny nose.|У меня насморк.
+mouth|рот|you eat and speak with it|Тело|Open your mouth, please.|Откройте рот, пожалуйста.
+tooth|зуб|hard white thing in your mouth|Стоматолог|I have a toothache.|У меня болит зуб.
+throat|горло|the inside of your neck|Врач|I have a sore throat.|У меня болит горло.
+back|спина|the back part of your body|Тело|Sitting all day is bad for your back.|Сидеть весь день вредно для спины.
+stomach|живот, желудок|where food goes|Врач|My stomach hurts.|У меня болит живот.
+hand|рука (кисть)|the end of your arm|Тело|Raise your hand.|Подними руку.
+arm|рука|between your shoulder and hand|Тело|I broke my arm.|Я сломал руку.
+leg|нога|you walk on it|Тело|My legs are tired.|Мои ноги устали.
+foot|ступня|the end of your leg|Тело|My foot hurts.|У меня болит ступня.
+heart|сердце|the organ that pumps blood|Тело|My heart is beating fast.|Моё сердце бьётся быстро.
+blood|кровь|red liquid in your body|Медицина|They took a blood test.|У меня взяли анализ крови.
+injury|травма|damage to your body|Спорт, врач|It's a sports injury.|Это спортивная травма.
+emergency|экстренный случай|a dangerous situation needing help|Помощь|Call an ambulance, it's an emergency!|Вызовите скорую, это срочно!
+ambulance|скорая помощь|a vehicle for sick people|Помощь|Call an ambulance!|Вызовите скорую!
+stress|стресс|worry and pressure|Здоровье|I'm under a lot of stress.|Я в сильном стрессе.
+tired of|устать от|bored or annoyed by|Состояние|I'm tired of sitting at home.|Я устал сидеть дома.
+sleep well|хорошо спать|to have good sleep|Здоровье|Did you sleep well?|Ты хорошо спал?
+dentist|стоматолог|a doctor for teeth|Врач|I need to see a dentist.|Мне нужно к стоматологу.
+symptom|симптом|a sign of illness|Врач|What are your symptoms?|Какие у вас симптомы?
+allergy|аллергия|a bad reaction to something|Здоровье|I have an allergy to cats.|У меня аллергия на кошек.
+recover|выздороветь|to become healthy again|Здоровье|He recovered quickly.|Он быстро выздоровел.
+check-up|медосмотр|a general medical exam|Врач|I have an annual check-up.|У меня ежегодный медосмотр.

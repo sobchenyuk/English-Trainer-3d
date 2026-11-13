@@ -1,0 +1,74 @@
+@B1|Важные слова B1–B2
+ability|способность|power or skill to do something|Описание навыков|She has the ability to learn fast.|У неё способность быстро учиться.
+access|доступ|the right to use or enter|IT, сервисы|I don't have access to the repo.|У меня нет доступа к репозиторию.
+accurate|точный|correct in every detail|Работа|The data is accurate.|Данные точные.
+aware|осведомлённый|knowing about something|Обсуждения|Are you aware of the problem?|Ты в курсе проблемы?
+behaviour|поведение|the way someone acts|Психология|His behaviour was strange.|Его поведение было странным.
+benefit|польза|an advantage|Анализ|What's the benefit?|Какая польза?
+capable|способный|able to do something|Описание людей|You're capable of more.|Ты способен на большее.
+certain|определённый, уверенный|sure; particular|Мнение|I'm certain it will work.|Я уверен, что сработает.
+chance|шанс|a possibility|Вероятность|Give me a chance.|Дай мне шанс.
+common|распространённый, общий|happening often; shared|Описание|It's a common mistake.|Это распространённая ошибка.
+condition|условие, состояние|a situation or rule|Договоры|In good condition.|В хорошем состоянии.
+consequence|последствие|a result of an action|Анализ|Think about the consequences.|Подумай о последствиях.
+create|создавать|to make something new|Работа|We create web applications.|Мы создаём веб-приложения.
+decision|решение|a choice you make|Решения|It was a hard decision.|Это было трудное решение.
+develop|развивать, разрабатывать|to grow or build|Работа|We develop mobile apps.|Мы разрабатываем мобильные приложения.
+difference|разница|how things are not the same|Сравнение|What's the difference?|В чём разница?
+effect|эффект, влияние|a result|Анализ|It had a positive effect.|Это дало положительный эффект.
+effort|усилие|hard work|Мотивация|It takes a lot of effort.|Это требует больших усилий.
+encourage|поощрять, поддерживать|to give confidence|Отношения|My wife encourages me.|Жена меня поддерживает.
+expect|ожидать|to think something will happen|Ожидания|I didn't expect that.|Я этого не ожидал.
+experience|переживать, испытывать|to have something happen to you|Жизнь|I experienced a lot this year.|Я многое пережил в этом году.
+familiar|знакомый|known|Описание|This place looks familiar.|Это место кажется знакомым.
+force|заставлять; сила|to make someone do|Действия|Don't force yourself.|Не заставляй себя.
+huge|огромный|very big|Описание|It's a huge difference.|Это огромная разница.
+impact|влияние, воздействие|a strong effect|Анализ|It had a big impact on me.|Это сильно на меня повлияло.
+increase|увеличивать(ся)|to become more|Метрики|Sales increased by ten percent.|Продажи выросли на десять процентов.
+decrease|уменьшать(ся)|to become less|Метрики|The price decreased.|Цена снизилась.
+independent|независимый|not needing others|Характер|I want to be independent.|Я хочу быть независимым.
+influence|влиять|to affect|Анализ|Music influences my mood.|Музыка влияет на моё настроение.
+involve|вовлекать, включать|to include|Работа|The job involves travel.|Работа связана с поездками.
+issue|вопрос, тема|an important topic|Обсуждения|That's a different issue.|Это другой вопрос.
+likely|вероятный|probable|Вероятность|It's likely to rain.|Вероятно, будет дождь.
+limit|предел, ограничение|the most allowed|Правила|There's a time limit.|Есть ограничение по времени.
+manage to|суметь|to succeed in doing|Достижения|I managed to fix it.|Мне удалось это починить.
+necessary|необходимый|needed|Обсуждения|Is it necessary?|Это необходимо?
+obvious|очевидный|easy to see|Обсуждения|The answer is obvious.|Ответ очевиден.
+occur|происходить|to happen (formal)|Формальный стиль|The error occurs randomly.|Ошибка возникает случайно.
+particular|особенный, конкретный|specific|Уточнение|Is there a particular reason?|Есть какая-то конкретная причина?
+pay off|окупиться|to bring good results|Мотивация|Hard work pays off.|Труд окупается.
+permission|разрешение|being allowed|Правила|Do I need permission?|Мне нужно разрешение?
+positive|положительный|good, hopeful|Эмоции|Stay positive!|Оставайся позитивным!
+negative|отрицательный|bad|Анализ|It had a negative effect.|Это имело негативный эффект.
+purpose|цель, назначение|the reason for something|Обсуждения|What's the purpose of this?|Какова цель этого?
+quality|качество|how good something is|Работа|Quality is more important than speed.|Качество важнее скорости.
+reduce|сокращать|to make smaller|Метрики|We need to reduce costs.|Нам нужно сократить расходы.
+regular|регулярный|happening often|Привычки|Regular practice is the key.|Регулярная практика — ключ.
+relationship|отношения|how people are connected|Отношения|We have a good relationship.|У нас хорошие отношения.
+rely on|полагаться на|to depend on|Доверие|You can rely on me.|Можешь на меня положиться.
+require|требовать|to need|Формальный стиль|This task requires attention.|Эта задача требует внимания.
+responsible|ответственный|reliable; in charge|Характер|He's very responsible.|Он очень ответственный.
+situation|ситуация|what is happening|Обсуждения|It's a difficult situation.|Это сложная ситуация.
+specific|конкретный|exact|Уточнение|Can you be more specific?|Можешь конкретнее?
+success|успех|achieving a goal|Мотивация|Congratulations on your success!|Поздравляю с успехом!
+successful|успешный|having success|Карьера|It was a successful project.|Это был успешный проект.
+suppose|предполагать|to think probably|Мнение|I suppose so.|Полагаю, что так.
+trust|доверять; доверие|to believe someone is good|Отношения|I trust you.|Я тебе доверяю.
+useful|полезный|helpful|Оценка|That's really useful.|Это очень полезно.
+valuable|ценный|worth a lot|Оценка|Thanks for the valuable advice.|Спасибо за ценный совет.
+various|различные|many different|Описание|We use various tools.|Мы используем различные инструменты.
+willing|готовый, желающий|ready to do something|Отношения|I'm willing to help.|Я готов помочь.
+appreciate|ценить|to be grateful for|Благодарность|I really appreciate your help.|Я очень ценю твою помощь.
+advice|совет|an opinion about what to do|Помощь|Can I ask your advice?|Можно спросить твоего совета?
+attitude|отношение, настрой|how you think or feel|Характер|She has a positive attitude.|У неё позитивный настрой.
+balance|баланс|equal amounts|Жизнь|Work-life balance is important.|Баланс работы и жизни важен.
+habit|привычка|something you do regularly|Привычки|Reading is a good habit.|Чтение — хорошая привычка.
+skillful|умелый|good at doing something|Описание навыков|He's a skillful designer.|Он умелый дизайнер.
+deserve|заслуживать|to earn by your actions|Мотивация|You deserve a rest.|Ты заслужил отдых.
+progress fast|быстро прогрессировать|to improve quickly|Обучение|You're progressing fast!|Ты быстро прогрессируешь!
+confidence|уверенность|belief in yourself|Эмоции|Speaking gives me confidence.|Разговорная практика даёт мне уверенность.
+challenge yourself|бросить себе вызов|to try something hard|Мотивация|Challenge yourself every day.|Бросай себе вызов каждый день.
+step by step|шаг за шагом|gradually|Обучение|Learn step by step.|Учись шаг за шагом.
+make progress|делать успехи|to improve|Обучение|I'm making progress in English.|Я делаю успехи в английском.
+keep in touch|оставаться на связи|to continue to communicate|Общение|Let's keep in touch.|Давай оставаться на связи.

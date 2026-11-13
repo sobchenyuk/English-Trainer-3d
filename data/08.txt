@@ -1,0 +1,152 @@
+@B1|Мнение и обсуждение
+opinion|мнение|what you think about something|Обсуждения|In my opinion, it's a good idea.|По-моему, это хорошая идея.
+in my opinion|по моему мнению|introducing your view|Обсуждения|In my opinion, we should wait.|По моему мнению, стоит подождать.
+I think so|думаю, да|agreeing softly|Обсуждения|— Is it ready? — I think so.|— Готово? — Думаю, да.
+I don't think so|не думаю|disagreeing softly|Обсуждения|I don't think so.|Не думаю.
+as far as I know|насколько я знаю|based on what I know|Обсуждения|As far as I know, it's free.|Насколько я знаю, это бесплатно.
+point of view|точка зрения|a way of thinking|Обсуждения|I see your point of view.|Я понимаю твою точку зрения.
+point|смысл, мысль|an idea in a discussion|Обсуждения|That's a good point.|Хорошая мысль.
+totally agree|полностью согласен|agree completely|Согласие|I totally agree with you.|Полностью с тобой согласен.
+disagree|не соглашаться|to have a different opinion|Обсуждения|I'm afraid I disagree.|Боюсь, я не согласен.
+argue|спорить|to disagree with strong words|Споры|Let's not argue.|Давай не будем спорить.
+argument|спор; аргумент|a disagreement; a reason|Обсуждения|That's a strong argument.|Это сильный аргумент.
+reason|причина|why something happens|Обсуждения|What's the reason?|В чём причина?
+because|потому что|for the reason that|Объяснение|I'm late because of traffic.|Я опоздал из-за пробок.
+however|однако|but|Контраст|It's cheap. However, it's slow.|Дёшево. Однако медленно.
+although|хотя|despite the fact that|Контраст|Although it's hard, I like it.|Хотя это трудно, мне нравится.
+on the other hand|с другой стороны|showing another view|Сравнение|On the other hand, it's cheaper.|С другой стороны, это дешевле.
+pros and cons|плюсы и минусы|advantages and disadvantages|Анализ|Let's discuss the pros and cons.|Давай обсудим плюсы и минусы.
+advantage|преимущество|a good side|Анализ|The main advantage is speed.|Главное преимущество — скорость.
+disadvantage|недостаток|a bad side|Анализ|The disadvantage is the price.|Недостаток — цена.
+compare|сравнивать|to see how things are different|Анализ|Let's compare these options.|Давай сравним эти варианты.
+option|вариант|a possible choice|Решения|We have two options.|У нас два варианта.
+choice|выбор|the act of choosing|Решения|It's your choice.|Это твой выбор.
+prefer|предпочитать|to like more|Мнение|I'd prefer to wait.|Я бы предпочёл подождать.
+rather|скорее, предпочтительнее|preferably|Мнение|I'd rather stay home.|Я бы лучше остался дома.
+it depends|зависит|the answer changes with conditions|Ответ|— Is it hard? — It depends.|— Это сложно? — Смотря как.
+depend on|зависеть от|to be decided by|Условия|It depends on the budget.|Это зависит от бюджета.
+convince|убеждать|to make someone believe|Обсуждения|You convinced me.|Ты меня убедил.
+doubt|сомнение; сомневаться|a feeling of not being sure|Обсуждения|I doubt it will work.|Сомневаюсь, что сработает.
+fact|факт|something true|Обсуждения|It's a fact.|Это факт.
+actually|вообще-то|in fact|Уточнение|Actually, it's not true.|Вообще-то это неправда.
+obviously|очевидно|clearly|Обсуждения|Obviously, we need more time.|Очевидно, нам нужно больше времени.
+probably|вероятно|very likely|Вероятность|It's probably a bug.|Вероятно, это баг.
+definitely|определённо|certainly|Уверенность|I'll definitely come.|Я точно приду.
+absolutely|абсолютно|completely|Согласие|Absolutely right!|Абсолютно верно!
+fair enough|справедливо, ладно|that's reasonable|Согласие|Fair enough, let's do it your way.|Справедливо, сделаем по-твоему.
+good point|хорошее замечание|a smart idea|Обсуждения|Good point, I didn't think of that.|Хорошее замечание, я не подумал.
+make sense|иметь смысл|to be logical|Обсуждения|That makes sense.|Это логично.
+I see what you mean|понимаю, о чём ты|I understand your idea|Обсуждения|I see what you mean, but...|Понимаю, о чём ты, но...
+to be honest|честно говоря|saying the truth|Мнение|To be honest, I'm tired.|Честно говоря, я устал.
+in general|в целом|usually, mostly|Обобщение|In general, it works well.|В целом работает хорошо.
+for example|например|giving an example|Объяснение|For example, React or Vue.|Например, React или Vue.
+such as|такой как|for example|Примеры|Languages such as Go or Rust.|Языки вроде Go или Rust.
+mention|упоминать|to say briefly|Обсуждения|You mentioned a problem.|Ты упомянул проблему.
+explain why|объяснить почему|to give reasons|Обсуждения|Can you explain why?|Можешь объяснить почему?
+believe|считать, полагать|to think is true|Мнение|I believe we can do it.|Я считаю, мы справимся.
+consider|рассматривать, учитывать|to think carefully about|Решения|Let's consider other options.|Давай рассмотрим другие варианты.
+debate|дебаты, спор|a formal discussion|Обсуждения|There's a big debate about AI.|Вокруг ИИ большие споры.
+assume|предполагать|to think without proof|Логика|I assume you're busy.|Полагаю, ты занят.
+agree on|договориться о|to decide together|Договорённости|Let's agree on a date.|Давай договоримся о дате.
+compromise|компромисс|an agreement where both give a little|Переговоры|Let's find a compromise.|Давай найдём компромисс.
+@B1|Созвоны и встречи
+call|звонок, созвон|a phone or video conversation|Созвоны|Let's have a quick call.|Давай быстро созвонимся.
+join a call|подключиться к звонку|to enter a video meeting|Созвоны|I'm joining the call now.|Подключаюсь к звонку.
+can you hear me|вы меня слышите|checking sound|Созвоны|Can you hear me now?|Теперь слышите меня?
+you're on mute|у тебя выключен микрофон|your microphone is off|Созвоны|Sorry, you're on mute.|Извини, у тебя выключен микрофон.
+mute|выключить звук|to turn off sound|Созвоны|Please mute your mic.|Выключи микрофон, пожалуйста.
+unmute|включить звук|to turn sound on|Созвоны|Can you unmute?|Можешь включить микрофон?
+connection|соединение|link to the internet|Созвоны|My connection is bad.|У меня плохая связь.
+lagging|лагать, тормозить|being slow and delayed|Созвоны|Your video is lagging.|У тебя тормозит видео.
+share your screen|показать экран|let others see your screen|Созвоны|Can you share your screen?|Можешь показать экран?
+camera|камера|device for video|Созвоны|Can you turn on your camera?|Можешь включить камеру?
+drop off|отключиться|to leave a call unexpectedly|Созвоны|Sorry, I dropped off.|Извините, меня выкинуло.
+get back to you|вернуться к тебе (с ответом)|to answer later|Работа|I'll get back to you tomorrow.|Я отвечу тебе завтра.
+follow up|вернуться к вопросу|to continue after a meeting|Работа|I'll follow up by email.|Я напишу потом на почту.
+reschedule|перенести|to change the time|Планирование|Can we reschedule?|Можем перенести?
+postpone|отложить|to move to a later time|Планирование|Let's postpone the meeting.|Давай отложим встречу.
+set up a meeting|назначить встречу|to arrange a meeting|Планирование|Let's set up a meeting.|Давай назначим встречу.
+time zone|часовой пояс|area with the same time|Удалёнка|What time zone are you in?|В каком ты часовом поясе?
+sound|звук; звучать|what you hear; to seem|Созвоны|That sounds good.|Звучит хорошо.
+sounds good|звучит хорошо, договорились|I agree|Согласие|Tomorrow at ten? Sounds good.|Завтра в десять? Договорились.
+let's start|давайте начнём|beginning a meeting|Встречи|Okay, let's start.|Хорошо, давайте начнём.
+let's move on|давайте дальше|going to the next topic|Встречи|Let's move on to the next point.|Давайте к следующему пункту.
+go over|просмотреть, пройтись|to review|Встречи|Let's go over the plan.|Давай пройдёмся по плану.
+wrap up|подводить итог, завершать|to finish|Встречи|Let's wrap up.|Давайте закругляться.
+summary|итоги, резюме|a short description of main points|Встречи|Here's a short summary.|Вот краткие итоги.
+action items|задачи по итогам|tasks after a meeting|Встречи|What are the action items?|Какие задачи по итогам?
+next steps|следующие шаги|what to do after this|Встречи|Let's discuss next steps.|Давайте обсудим следующие шаги.
+any questions|есть вопросы|asking if people need clarity|Встречи|Any questions?|Есть вопросы?
+clarify|уточнить|to make clear|Встречи|Could you clarify that?|Можешь уточнить?
+go ahead|давай, продолжай|you can start or continue|Встречи|Go ahead, please.|Продолжай, пожалуйста.
+interrupt|перебивать|to stop someone speaking|Встречи|Sorry to interrupt.|Извините, что перебиваю.
+on the same page|на одной волне|having the same understanding|Работа|Are we on the same page?|Мы друг друга поняли?
+take notes|записывать|to write down key points|Встречи|Who's taking notes?|Кто записывает?
+presentation|презентация|a talk with slides|Работа|I'll give a short presentation.|Я сделаю короткую презентацию.
+demo|демо|showing how something works|Работа|Let me show you a quick demo.|Давайте покажу короткое демо.
+attend|посещать|to be present at|Встречи|Who will attend the meeting?|Кто будет на встрече?
+participant|участник|a person taking part|Встречи|We have ten participants.|У нас десять участников.
+host|ведущий, организатор|the person who organises|Встречи|Who's hosting the call?|Кто ведёт звонок?
+invitation|приглашение|a request to come|Календарь|I sent you an invitation.|Я отправил тебе приглашение.
+standup|стендап, планёрка|a short daily team meeting|Agile|See you at the standup.|Увидимся на стендапе.
+retrospective|ретроспектива|a meeting to review a sprint|Agile|We discussed it at the retro.|Мы обсудили это на ретро.
+brainstorm|мозговой штурм|to share many ideas|Встречи|Let's brainstorm ideas.|Давайте накидаем идей.
+I'll be quick|я быстро|I won't take long|Встречи|I'll be quick, I promise.|Я быстро, обещаю.
+running late|опаздываю|going to be late|Встречи|Sorry, I'm running late.|Извини, я опаздываю.
+just a moment|минутку|wait a little|Созвоны|Just a moment, please.|Минутку, пожалуйста.
+back to|вернёмся к|return to a topic|Встречи|Back to our topic.|Вернёмся к нашей теме.
+in a nutshell|в двух словах|very briefly|Объяснение|In a nutshell, it works.|В двух словах — работает.
+heads up|предупреждение|a warning in advance|Работа|Just a heads up, I'm off tomorrow.|Предупреждаю: завтра меня нет.
+keep me posted|держи в курсе|tell me about updates|Работа|Keep me posted.|Держи меня в курсе.
+touch base|связаться, свериться|to talk briefly|Работа|Let's touch base next week.|Давай сверимся на следующей неделе.
+@B1|Собеседование и карьера
+interview|собеседование|a meeting to get a job|Карьера|I have a job interview tomorrow.|Завтра у меня собеседование.
+candidate|кандидат|a person applying for a job|HR|She's a strong candidate.|Она сильный кандидат.
+apply|подавать заявку|to ask formally for a job|Карьера|I applied for this position.|Я подал заявку на эту позицию.
+position|должность, позиция|a job in a company|Карьера|I'm applying for a senior position.|Я претендую на позицию сеньора.
+vacancy|вакансия|an open job|Карьера|Do you have any vacancies?|У вас есть вакансии?
+CV|резюме|a document about your experience|Карьера|Please send your CV.|Пожалуйста, пришлите резюме.
+cover letter|сопроводительное письмо|a letter sent with a CV|Карьера|I wrote a cover letter.|Я написал сопроводительное письмо.
+background|опыт, бэкграунд|your past experience|Собеседование|Tell me about your background.|Расскажите о своём опыте.
+strength|сильная сторона|something you're good at|Собеседование|What are your strengths?|Какие у вас сильные стороны?
+weakness|слабая сторона|something you're not good at|Собеседование|My weakness is perfectionism.|Моя слабая сторона — перфекционизм.
+achievement|достижение|something you did well|Собеседование|What's your biggest achievement?|Какое ваше главное достижение?
+challenge|вызов, сложность|a difficult task|Собеседование|Tell me about a challenge you faced.|Расскажите о сложности, с которой вы столкнулись.
+handle|справляться|to deal with|Собеседование|How do you handle stress?|Как вы справляетесь со стрессом?
+lead|руководить, возглавлять|to be in charge of|Карьера|I led a team of five.|Я руководил командой из пяти человек.
+team lead|тимлид|the leader of a dev team|IT|I worked as a team lead.|Я работал тимлидом.
+senior|старший, сеньор|experienced|IT|I'm a senior developer.|Я старший разработчик.
+junior|младший, джун|beginner level|IT|We're hiring juniors.|Мы нанимаем джунов.
+mentor|наставник; наставлять|someone who helps juniors|Карьера|I mentor junior developers.|Я менторю джунов.
+salary expectations|ожидания по зарплате|the money you want|Собеседование|What are your salary expectations?|Каковы ваши зарплатные ожидания?
+negotiate|договариваться|to discuss to reach agreement|Переговоры|We can negotiate the salary.|Зарплату можно обсудить.
+offer|оффер, предложение|a job proposal|Карьера|I got a job offer!|Я получил оффер!
+benefits|бонусы, соцпакет|extras besides salary|HR|What benefits do you offer?|Какой у вас соцпакет?
+probation period|испытательный срок|first months at a job|HR|The probation period is three months.|Испытательный срок — три месяца.
+career|карьера|your working life|Карьера|I want to grow my career.|Хочу развивать карьеру.
+qualified|квалифицированный|having the right skills|Карьера|You're well qualified.|У вас подходящая квалификация.
+requirements|требования|what is needed|Вакансии|What are the requirements?|Какие требования?
+responsibility|обязанность, ответственность|a duty|Работа|What were your responsibilities?|Какие у вас были обязанности?
+reference|рекомендация|a letter from a former employer|HR|Can you give references?|Можете дать рекомендации?
+employer|работодатель|a company that employs|Карьера|My last employer was a bank.|Мой прошлый работодатель — банк.
+employee|сотрудник|a person who works for a company|Карьера|We have fifty employees.|У нас пятьдесят сотрудников.
+recruiter|рекрутер|a person who finds candidates|HR|A recruiter contacted me.|Со мной связался рекрутер.
+portfolio|портфолио|examples of your work|Карьера|Here's my portfolio.|Вот моё портфолио.
+hard-working|трудолюбивый|working with effort|Собеседование|I'm hard-working and reliable.|Я трудолюбивый и надёжный.
+reliable|надёжный|can be trusted|Собеседование|She's a reliable colleague.|Она надёжная коллега.
+teamwork|командная работа|working well together|Собеседование|Teamwork is important to me.|Командная работа для меня важна.
+self-motivated|самомотивированный|works without being pushed|Собеседование|I'm self-motivated.|Я сам себя мотивирую.
+deal with|иметь дело, справляться|to handle|Работа|I deal with clients every day.|Я каждый день работаю с клиентами.
+manage|управлять, справиться|to control; to succeed|Работа|I managed to finish on time.|Я успел закончить вовремя.
+goal-oriented|нацеленный на результат|focused on goals|Собеседование|I'm very goal-oriented.|Я очень нацелен на результат.
+why should we hire you|почему мы должны вас нанять|a common interview question|Собеседование|Why should we hire you?|Почему мы должны нанять вас?
+where do you see yourself|где вы себя видите|asking about future plans|Собеседование|Where do you see yourself in five years?|Где вы видите себя через пять лет?
+notice period|срок уведомления (об уходе)|time before leaving a job|HR|My notice period is two weeks.|Мне нужно отработать две недели.
+relocate|переехать (по работе)|to move for a job|Карьера|Are you ready to relocate?|Вы готовы к релокации?
+growth|рост|development|Карьера|I'm looking for growth.|Я ищу возможности для роста.
+opportunity|возможность|a chance|Карьера|Thank you for the opportunity.|Спасибо за возможность.
+company culture|культура компании|values and atmosphere|HR|I like your company culture.|Мне нравится культура вашей компании.
+hiring process|процесс найма|steps to get hired|HR|What's the hiring process?|Какие этапы найма?
+technical task|тестовое задание|a test project for candidates|IT-собеседование|I finished the technical task.|Я сделал тестовое задание.
+soft skills|софт-скиллы|communication and people skills|Карьера|Soft skills matter a lot.|Софт-скиллы очень важны.
+hard skills|хард-скиллы|technical skills|Карьера|My hard skills are strong.|У меня сильные хард-скиллы.

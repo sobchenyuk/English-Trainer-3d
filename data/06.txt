@@ -1,0 +1,153 @@
+@A2|Погода и природа
+weather|погода|the state of the air outside|Small talk|What's the weather like?|Какая погода?
+sunny|солнечный|with a lot of sun|Погода|It's sunny today.|Сегодня солнечно.
+rain|дождь; идёт дождь|water falling from clouds|Погода|It's raining again.|Опять идёт дождь.
+rainy|дождливый|with a lot of rain|Погода|It's a rainy day.|Дождливый день.
+snow|снег|white frozen water from the sky|Погода|It's snowing outside.|На улице идёт снег.
+wind|ветер|moving air|Погода|The wind is very strong.|Очень сильный ветер.
+windy|ветреный|with a lot of wind|Погода|It's windy today.|Сегодня ветрено.
+cloudy|облачный|with many clouds|Погода|It's cloudy but warm.|Облачно, но тепло.
+cloud|облако|white or grey thing in the sky|Природа|Look at that cloud.|Посмотри на то облако.
+storm|шторм, гроза|very bad weather|Погода|There's a storm coming.|Надвигается гроза.
+fog|туман|thick cloud near the ground|Погода|The fog is very thick.|Очень густой туман.
+temperature|температура|how hot or cold it is|Погода|The temperature is below zero.|Температура ниже нуля.
+degree|градус|unit of temperature|Погода|It's twenty degrees.|Двадцать градусов.
+forecast|прогноз|what the weather will be|Погода|Check the weather forecast.|Посмотри прогноз погоды.
+umbrella|зонт|you use it in the rain|Быт|Take an umbrella.|Возьми зонт.
+season|время года|spring, summer, autumn, winter|Времена года|What's your favourite season?|Какое твоё любимое время года?
+spring|весна|the season after winter|Времена года|Spring is my favourite season.|Весна — моё любимое время года.
+summer|лето|the hottest season|Времена года|We go to the sea in summer.|Летом мы ездим на море.
+autumn|осень|the season after summer|Времена года|Autumn in Lviv is beautiful.|Осень во Львове прекрасна.
+winter|зима|the coldest season|Времена года|Winter is long here.|Зима здесь долгая.
+nature|природа|plants, animals, land|Природа|I love being in nature.|Я люблю быть на природе.
+tree|дерево|a tall plant with leaves|Природа|There's an old tree in the yard.|Во дворе старое дерево.
+flower|цветок|a colourful part of a plant|Природа|These flowers smell nice.|Эти цветы приятно пахнут.
+grass|трава|green plants covering ground|Природа|Don't walk on the grass.|Не ходите по траве.
+forest|лес|many trees together|Природа|We walked in the forest.|Мы гуляли в лесу.
+river|река|water flowing across land|Природа|The river is very wide.|Река очень широкая.
+lake|озеро|water surrounded by land|Природа|Let's swim in the lake.|Давай искупаемся в озере.
+hill|холм|small high land|Природа|There's a castle on the hill.|На холме замок.
+field|поле|open land with grass or crops|Природа|Cows are in the field.|Коровы в поле.
+sky|небо|the space above the earth|Природа|The sky is clear.|Небо ясное.
+sun|солнце|the star that gives us light|Природа|The sun is shining.|Светит солнце.
+moon|луна|it shines in the night sky|Природа|Look at the moon!|Посмотри на луну!
+star|звезда|a bright point in the night sky|Природа|You can see many stars here.|Здесь видно много звёзд.
+air|воздух|what we breathe|Природа|The air is fresh here.|Здесь свежий воздух.
+animal|животное|a living creature|Природа|What's your favourite animal?|Какое твоё любимое животное?
+bird|птица|an animal with wings|Природа|Birds are singing.|Поют птицы.
+ice|лёд|frozen water|Погода|Be careful, there's ice.|Осторожно, лёд.
+freezing|ледяной, морозный|very cold|Погода|It's freezing outside!|На улице мороз!
+humid|влажный|with wet air|Погода|It's hot and humid.|Жарко и влажно.
+dry|сухой|without water|Погода|The air is very dry.|Воздух очень сухой.
+wet|мокрый|covered with water|Погода|My shoes are wet.|Мои ботинки мокрые.
+environment|окружающая среда|the natural world|Экология|We must protect the environment.|Мы должны защищать окружающую среду.
+pollution|загрязнение|dirty air, water or land|Экология|Air pollution is a big problem.|Загрязнение воздуха — большая проблема.
+climate|климат|usual weather in a place|Экология|The climate is changing.|Климат меняется.
+recycle|перерабатывать|to use waste again|Экология|We recycle plastic.|Мы сдаём пластик на переработку.
+plant|растение; сажать|a living thing that grows|Природа|I have many plants at home.|У меня дома много растений.
+sunset|закат|when the sun goes down|Природа|What a beautiful sunset!|Какой красивый закат!
+sunrise|рассвет|when the sun comes up|Природа|We watched the sunrise.|Мы встречали рассвет.
+outside|снаружи, на улице|not in a building|Погода|Let's go outside.|Пойдём на улицу.
+inside|внутри|in a building|Погода|It's warm inside.|Внутри тепло.
+@A2|Хобби и свободное время
+music|музыка|sounds arranged in a pleasant way|Хобби|What music do you like?|Какую музыку ты любишь?
+song|песня|music with words|Музыка|I love this song.|Я обожаю эту песню.
+band|группа (музыкальная)|a group of musicians|Музыка|What's your favourite band?|Какая твоя любимая группа?
+concert|концерт|a music performance|Досуг|Let's go to a concert.|Пойдём на концерт.
+instrument|инструмент (муз.)|a thing for making music|Музыка|Do you play an instrument?|Ты играешь на каком-нибудь инструменте?
+guitar|гитара|a musical instrument with strings|Музыка|I'm learning to play guitar.|Я учусь играть на гитаре.
+film|фильм|a movie|Досуг|Have you seen this film?|Ты смотрел этот фильм?
+series|сериал|a TV show with episodes|Досуг|I'm watching a new series.|Я смотрю новый сериал.
+episode|серия, эпизод|one part of a series|Сериалы|Don't tell me the last episode!|Не рассказывай последнюю серию!
+book|книга|pages with written words|Чтение|I'm reading a good book.|Я читаю хорошую книгу.
+game|игра|an activity with rules for fun|Игры|Let's play a game.|Давай сыграем в игру.
+video game|видеоигра|a game on a computer or console|Игры|I play video games at night.|Ночью я играю в видеоигры.
+sport|спорт|physical games or activities|Спорт|What sports do you like?|Какой спорт тебе нравится?
+football|футбол|a ball game with two teams|Спорт|Do you watch football?|Ты смотришь футбол?
+swim|плавать|to move in water|Спорт|I swim twice a week.|Я плаваю дважды в неделю.
+running|бег|the sport of running|Спорт|I go running in the morning.|По утрам я бегаю.
+cycling|велоспорт|riding a bike for sport|Спорт|Cycling is my hobby.|Велоспорт — моё хобби.
+hiking|пеший туризм|long walks in nature|Активный отдых|We went hiking last weekend.|В прошлые выходные мы ходили в поход.
+fishing|рыбалка|catching fish|Хобби|My dad loves fishing.|Мой папа обожает рыбалку.
+photography|фотография|taking photos as a hobby|Хобби|Photography is my passion.|Фотография — моя страсть.
+draw|рисовать (карандашом)|to make pictures with a pencil|Хобби|I like to draw.|Я люблю рисовать.
+paint|рисовать (красками)|to make pictures with paint|Хобби|She paints landscapes.|Она пишет пейзажи.
+dance|танцевать|to move to music|Хобби|Do you like to dance?|Ты любишь танцевать?
+sing|петь|to make music with your voice|Хобби|I sing in the shower.|Я пою в душе.
+party|вечеринка|a social event with friends|Досуг|Are you coming to the party?|Ты придёшь на вечеринку?
+hang out|тусоваться, проводить время|to spend time with friends|Неформально|Let's hang out this weekend.|Давай потусим на выходных.
+go out|выходить (развлечься)|to go to a social place|Досуг|Do you want to go out tonight?|Хочешь куда-нибудь сходить вечером?
+invite|приглашать|to ask someone to come|Досуг|I want to invite you to dinner.|Хочу пригласить тебя на ужин.
+join|присоединиться|to become part of something|Досуг|Can I join you?|Можно к вам присоединиться?
+fun|веселье; весёлый|enjoyment|Досуг|Have fun!|Повеселись!
+bored|скучающий|feeling that nothing is interesting|Состояние|I'm bored.|Мне скучно.
+favourite thing|любимое занятие|what you like most|Интересы|My favourite thing is cooking.|Моё любимое занятие — готовить.
+collect|коллекционировать|to keep many similar things|Хобби|He collects vinyl records.|Он собирает виниловые пластинки.
+podcast|подкаст|a recorded audio show|Медиа|I listen to podcasts in English.|Я слушаю подкасты на английском.
+social media|соцсети|websites to share and connect|Интернет|I don't use social media much.|Я редко пользуюсь соцсетями.
+cinema|кинотеатр|a place to watch films|Досуг|Let's go to the cinema.|Пойдём в кино.
+theatre|театр|a place for plays|Досуг|We went to the theatre.|Мы ходили в театр.
+exhibition|выставка|a show of art or objects|Культура|There's a new exhibition.|Там новая выставка.
+festival|фестиваль|a big public celebration|Досуг|There's a music festival in July.|В июле музыкальный фестиваль.
+ticket price|цена билета|how much a ticket costs|Досуг|What's the ticket price?|Сколько стоит билет?
+spare time|свободное время|free time|Хобби|What do you do in your spare time?|Чем ты занимаешься в свободное время?
+passion|страсть, увлечение|a strong love for something|Интересы|Music is my passion.|Музыка — моя страсть.
+practise|практиковаться|to do regularly to improve|Обучение|I practise every day.|Я практикуюсь каждый день.
+team sport|командный спорт|a sport played in teams|Спорт|I prefer team sports.|Я предпочитаю командные виды спорта.
+board game|настольная игра|a game played on a table|Досуг|Let's play a board game.|Давай сыграем в настолку.
+chess|шахматы|a strategy board game|Игры|Do you play chess?|Ты играешь в шахматы?
+camping|кемпинг|sleeping in a tent outdoors|Активный отдых|We go camping every summer.|Каждое лето мы ездим в кемпинг.
+gaming|гейминг|playing video games|Игры|Gaming is my way to relax.|Игры — мой способ расслабиться.
+streaming|стриминг|watching or playing online live|Медиа|Which streaming service do you use?|Каким стриминговым сервисом пользуешься?
+recommend|советовать|to say something is good|Отзывы|Can you recommend a good film?|Посоветуешь хороший фильм?
+@A2|Одежда и внешность
+clothes|одежда|things you wear|Одежда|I need new clothes.|Мне нужна новая одежда.
+wear|носить|to have clothes on your body|Одежда|What should I wear?|Что мне надеть?
+put on|надевать|to start wearing|Одежда|Put on your jacket.|Надень куртку.
+take off|снимать|to remove clothes|Одежда|Take off your shoes, please.|Разуйтесь, пожалуйста.
+shirt|рубашка|clothing for the upper body|Одежда|He's wearing a white shirt.|На нём белая рубашка.
+T-shirt|футболка|a simple shirt with short sleeves|Одежда|I usually wear T-shirts.|Обычно я ношу футболки.
+trousers|брюки|clothing for the legs|Одежда|These trousers are too long.|Эти брюки слишком длинные.
+jeans|джинсы|trousers made of denim|Одежда|I wear jeans every day.|Я ношу джинсы каждый день.
+dress|платье|clothing for women|Одежда|What a beautiful dress!|Какое красивое платье!
+skirt|юбка|clothing hanging from the waist|Одежда|She bought a new skirt.|Она купила новую юбку.
+jacket|куртка, пиджак|a short coat|Одежда|Take your jacket, it's cold.|Возьми куртку, холодно.
+coat|пальто|a long warm jacket|Одежда|I need a winter coat.|Мне нужно зимнее пальто.
+sweater|свитер|a warm knitted top|Одежда|I'm wearing a warm sweater.|Я в тёплом свитере.
+hoodie|худи|a sweatshirt with a hood|Одежда|Developers love hoodies.|Разработчики обожают худи.
+shoes|обувь, туфли|things you wear on your feet|Обувь|I need new shoes.|Мне нужна новая обувь.
+boots|ботинки, сапоги|shoes that cover the ankle|Обувь|Winter boots are expensive.|Зимние ботинки дорогие.
+trainers|кроссовки|sports shoes|Обувь|I always wear trainers.|Я всегда ношу кроссовки.
+socks|носки|clothing for your feet|Одежда|Where are my socks?|Где мои носки?
+hat|шляпа, шапка|clothing for your head|Одежда|Wear a hat, it's cold.|Надень шапку, холодно.
+glasses|очки|lenses that help you see|Аксессуары|I wear glasses for reading.|Я ношу очки для чтения.
+watch|часы (наручные)|a small clock on your wrist|Аксессуары|I got a smart watch.|Я купил смарт-часы.
+uniform|форма|special clothes for work|Работа|Soldiers wear a uniform.|Военные носят форму.
+casual|повседневный|informal|Стиль|The dress code is casual.|Дресс-код свободный.
+formal|официальный|for serious occasions|Стиль|It's a formal event.|Это официальное мероприятие.
+style|стиль|a way of dressing|Мода|I like your style.|Мне нравится твой стиль.
+fashion|мода|popular styles of clothes|Мода|She works in fashion.|Она работает в сфере моды.
+colour|цвет|red, blue, green etc.|Описание|What colour is it?|Какого это цвета?
+black|чёрный|the darkest colour|Цвета|I like black clothes.|Мне нравится чёрная одежда.
+white|белый|the colour of snow|Цвета|A white T-shirt.|Белая футболка.
+grey|серый|between black and white|Цвета|A grey hoodie.|Серое худи.
+blue|синий, голубой|the colour of the sky|Цвета|My favourite colour is blue.|Мой любимый цвет — синий.
+red|красный|the colour of blood|Цвета|A red car.|Красная машина.
+green|зелёный|the colour of grass|Цвета|Green tea, please.|Зелёный чай, пожалуйста.
+yellow|жёлтый|the colour of the sun|Цвета|Yellow taxi.|Жёлтое такси.
+dark|тёмный|with little light|Цвета|She has dark hair.|У неё тёмные волосы.
+hair|волосы|what grows on your head|Внешность|He has short hair.|У него короткие волосы.
+beard|борода|hair on a man's face|Внешность|He has a beard.|У него борода.
+eyes|глаза|you see with them|Внешность|She has blue eyes.|У неё голубые глаза.
+slim|стройный|thin in a nice way|Внешность|She's tall and slim.|Она высокая и стройная.
+handsome|красивый (о мужчине)|good-looking man|Внешность|He's very handsome.|Он очень красивый.
+pretty|симпатичная|attractive|Внешность|What a pretty girl!|Какая симпатичная девушка!
+good-looking|привлекательный|attractive|Внешность|He's a good-looking guy.|Он привлекательный парень.
+appearance|внешность|how someone looks|Описание|Appearance isn't everything.|Внешность — не главное.
+suit|костюм; подходить|formal jacket and trousers; to look good on|Одежда|That colour suits you.|Этот цвет тебе идёт.
+tight|тесный|fitting too closely|Одежда|These jeans are too tight.|Эти джинсы слишком тесные.
+loose|свободный|not tight|Одежда|I prefer loose clothes.|Я предпочитаю свободную одежду.
+comfortable clothes|удобная одежда|clothes that feel nice|Одежда|I work in comfortable clothes.|Я работаю в удобной одежде.
+pocket|карман|a small bag in clothes|Одежда|It's in my pocket.|Это у меня в кармане.
+look good|хорошо выглядеть|to appear attractive|Комплименты|You look good today!|Ты сегодня хорошо выглядишь!
+dress up|наряжаться|to wear nice clothes|Праздники|Do we need to dress up?|Нам нужно наряжаться?

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English Trainer 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080f; --bg2:#0f1220; --card:#151a2e; --card2:#1c2340; --line:#2a3358;
+  --tx:#eef1ff; --mut:#8b93b8; --a1:#7c5cff; --a2:#22d3ee; --ok:#34d399; --mid:#fbbf24; --bad:#fb7185;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+
+/* ---------- 3D background ---------- */
+.scene-bg{position:fixed;inset:0;z-index:0;overflow:hidden;perspective:600px;pointer-events:none}
+.grid{position:absolute;left:-50%;right:-50%;bottom:-30%;height:80%;
+  background-image:linear-gradient(rgba(124,92,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.25) 1px,transparent 1px);
+  background-size:48px 48px;transform:rotateX(72deg);transform-origin:bottom;animation:gridmove 6s linear infinite;
+  mask-image:linear-gradient(to top,#000 10%,transparent 85%);-webkit-mask-image:linear-gradient(to top,#000 10%,transparent 85%)}
+@keyframes gridmove{to{background-position:0 48px,0 0}}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:float 14s ease-in-out infinite}
+.orb.o1{width:320px;height:320px;background:var(--a1);top:-80px;left:-80px}
+.orb.o2{width:260px;height:260px;background:var(--a2);top:30%;right:-100px;animation-delay:-5s}
+@keyframes float{50%{transform:translate(40px,60px) scale(1.15)}}
+
+.app{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:16px 16px 96px;min-height:100%}
+
+/* ---------- header ---------- */
+.top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
+.logo span{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.chips{margin-left:auto;display:flex;gap:8px}
+.chip{background:rgba(21,26,46,.8);border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:13px;font-weight:600;backdrop-filter:blur(8px)}
+
+/* ---------- goal strip ---------- */
+.goal{display:flex;align-items:center;gap:14px;background:rgba(21,26,46,.75);border:1px solid var(--line);border-radius:18px;padding:12px 14px;margin-bottom:16px;backdrop-filter:blur(10px)}
+.ringwrap{perspective:400px}
+.ring3d{width:62px;height:62px;transform:rotateX(18deg) rotateY(-14deg);transform-style:preserve-3d;filter:drop-shadow(0 8px 14px rgba(124,92,255,.45))}
+.goal .t{font-size:13px;color:var(--mut)}
+.goal .v{font-size:22px;font-weight:800}
+.goal .v small{font-size:13px;color:var(--mut);font-weight:600}
+.goal .sub{font-size:12px;color:var(--mut);margin-top:2px}
+
+/* ---------- views ---------- */
+.view{display:none;animation:in .35s ease}
+.view.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(10px)}}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;margin:4px 2px 10px;font-weight:600;display:flex;justify-content:space-between;gap:10px}
+.h span:last-child{color:var(--a2);text-transform:none;letter-spacing:0}
+
+/* ---------- flashcard ---------- */
+.stage{perspective:1100px;margin-bottom:14px}
+.card3d{position:relative;height:380px;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1);cursor:pointer}
+.card3d.flip .inner{transform:rotateY(180deg)}
+.inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:24px;padding:22px;
+  background:linear-gradient(155deg,var(--card2),var(--card) 60%);border:1px solid var(--line);
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.06);display:flex;flex-direction:column;overflow:hidden}
+.face::before{content:"";position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(135deg,rgba(124,92,255,.8),transparent 40%,rgba(34,211,238,.6));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.face .shine{position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,30%),rgba(255,255,255,.12),transparent 50%);pointer-events:none}
+.back{transform:rotateY(180deg)}
+.tag{align-self:flex-start;font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;background:rgba(124,92,255,.18);color:#c4b5fd;letter-spacing:.04em}
+.stagebadge{position:absolute;top:22px;right:22px;display:flex;gap:3px}
+.stagebadge i{width:7px;height:7px;border-radius:2px;background:var(--line)}
+.stagebadge i.f{background:var(--ok)}
+.front .word{font-size:clamp(34px,10vw,46px);font-weight:800;letter-spacing:-.02em;margin-top:auto;transform:translateZ(40px);text-shadow:0 10px 30px rgba(124,92,255,.5)}
+.ipa{font-family:"JetBrains Mono",monospace;color:var(--a2);font-size:16px;margin-top:6px}
+.hint{margin-top:auto;font-size:13px;color:var(--mut);display:flex;align-items:center;justify-content:space-between}
+.spk{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--a1),#5b3fd9);display:grid;place-items:center;box-shadow:0 8px 20px -6px var(--a1);flex:none}
+.spk.sm{width:36px;height:36px;border-radius:11px}
+.spk svg{width:20px;height:20px}
+.spk.playing{animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(124,92,255,.25)}}
+.back .ru{font-size:28px;font-weight:800;margin-top:12px}
+.back .def{color:var(--mut);font-size:14px;margin-top:6px;font-style:italic}
+.blk{margin-top:12px;background:rgba(7,8,15,.45);border:1px solid var(--line);border-radius:14px;padding:11px 12px}
+.blk .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.blk .p{font-size:17px;font-weight:600;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.blk .pr{font-size:13px;color:var(--mut);margin-top:3px}
+
+.grades{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;transition:opacity .3s}
+.grades.off{opacity:.25;pointer-events:none}
+.g{border-radius:16px;padding:14px 6px;font-weight:700;font-size:14px;border:1px solid var(--line);background:var(--card);transform:translateZ(0);transition:transform .15s,box-shadow .15s;box-shadow:0 6px 0 #0b0e1c}
+.g:active{transform:translateY(4px);box-shadow:0 2px 0 #0b0e1c}
+.g small{display:block;font-size:11px;color:var(--mut);font-weight:600;margin-top:2px}
+.g.b{color:var(--bad)} .g.m{color:var(--mid)} .g.k{color:var(--ok)}
+
+/* ---------- quiz ---------- */
+.qcard{background:linear-gradient(155deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:22px;padding:22px;margin-bottom:12px;text-align:center;
+  transform:perspective(900px) rotateX(6deg);box-shadow:0 24px 40px -18px #000}
+.qcard .word{font-size:34px;font-weight:800}
+.qcard .ipa{margin-top:4px}
+.qcard .bigspk{width:84px;height:84px;border-radius:26px;margin:4px auto 6px}
+.qcard .bigspk svg{width:36px;height:36px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;padding:15px 16px;border-radius:16px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:15px;box-shadow:0 5px 0 #0b0e1c;transition:transform .12s}
+.opt:active{transform:translateY(3px)}
+.opt.right{background:rgba(52,211,153,.15);border-color:var(--ok)}
+.opt.wrong{background:rgba(251,113,133,.15);border-color:var(--bad);animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.reveal{margin-top:12px;font-size:14px;color:var(--mut);text-align:center;min-height:20px}
+.next{width:100%;margin-top:12px;padding:15px;border-radius:16px;background:linear-gradient(90deg,var(--a1),var(--a2));font-weight:800;color:#0a0b14;display:none}
+.next.on{display:block}
+
+/* ---------- speak ---------- */
+.mic{width:96px;height:96px;border-radius:50%;margin:8px auto;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#ff8fa3,#e11d48);box-shadow:0 14px 30px -8px #e11d48,inset 0 -6px 12px rgba(0,0,0,.3)}
+.mic svg{width:38px;height:38px}
+.mic.on{animation:pulse2 1.2s infinite}
+@keyframes pulse2{50%{box-shadow:0 0 0 16px rgba(225,29,72,.18),0 14px 30px -8px #e11d48}}
+.heard{min-height:48px;font-size:17px;text-align:center;margin:8px 0;color:var(--tx)}
+.heard .w-ok{color:var(--ok)} .heard .w-no{color:var(--bad);text-decoration:line-through}
+.score{font-size:40px;font-weight:800;text-align:center}
+.note{font-size:13px;color:var(--mut);text-align:center;line-height:1.5}
+.self{display:none;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.self.on{display:grid}
+
+/* ---------- stats ---------- */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.tile{background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:14px;
+  transform:perspective(700px) rotateX(8deg);transform-origin:bottom;box-shadow:0 18px 30px -16px #000}
+.tile .n{font-size:28px;font-weight:800}
+.tile .l{font-size:12px;color:var(--mut)}
+.panel{background:rgba(21,26,46,.8);border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:16px;backdrop-filter:blur(8px)}
+.road{position:relative;height:14px;border-radius:999px;background:#0b0e1c;border:1px solid var(--line);margin:30px 0 26px}
+.road .fill{position:absolute;inset:0 auto 0 0;border-radius:999px;background:linear-gradient(90deg,var(--a1),var(--a2));box-shadow:0 0 18px var(--a1);transition:width 1s}
+.road .mk{position:absolute;top:-24px;transform:translateX(-50%);font-size:11px;font-weight:700;color:var(--mut);text-align:center}
+.road .mk::after{content:"";display:block;width:2px;height:30px;background:var(--line);margin:4px auto 0}
+.road .mk.got{color:var(--a2)}
+.road .mk b{display:block;font-size:10px;font-weight:600}
+.bars{display:flex;align-items:flex-end;gap:10px;height:150px;perspective:500px;padding-top:10px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.prism{width:100%;max-width:34px;position:relative;transform-style:preserve-3d;transform:rotateX(-14deg) rotateY(-24deg);transition:height .8s}
+.prism .fr{position:absolute;inset:0;background:linear-gradient(to top,#5b3fd9,var(--a1));border-radius:3px}
+.prism .sd{position:absolute;top:0;bottom:0;right:-10px;width:10px;background:#3f2aa8;transform:skewY(-40deg);transform-origin:left}
+.prism .tp{position:absolute;left:0;right:0;top:-8px;height:8px;background:#a78bfa;transform:skewX(-50deg);transform-origin:bottom}
+.prism.today .fr{background:linear-gradient(to top,#0e9fb6,var(--a2))} .prism.today .sd{background:#0b7c8f} .prism.today .tp{background:#a5f3fc}
+.bar .d{font-size:11px;color:var(--mut)}
+.bar .c{font-size:11px;font-weight:700}
+.topic{margin-bottom:12px}
+.topic .r{display:flex;justify-content:space-between;font-size:14px;margin-bottom:6px;font-weight:600}
+.topic .r span{color:var(--mut);font-weight:600}
+.tbar{height:10px;border-radius:999px;background:#0b0e1c;overflow:hidden;display:flex}
+.tbar i{display:block;height:100%}
+.legend{display:flex;gap:12px;font-size:11px;color:var(--mut);margin-top:10px;flex-wrap:wrap}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px}
+.reset{font-size:12px;color:var(--mut);text-decoration:underline;margin:4px auto 0;display:block}
+
+.done{text-align:center;padding:40px 16px}
+.done .big{font-size:64px;animation:spin3d 3s ease-in-out infinite;display:inline-block}
+@keyframes spin3d{50%{transform:rotateY(180deg) scale(1.1)}}
+.done h2{margin:10px 0 6px}
+.cta{display:inline-block;margin-top:16px;padding:13px 20px;border-radius:14px;background:linear-gradient(90deg,var(--a1),var(--a2));color:#0a0b14;font-weight:800}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:5;display:flex;gap:4px;
+  background:rgba(15,18,32,.85);border:1px solid var(--line);border-radius:22px;padding:6px;backdrop-filter:blur(14px);box-shadow:0 20px 40px -10px #000;width:min(500px,calc(100% - 24px))}
+.nav button{flex:1;padding:8px 2px;border-radius:16px;font-size:11px;font-weight:700;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:3px;transition:.2s}
+.nav button svg{width:20px;height:20px}
+.nav button.on{color:var(--tx);background:linear-gradient(135deg,rgba(124,92,255,.35),rgba(34,211,238,.2))}
+.search{width:100%;padding:13px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--tx);font:inherit;font-size:15px;outline:none;resize:vertical}
+.search:focus{border-color:var(--a1)}
+.sel{width:100%;margin-top:8px;padding:12px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--tx);font:inherit;font-size:14px}
+.lab{display:block;font-size:12px;color:var(--mut);margin-top:12px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:16px;background:rgba(21,26,46,.75);border:1px solid var(--line);margin-bottom:8px;cursor:pointer;transition:transform .2s}
+.row:active{transform:scale(.99)}
+.rw{flex:1;min-width:0}
+.ru2{color:var(--tx);opacity:.85;font-size:14px;margin-top:2px}
+.row .ex{display:none;font-size:13px;margin-top:6px;color:var(--tx)}
+.row .ex span{color:var(--mut)}
+.row.open .ex{display:block}
+.rs{display:flex;align-items:center;gap:10px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.nav button{font-size:10px}
+.toast{position:fixed;top:16px;left:50%;transform:translate(-50%,-80px);background:var(--card2);border:1px solid var(--line);padding:10px 16px;border-radius:14px;font-size:14px;font-weight:600;z-index:9;transition:transform .35s}
+.toast.on{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="scene-bg"><div class="orb o1"></div><div class="orb o2"></div><div class="grid"></div></div>
+
+<div class="app">
+  <div class="top">
+    <div class="logo">Speak<span>Up</span> 3D</div>
+    <div class="chips">
+      <div class="chip" id="streakChip">🔥 0</div>
+      <div class="chip" id="levelChip">A1</div>
+    </div>
+  </div>
+
+  <div class="goal">
+    <div class="ringwrap"><svg class="ring3d" viewBox="0 0 64 64">
+      <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+      <circle cx="32" cy="32" r="26" fill="none" stroke="#1c2340" stroke-width="8"/>
+      <circle id="ring" cx="32" cy="32" r="26" fill="none" stroke="url(#rg)" stroke-width="8" stroke-linecap="round" transform="rotate(-90 32 32)" stroke-dasharray="163.4" stroke-dashoffset="163.4" style="transition:stroke-dashoffset .8s"/>
+      <text id="ringPct" x="32" y="37" text-anchor="middle" fill="#eef1ff" font-size="14" font-weight="800" font-family="Manrope">0%</text>
+    </svg></div>
+    <div>
+      <div class="t">Цель на сегодня</div>
+      <div class="v"><span id="todayCnt">0</span> <small>/ 100 повторений</small></div>
+      <div class="sub" id="todaySub">Новых: 0 / 25 · к повтору: 0</div>
+    </div>
+  </div>
+
+  <!-- LEARN -->
+  <section class="view on" id="v-learn">
+    <div class="h"><span id="learnTitle">Карточки</span><span id="learnLeft"></span></div>
+    <div id="learnBox"></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="view" id="v-quiz">
+    <div class="h"><span>Тест: выбери перевод</span><span id="quizScore"></span></div>
+    <div id="quizBox"></div>
+  </section>
+
+  <!-- LISTEN -->
+  <section class="view" id="v-listen">
+    <div class="h"><span>Аудирование</span><span id="listenScore"></span></div>
+    <div id="listenBox"></div>
+  </section>
+
+  <!-- SPEAK -->
+  <section class="view" id="v-speak">
+    <div class="h"><span>Говорение</span><span id="speakScore"></span></div>
+    <div id="speakBox"></div>
+  </section>
+
+  <!-- DICT -->
+  <section class="view" id="v-dict">
+    <div id="dictBox"></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="view" id="v-stats">
+    <div id="statsBox"></div>
+  </section>
+</div>
+
+<nav class="nav" id="nav">
+  <button data-v="learn" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="14" height="16" rx="3"/><path d="M7 3h11a3 3 0 0 1 3 3v12"/></svg>Учить</button>
+  <button data-v="quiz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>Тест</button>
+  <button data-v="listen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="5" height="7" rx="2"/><rect x="16" y="14" width="5" height="7" rx="2"/></svg>Слушать</button>
+  <button data-v="speak"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Говорить</button>
+  <button data-v="dict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4z"/><path d="M8 20a4 4 0 0 1 0-8h12"/></svg>Словарь</button>
+  <button data-v="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Прогресс</button>
+</nav>
+<div class="toast" id="toast"></div>
+
+<script src="words.js"></script>
+<script>
+/* ===== DATA (words.js) ===== */
+const W=window.WORDS||[], TOPICS=window.TOPICS||[];
+const KEY=W.map(w=>w[0]+"|"+w[2]);
+const INT=[0,1,3,7,14,30];
+const GOAL=100, TARGET=3000;
+const LEVELS=[[0,"A0"],[500,"A1"],[1000,"A2"],[2000,"B1"],[3000,"B2"]];
+
+/* ===== STATE ===== */
+const dayNum=(t=Date.now())=>Math.floor((t-new Date(t).getTimezoneOffset()*60000)/86400000);
+const DEF_SET={n:25,topic:-1,rate:0.95};
+let S={cards:{},days:{},streak:0,lastDay:null,ts:0,set:Object.assign({},DEF_SET)};
+const LS="speakup3d_v2";
+try{const raw=localStorage.getItem(LS); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
+S.set=Object.assign({},DEF_SET,S.set||{});
+let dbRef=null, saving=false, pendingSave=false, saveTimer=null;
+
+function save(){
+  S.ts=Date.now();
+  try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}
+  clearTimeout(saveTimer); saveTimer=setTimeout(pushDb,1200);
+}
+async function pushDb(){
+  if(!dbRef) return;
+  if(saving){pendingSave=true;return;}
+  saving=true;
+  try{await dbRef.set({state:JSON.stringify(S),ts:S.ts});}catch(e){}
+  saving=false;
+  if(pendingSave){pendingSave=false;pushDb();}
+}
+function extract(x){
+  if(!x) return null;
+  try{ if(typeof x.data==="function") x=x.data(); }catch(e){}
+  if(x&&x.state) return x;
+  if(x&&x.data&&x.data.state) return x.data;
+  return null;
+}
+(async()=>{
+  try{
+    if(!window.claude||!claude.use) return;
+    const [db,user]=await Promise.all([claude.use("db"),claude.use("user")]);
+    if(!db||!user) return;
+    const id=await user.id(); if(!id) return;
+    dbRef=db.collection("data/users/"+id).doc("progress");
+    const d=extract(await dbRef.get());
+    if(d){ const remote=JSON.parse(d.state); if((remote.ts||0)>(S.ts||0)){ S=Object.assign({cards:{},days:{}},remote); S.set=Object.assign({},DEF_SET,S.set||{}); try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){} refreshAll(); toast("Прогресс синхронизирован ☁️"); } else if(S.ts) pushDb(); }
+    else if(S.ts) pushDb();
+  }catch(e){}
+})();
+
+/* ===== SPEECH ===== */
+let TTS=null, DICT=null;
+(async()=>{ try{ if(window.claude&&claude.use){ TTS=await claude.use("tts"); } }catch(e){} })();
+let MICE=null, spH={};
+function browserDict(){
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition; if(!SR) return null;
+  let r=null; const cb={state:()=>{},partial:()=>{},final:()=>{}};
+  return {
+    onState(f){cb.state=f}, onPartial(f){cb.partial=f}, onFinal(f){cb.final=f},
+    start(){ return new Promise((res,rej)=>{ try{
+      r=new SR(); r.lang="en-US"; r.interimResults=true; r.continuous=false; r.maxAlternatives=1;
+      r.onstart=()=>{ cb.state({state:"listening"}); res(); };
+      r.onresult=e=>{ let interim=""; for(let k=e.resultIndex;k<e.results.length;k++){ const t=e.results[k][0].transcript; if(e.results[k].isFinal) cb.final({text:t}); else interim+=t; } if(interim) cb.partial({text:interim}); };
+      r.onerror=e=>{ if(e.error==="not-allowed"||e.error==="service-not-allowed"){ rej({code:"not_granted"}); } cb.state({state:"idle",reason:e.error}); };
+      r.onend=()=>cb.state({state:"idle",reason:"stopped"});
+      r.start(); }catch(e){ rej({code:"error"}); } }); },
+    stop(){ try{ r&&r.stop(); }catch(e){} return Promise.resolve(); }
+  };
+}
+function setMic(m){
+  MICE=m; if(!m) return;
+  try{ m.onState(x=>spH.state&&spH.state(x)); m.onPartial(x=>spH.partial&&spH.partial(x)); m.onFinal(x=>spH.final&&spH.final(x)); }catch(e){}
+  if(cur==="speak"&&!spH.state) renderSpeak();
+}
+(async()=>{
+  await null;
+  try{ if(window.claude&&claude.use){ DICT=await claude.use("dictation"); } }catch(e){}
+  setMic(DICT||browserDict());
+})();
+let enVoice=null;
+function pickVoice(){ try{ const vs=speechSynthesis.getVoices(); enVoice=vs.find(v=>/en[-_]US/i.test(v.lang)&&/Google|Samantha|Natural/i.test(v.name))||vs.find(v=>/^en/i.test(v.lang))||null; }catch(e){} }
+try{ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }catch(e){}
+function browserSay(text,rate){
+  return new Promise(res=>{
+    try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.lang="en-US"; if(enVoice)u.voice=enVoice; u.rate=rate; u.onend=res; u.onerror=res; speechSynthesis.speak(u);}catch(e){res();}
+  });
+}
+let slow=false;
+async function say(text,btn){
+  if(btn) btn.classList.add("playing");
+  const rate=slow?0.75:(S.set.rate||0.95);
+  try{
+    if(TTS){ await TTS.speak(text,{language:"en",rate}); }
+    else await browserSay(text,rate);
+  }catch(e){ await browserSay(text,rate); }
+  if(btn) btn.classList.remove("playing");
+}
+const SPK='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+const MIC='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>';
+
+/* ===== HELPERS ===== */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]];}return a;};
+function card(i){ return S.cards[KEY[i]]||(S.cards[KEY[i]]={s:0,due:0,seen:0,ok:0,bad:0}); }
+function NEW(){ return (S.set&&S.set.n)||25; }
+function dayRec(){ const d=dayNum(); return S.days[d]||(S.days[d]={a:0,c:0,n:0}); }
+function touchStreak(){
+  const d=dayNum(); if(S.lastDay===d) return;
+  S.streak=(S.lastDay===d-1)?(S.streak||0)+1:1; S.lastDay=d;
+  if(S.streak>1) toast("🔥 Серия: "+S.streak+" дн.");
+}
+function logAnswer(ok){ touchStreak(); const r=dayRec(); r.a++; if(ok) r.c++; if(r.a===GOAL) toast("🎉 Цель дня выполнена!"); }
+function learnedCount(){ return Object.values(S.cards).filter(c=>c.seen&&c.s>=3).length; }
+function seenIdx(){ return W.map((_,i)=>i).filter(i=>S.cards[KEY[i]]&&S.cards[KEY[i]].seen); }
+function curStreak(){ const d=dayNum(); return (S.lastDay===d||S.lastDay===d-1)?(S.streak||0):0; }
+function toast(t){ const el=$("#toast"); el.textContent=t; el.classList.add("on"); clearTimeout(el._t); el._t=setTimeout(()=>el.classList.remove("on"),2200); }
+
+function refreshHeader(){
+  const r=S.days[dayNum()]||{a:0,c:0,n:0};
+  const pct=Math.min(100,Math.round(r.a/GOAL*100));
+  $("#ring").style.strokeDashoffset=163.4*(1-pct/100);
+  $("#ringPct").textContent=pct+"%";
+  $("#todayCnt").textContent=r.a;
+  const due=W.map((_,i)=>i).filter(i=>S.cards[KEY[i]]&&S.cards[KEY[i]].seen&&S.cards[KEY[i]].due<=dayNum()).length;
+  $("#todaySub").textContent="Новых: "+(r.n||0)+" / "+NEW()+" · к повтору: "+due;
+  $("#streakChip").textContent="🔥 "+curStreak();
+  const known=seenIdx().length; let lv="A0"; LEVELS.forEach(([n,l])=>{ if(known>=n) lv=l; });
+  $("#levelChip").textContent=lv+" · "+known+" сл.";
+}
+
+/* ===== LEARN (SRS cards) ===== */
+let queue=[], qi=0;
+function buildQueue(){
+  const d=dayNum(), r=S.days[d]||{n:0};
+  const due=shuffle(W.map((_,i)=>i).filter(i=>S.cards[KEY[i]]&&S.cards[KEY[i]].seen&&S.cards[KEY[i]].due<=d));
+  const tp=S.set.topic; const fresh=W.map((_,i)=>i).filter(i=>(tp<0||W[i][7]===tp)&&!(S.cards[KEY[i]]&&S.cards[KEY[i]].seen)).slice(0,Math.max(0,NEW()-(r.n||0)));
+  queue=due.concat(fresh); qi=0;
+}
+function renderLearn(){
+  const box=$("#learnBox");
+  if(qi>=queue.length) buildQueue();
+  if(!queue.length){
+    const allSeen=seenIdx().length===W.length;
+    box.innerHTML='<div class="done"><div class="big">🏆</div><h2>На сегодня всё!</h2><p class="note">'+
+      (allSeen?"Вы открыли все "+W.length+" слов. Теперь — только повторения по графику.":"На сегодня новые карточки и повторения закончились. Закрепите слова в тесте или потренируйте говорение. Лимит новых слов можно поменять в «Прогрессе».")+
+      '</p><button class="cta" onclick="go(\'speak\')">🎙 Потренировать говорение</button></div>';
+    $("#learnLeft").textContent=""; return;
+  }
+  const i=queue[qi], w=W[i], c=S.cards[KEY[i]]||{s:0,seen:0};
+  const isNew=!c.seen;
+  $("#learnTitle").textContent=isNew?"Новое слово":"Повторение";
+  $("#learnLeft").textContent="осталось "+(queue.length-qi);
+  let dots=""; for(let k=1;k<=5;k++) dots+='<i class="'+(c.s>=k?"f":"")+'"></i>';
+  box.innerHTML=`
+  <div class="stage"><div class="card3d" id="fc">
+    <div class="inner">
+      <div class="face front"><div class="shine"></div>
+        <span class="tag">${TOPICS[w[7]]}${isNew?" · NEW":""}</span>
+        <div class="stagebadge">${dots}</div>
+        <div class="word">${esc(w[0])}</div>
+        <div class="ipa">${esc(w[1])}</div>
+        <div class="hint"><span>Нажмите, чтобы перевернуть ↻</span><button class="spk" data-say="${esc(w[0])}">${SPK}</button></div>
+      </div>
+      <div class="face back"><div class="shine"></div>
+        <span class="tag">${esc(w[0])} ${esc(w[1])}</span>
+        <div class="ru">${esc(w[2])}</div>
+        <div class="def">${esc(w[3])}</div>
+        <div class="blk"><div class="l">Пример</div><div class="p"><span>${esc(w[5])}</span><button class="spk sm" data-say="${esc(w[5])}">${SPK}</button></div><div class="pr">${esc(w[6])}</div></div>
+        <div class="blk"><div class="l">Где применяется</div><div class="pr" style="color:var(--tx);font-size:14px">${esc(w[4])}</div></div>
+      </div>
+    </div>
+  </div></div>
+  <div class="grades off" id="grades">
+    <button class="g b" data-g="0">Не знаю<small>снова сегодня</small></button>
+    <button class="g m" data-g="1">Сложно<small>завтра</small></button>
+    <button class="g k" data-g="2">Знаю<small>через ${INT[Math.min((c.s||0)+1,5)]} дн.</small></button>
+  </div>`;
+  const fc=$("#fc");
+  fc.addEventListener("click",e=>{
+    if(e.target.closest("[data-say]")) return;
+    fc.classList.toggle("flip"); $("#grades").classList.remove("off");
+  });
+  tilt(fc);
+  box.querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",e=>{e.stopPropagation();say(b.dataset.say,b);}));
+  box.querySelectorAll("[data-g]").forEach(b=>b.addEventListener("click",()=>grade(i,+b.dataset.g)));
+}
+function grade(i,g){
+  const c=card(i), d=dayNum(), r=dayRec();
+  if(!c.seen){ c.seen=1; r.n=(r.n||0)+1; } else c.seen++;
+  if(g===0){ c.s=0; c.due=d; c.bad++; queue.splice(Math.min(qi+4,queue.length),0,i); }
+  else if(g===1){ c.due=d+1; c.ok++; }
+  else { c.s=Math.min((c.s||0)+1,5); c.due=d+INT[c.s]; c.ok++; }
+  logAnswer(g>0); save(); qi++;
+  const fc=$("#fc"); if(fc){ fc.style.transition="transform .35s"; fc.style.transform="translateX("+(g===0?-120:120)+"%) rotateZ("+(g===0?-14:14)+"deg)"; fc.style.opacity="0"; }
+  refreshHeader(); setTimeout(renderLearn,260);
+}
+function tilt(el){
+  const inner=el.querySelector(".inner");
+  const move=(x,y)=>{ const r=el.getBoundingClientRect(); const px=(x-r.left)/r.width, py=(y-r.top)/r.height;
+    el.style.transform=`rotateY(${(px-.5)*16}deg) rotateX(${(.5-py)*12}deg)`;
+    el.querySelectorAll(".face").forEach(f=>{f.style.setProperty("--mx",px*100+"%");f.style.setProperty("--my",py*100+"%");}); };
+  el.addEventListener("pointermove",e=>move(e.clientX,e.clientY));
+  el.addEventListener("pointerleave",()=>{el.style.transform="";});
+}
+
+/* ===== QUIZ ===== */
+let qs={ok:0,all:0};
+function pool(){ const s=seenIdx(); return s.length>=4?s:W.map((_,i)=>i).slice(0,Math.max(8,s.length)); }
+function opts(i,field){ const ok=k=>k!==i&&W[k][field]!==W[i][field]; const same=shuffle(W.map((_,k)=>k).filter(k=>ok(k)&&W[k][7]===W[i][7])); const rest=shuffle(W.map((_,k)=>k).filter(ok)); const pick=[...new Set(same.slice(0,3).concat(rest.slice(0,6)))].slice(0,3); return shuffle([i,...pick]); }
+function renderQuiz(){
+  const p=pool(), i=p[Math.random()*p.length|0], w=W[i], o=opts(i,2);
+  $("#quizScore").textContent=qs.all?qs.ok+" / "+qs.all:"";
+  $("#quizBox").innerHTML=`
+    <div class="qcard"><span class="tag">${TOPICS[w[7]]}</span><div class="word" style="margin-top:10px">${esc(w[0])}</div><div class="ipa">${esc(w[1])}</div>
+    <button class="spk" style="margin:12px auto 0" data-say="${esc(w[0])}">${SPK}</button></div>
+    <div class="opts">${o.map(k=>`<button class="opt" data-k="${k}">${esc(W[k][2])}</button>`).join("")}</div>
+    <div class="reveal" id="qrev"></div><button class="next" id="qnext">Дальше →</button>`;
+  bindChoice("#quizBox",i,"#qrev",`<b>${esc(w[5])}</b> — ${esc(w[6])}`,renderQuiz,"q");
+}
+function bindChoice(root,i,rev,revHtml,next,kind){
+  const box=$(root);
+  box.querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",()=>say(b.dataset.say,b)));
+  let answered=false;
+  box.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+    if(answered) return; answered=true;
+    const ok=+b.dataset.k===i, c=card(i);
+    box.querySelector(`.opt[data-k="${i}"]`).classList.add("right");
+    if(!ok){ b.classList.add("wrong"); c.bad++; c.s=Math.max(0,(c.s||0)-1); c.due=dayNum(); if(!c.seen){c.seen=1;dayRec().n++;} }
+    else c.ok++;
+    const st=kind==="q"?qs:ls; st.all++; if(ok) st.ok++;
+    logAnswer(ok); save(); refreshHeader();
+    $(rev).innerHTML=revHtml; box.querySelector(".next").classList.add("on");
+  }));
+  box.querySelector(".next").addEventListener("click",next);
+}
+
+/* ===== LISTEN ===== */
+let ls={ok:0,all:0};
+function renderListen(){
+  const p=pool(), i=p[Math.random()*p.length|0], w=W[i], o=opts(i,6);
+  $("#listenScore").textContent=ls.all?ls.ok+" / "+ls.all:"";
+  $("#listenBox").innerHTML=`
+    <div class="qcard"><div class="note">Послушайте фразу и выберите перевод</div>
+      <button class="spk bigspk" id="lplay" data-say="${esc(w[5])}">${SPK}</button>
+      <button class="chip" id="slowBtn" style="margin-top:6px">${slow?"🐢 медленно":"🐇 обычная скорость"}</button></div>
+    <div class="opts">${o.map(k=>`<button class="opt" data-k="${k}">${esc(W[k][6])}</button>`).join("")}</div>
+    <div class="reveal" id="lrev"></div><button class="next" id="lnext">Дальше →</button>`;
+  $("#slowBtn").addEventListener("click",()=>{slow=!slow; $("#slowBtn").textContent=slow?"🐢 медленно":"🐇 обычная скорость";});
+  bindChoice("#listenBox",i,"#lrev",`<b>${esc(w[5])}</b>`,renderListen,"l");
+}
+
+/* ===== SPEAK ===== */
+let sp={i:null,heard:"",best:[]};
+const norm=s=>s.toLowerCase().replace(/[’']/g,"'").replace(/[^a-z' ]/g," ").replace(/\s+/g," ").trim();
+function expand(s){ return norm(s).replace(/\bi'm\b/g,"i am").replace(/\bi'd\b/g,"i would").replace(/\bi'll\b/g,"i will").replace(/\blet's\b/g,"let us").replace(/\bwhat's\b/g,"what is").replace(/\bthere's\b/g,"there is").replace(/\bdon't\b/g,"do not").replace(/\bwe're\b/g,"we are"); }
+function compare(target,heard){
+  const t=expand(target).split(" "), h=new Set(expand(heard).split(" "));
+  const marks=t.map(x=>({x,ok:h.has(x)})); const sc=Math.round(marks.filter(m=>m.ok).length/t.length*100);
+  return {marks,sc};
+}
+function renderSpeak(){
+  if(sp.i===null){ const p=pool(); sp.i=p[Math.random()*p.length|0]; sp.heard=""; }
+  const w=W[sp.i];
+  const hasMic=!!MICE;
+  $("#speakBox").innerHTML=`
+    <div class="qcard">
+      <div class="note">Скажите по-английски:</div>
+      <div style="font-size:22px;font-weight:800;margin:8px 0">${esc(w[6])}</div>
+      <div class="note">подсказка: <b style="color:var(--a2)">${esc(w[0])}</b> ${esc(w[1])}</div>
+    </div>
+    ${hasMic?`<button class="mic" id="micBtn">${MIC}</button><div class="note" id="micNote">Нажмите и скажите фразу</div>`
+            :`<div class="note" style="margin:8px 0">Скажите фразу вслух, затем откройте ответ и оцените себя.<br><span style="opacity:.7">Проверка микрофоном работает в Chrome и Edge.</span></div>`}
+    <div class="heard" id="heard"></div>
+    <div id="spRes"></div>
+    <div class="blk" id="ans" style="display:none"><div class="l">Правильно</div><div class="p"><span>${esc(w[5])}</span><button class="spk sm" data-say="${esc(w[5])}">${SPK}</button></div></div>
+    <button class="next ${hasMic?"":"on"}" id="showAns" style="background:var(--card2);color:var(--tx);border:1px solid var(--line)">Показать ответ</button>
+    <div class="self" id="selfBox"><button class="g b" data-sg="0">Не смог</button><button class="g k" data-sg="1">Сказал верно</button></div>
+    <button class="next" id="snext">Следующая фраза →</button>`;
+  const box=$("#speakBox");
+  box.querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",()=>say(b.dataset.say,b)));
+  $("#snext").addEventListener("click",()=>{sp.i=null;spH={};renderSpeak();});
+  $("#showAns").addEventListener("click",()=>{ $("#ans").style.display="block"; $("#showAns").classList.remove("on"); $("#selfBox").classList.add("on"); say(w[5]); });
+  box.querySelectorAll("[data-sg]").forEach(b=>b.addEventListener("click",()=>{ const ok=b.dataset.sg==="1"; finishSpeak(ok, ok?"✅ Отлично!":"Послушайте и повторите вслух 3 раза"); }));
+  if(!hasMic){ spH={}; return; }
+  const btn=$("#micBtn"); let text="", listening=false, done=false;
+  spH={
+    state:({state,reason})=>{
+      listening=state==="listening"; btn.classList.toggle("on",listening);
+      $("#micNote").textContent=listening?"Слушаю… нажмите ещё раз, чтобы закончить":"Нажмите и скажите фразу";
+      if(!listening&&text&&!done&&reason!=="hidden") evaluate();
+      if(!listening&&!text&&reason&&reason!=="stopped"&&reason!=="viewer_stopped") $("#micNote").textContent="Ничего не услышал — попробуйте ещё раз";
+    },
+    partial:({text:t})=>{ $("#heard").textContent=(text+" "+t).trim(); },
+    final:({text:t})=>{ text=(text+" "+t).trim(); $("#heard").textContent=text; }
+  };
+  btn.addEventListener("click",()=>{
+    if(listening){ MICE.stop().catch(()=>{}); return; }
+    text=""; done=false; $("#heard").textContent=""; $("#spRes").innerHTML="";
+    MICE.start().catch(e=>{ const code=e&&e.code; if(code==="not_granted"){ MICE=null; toast("Микрофон недоступен — оценивайте себя сами"); renderSpeak(); } else toast("Не удалось включить микрофон"); });
+  });
+  function evaluate(){
+    done=true;
+    const {marks,sc}=compare(w[5],text);
+    $("#heard").innerHTML=marks.map(m=>`<span class="${m.ok?"w-ok":"w-no"}">${esc(m.x)}</span>`).join(" ");
+    finishSpeak(sc>=80, `<div class="score" style="color:${sc>=80?"var(--ok)":sc>=50?"var(--mid)":"var(--bad)"}">${sc}%</div><div class="note">${sc>=80?"Отлично, вас поняли!":"Зачёркнутые слова не распознались — послушайте и повторите"}</div>`);
+  }
+}
+let spStat={ok:0,all:0};
+function finishSpeak(ok,html){
+  const c=card(sp.i); if(!c.seen){c.seen=1;dayRec().n++;}
+  if(ok) c.ok++; else {c.bad++; c.due=dayNum();}
+  spStat.all++; if(ok) spStat.ok++;
+  logAnswer(ok); save(); refreshHeader();
+  $("#spRes").innerHTML=typeof html==="string"&&html.startsWith("<")?html:`<div class="note" style="font-size:16px;color:var(--tx)">${html}</div>`;
+  $("#ans").style.display="block"; $("#showAns").classList.remove("on"); $("#selfBox").classList.remove("on"); $("#snext").classList.add("on");
+  $("#speakScore").textContent=spStat.ok+" / "+spStat.all;
+}
+
+/* ===== STATS ===== */
+function renderStats(){
+  const seen=seenIdx(), learned=learnedCount(), learning=seen.length-learned;
+  let a=0,c=0; Object.values(S.days).forEach(r=>{a+=r.a;c+=r.c;});
+  const acc=a?Math.round(c/a*100):0;
+  const d=dayNum(); const week=[]; for(let k=6;k>=0;k--){ const r=S.days[d-k]||{a:0}; week.push({d:d-k,a:r.a}); }
+  const mx=Math.max(GOAL,...week.map(x=>x.a));
+  const wd=["Вс","Пн","Вт","Ср","Чт","Пт","Сб"];
+  const pct=Math.min(100,seen.length/TARGET*100);
+  const marks=[[500,"A1"],[1000,"A2"],[2000,"B1"],[3000,"B2"]];
+  $("#statsBox").innerHTML=`
+    <div class="tiles">
+      <div class="tile"><div class="n" style="color:var(--mid)">🔥 ${curStreak()}</div><div class="l">дней подряд</div></div>
+      <div class="tile"><div class="n" style="color:var(--ok)">${learned}</div><div class="l">выучено (повтор ≥ 7 дн.)</div></div>
+      <div class="tile"><div class="n" style="color:var(--a2)">${learning}</div><div class="l">в процессе</div></div>
+      <div class="tile"><div class="n" style="color:#c4b5fd">${acc}%</div><div class="l">точность ответов</div></div>
+    </div>
+    <div class="panel"><div class="h" style="margin-top:0"><span>Путь к 3000 слов</span><span>${seen.length} / ${TARGET}</span></div>
+      <div class="road"><div class="fill" style="width:${Math.max(pct,1)}%"></div>
+      ${marks.map(([n,l])=>`<div class="mk ${seen.length>=n?"got":""}" style="left:${n/TARGET*100}%">${l}<b>${n}</b></div>`).join("")}</div>
+      <div class="note" style="text-align:left">В словаре ${W.length} слов и фраз уровней A1–B1 по ${TOPICS.length} темам.</div>
+    </div>
+    <div class="panel"><div class="h" style="margin-top:0"><span>Активность за неделю</span><span>цель ${GOAL}/день</span></div>
+      <div class="bars">${week.map((x,k)=>`<div class="bar"><div class="c">${x.a||""}</div><div class="prism ${k===6?"today":""}" style="height:${Math.max(4,x.a/mx*100)}px"><div class="fr"></div><div class="sd"></div><div class="tp"></div></div><div class="d">${wd[new Date(x.d*86400000).getUTCDay()]}</div></div>`).join("")}</div>
+    </div>
+    <div class="panel"><div class="h" style="margin-top:0"><span>Темы</span></div>
+      ${TOPICS.map((t,ti)=>{ const lvl=(W.find(w=>w[7]===ti)||[])[8]||""; const ids=W.map((_,i)=>i).filter(i=>W[i][7]===ti); const L=ids.filter(i=>S.cards[KEY[i]]&&S.cards[KEY[i]].seen&&S.cards[KEY[i]].s>=3).length; const P=ids.filter(i=>S.cards[KEY[i]]&&S.cards[KEY[i]].seen&&S.cards[KEY[i]].s<3).length; const n=ids.length;
+        return `<div class="topic"><div class="r"><span style="color:var(--tx)"><b style="color:var(--a2);font-size:11px;margin-right:6px">${lvl}</b>${t}</span><span>${L+P} / ${n}</span></div><div class="tbar"><i style="width:${L/n*100}%;background:var(--ok)"></i><i style="width:${P/n*100}%;background:var(--a1)"></i></div></div>`; }).join("")}
+      <div class="legend"><span><i style="background:var(--ok)"></i>выучено</span><span><i style="background:var(--a1)"></i>учу</span><span><i style="background:#0b0e1c;border:1px solid var(--line)"></i>не начато</span></div>
+    </div>
+    <div class="panel"><div class="h" style="margin-top:0"><span>Как работает повторение</span></div>
+      <div class="note" style="text-align:left">Каждое слово повторяется через <b>1 → 3 → 7 → 14 → 30</b> дней. «Не знаю» сбрасывает слово на начало. В день: до <b>${NEW()}</b> новых, остальное — повторения, тест, аудирование и говорение. Цель — <b>${GOAL}</b> ответов в день.</div>
+    </div>
+    ${settingsHtml()}
+    <button class="reset" id="resetBtn">Сбросить прогресс</button>`;
+  bindSettings();
+  let armed=false;
+  $("#resetBtn").addEventListener("click",e=>{
+    if(!armed){ armed=true; e.target.textContent="Точно сбросить? Нажмите ещё раз"; e.target.style.color="var(--bad)"; return; }
+    S={cards:{},days:{},streak:0,lastDay:null,ts:0,set:S.set}; save(); buildQueue(); refreshAll(); toast("Прогресс сброшен");
+  });
+}
+
+/* ===== DICTIONARY ===== */
+let dq={q:"",t:-1,limit:60};
+function stat(i){ const c=S.cards[KEY[i]]; if(!c||!c.seen) return ["не начато","#3a4370"]; if(c.s>=3) return ["выучено","var(--ok)"]; return ["учу","var(--a1)"]; }
+function topicOptions(sel,allLabel){ return `<option value="-1"${sel<0?" selected":""}>${allLabel}</option>`+TOPICS.map((t,ti)=>{ const l=(W.find(w=>w[7]===ti)||[])[8]||""; return `<option value="${ti}"${sel===ti?" selected":""}>${l} · ${esc(t)}</option>`; }).join(""); }
+function renderDict(){
+  $("#dictBox").innerHTML=`
+    <input class="search" id="dSearch" placeholder="Поиск: слово или перевод…" value="${esc(dq.q)}" autocomplete="off">
+    <select class="sel" id="dTopic">${topicOptions(dq.t,"Все темы")}</select>
+    <div class="h" style="margin-top:12px"><span id="dCount"></span><span></span></div>
+    <div id="dList"></div>`;
+  $("#dSearch").addEventListener("input",e=>{ dq.q=e.target.value; dq.limit=60; renderDictList(); });
+  $("#dTopic").addEventListener("change",e=>{ dq.t=+e.target.value; dq.limit=60; renderDictList(); });
+  renderDictList();
+}
+function renderDictList(){
+  const q=dq.q.trim().toLowerCase();
+  const ids=W.map((_,i)=>i).filter(i=>(dq.t<0||W[i][7]===dq.t)&&(!q||W[i][0].toLowerCase().includes(q)||W[i][2].toLowerCase().includes(q)));
+  $("#dCount").textContent="Найдено: "+ids.length;
+  $("#dList").innerHTML=ids.slice(0,dq.limit).map(i=>{ const w=W[i], [st,col]=stat(i); return `
+    <div class="row" data-i="${i}">
+      <div class="rw"><div><b>${esc(w[0])}</b> <span class="ipa" style="font-size:12px">${esc(w[1])}</span></div>
+        <div class="ru2">${esc(w[2])}</div>
+        <div class="ex">${esc(w[5])}<br><span>${esc(w[6])}</span></div>
+        <div class="ex"><span>📍 ${esc(w[4])} · ${esc(w[3])}</span></div></div>
+      <div class="rs"><i class="dot" style="background:${col}" title="${st}"></i><button class="spk sm" data-say="${esc(w[0])}">${SPK}</button></div>
+    </div>`; }).join("")+(ids.length>dq.limit?`<button class="next on" id="dMore" style="background:var(--card2);color:var(--tx);border:1px solid var(--line)">Показать ещё (${ids.length-dq.limit})</button>`:"");
+  $("#dList").querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",e=>{ e.stopPropagation(); say(b.dataset.say,b); }));
+  $("#dList").querySelectorAll(".row").forEach(r=>r.addEventListener("click",()=>r.classList.toggle("open")));
+  const m=$("#dMore"); if(m) m.addEventListener("click",()=>{ dq.limit+=100; renderDictList(); });
+}
+
+/* ===== SETTINGS & BACKUP ===== */
+function settingsHtml(){
+  const ns=[10,15,20,25,30,40,50], rs=[[0.8,"Медленно"],[0.95,"Обычно"],[1.1,"Быстро"]];
+  return `<div class="panel"><div class="h" style="margin-top:0"><span>Настройки</span></div>
+    <label class="lab">Новых слов в день</label>
+    <select class="sel" id="sNew">${ns.map(n=>`<option value="${n}"${S.set.n===n?" selected":""}>${n}</option>`).join("")}</select>
+    <label class="lab">Откуда брать новые слова</label>
+    <select class="sel" id="sTopic">${topicOptions(S.set.topic,"Все темы по порядку (A1 → B1)")}</select>
+    <label class="lab">Скорость озвучки</label>
+    <select class="sel" id="sRate">${rs.map(([v,l])=>`<option value="${v}"${S.set.rate===v?" selected":""}>${l}</option>`).join("")}</select>
+    <div class="h" style="margin-top:16px"><span>Резервная копия</span></div>
+    <div class="btns"><button class="g" id="bExp">⬇️ Экспорт</button><button class="g" id="bImp">⬆️ Импорт</button></div>
+    <div id="impBox" style="display:none;margin-top:10px">
+      <textarea class="search" id="impText" rows="4" placeholder="Вставьте сюда JSON с прогрессом…"></textarea>
+      <input type="file" id="impFile" accept=".json,application/json" style="margin:8px 0;color:var(--mut);font-size:13px">
+      <button class="next on" id="impGo">Загрузить прогресс</button>
+    </div>
+    <div class="note" style="text-align:left;margin-top:8px">Прогресс хранится в этом браузере${dbRef?" и в вашем аккаунте Claude":""}. Экспорт копирует его в буфер обмена (и скачивает файл, где это разрешено).</div>
+  </div>`;
+}
+function bindSettings(){
+  $("#sNew").addEventListener("change",e=>{ S.set.n=+e.target.value; save(); buildQueue(); refreshHeader(); toast("Новых в день: "+S.set.n); });
+  $("#sTopic").addEventListener("change",e=>{ S.set.topic=+e.target.value; save(); buildQueue(); toast("Тема новых слов сохранена"); });
+  $("#sRate").addEventListener("change",e=>{ S.set.rate=+e.target.value; save(); say("This is how fast I speak."); });
+  $("#bExp").addEventListener("click",async()=>{
+    const json=JSON.stringify(S);
+    try{ await navigator.clipboard.writeText(json); toast("Прогресс скопирован в буфер 📋"); }catch(e){ toast("Не удалось скопировать"); }
+    try{ const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([json],{type:"application/json"})); a.download="speakup3d-progress-"+new Date().toISOString().slice(0,10)+".json"; document.body.appendChild(a); a.click(); a.remove(); }catch(e){}
+  });
+  $("#bImp").addEventListener("click",()=>{ const b=$("#impBox"); b.style.display=b.style.display==="none"?"block":"none"; });
+  $("#impFile").addEventListener("change",e=>{ const f=e.target.files[0]; if(!f) return; f.text().then(t=>{ $("#impText").value=t; }); });
+  $("#impGo").addEventListener("click",()=>{
+    try{ const d=JSON.parse($("#impText").value); if(!d||typeof d.cards!=="object") throw 0;
+      S=Object.assign({cards:{},days:{},streak:0,lastDay:null},d); S.set=Object.assign({},DEF_SET,S.set||{}); save(); buildQueue(); refreshAll(); toast("Прогресс загружен ✅");
+    }catch(e){ toast("Неверный формат файла"); }
+  });
+}
+
+/* ===== NAV ===== */
+let cur="learn";
+const R={learn:renderLearn,quiz:renderQuiz,listen:renderListen,speak:renderSpeak,dict:renderDict,stats:renderStats};
+function go(v){
+  cur=v; document.querySelectorAll(".view").forEach(s=>s.classList.toggle("on",s.id==="v-"+v));
+  document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
+  try{ if(TTS) TTS.stop(); else speechSynthesis.cancel(); }catch(e){}
+  if(v==="learn"&&qi>=queue.length) buildQueue();
+  R[v](); window.scrollTo({top:0,behavior:"smooth"});
+}
+document.querySelectorAll("#nav button").forEach(b=>b.addEventListener("click",()=>go(b.dataset.v)));
+function refreshAll(){ refreshHeader(); if(cur==="learn") buildQueue(); R[cur](); }
+buildQueue(); refreshHeader(); renderLearn();
+</script>
+</body>
+</html>

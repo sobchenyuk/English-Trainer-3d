@@ -1,0 +1,154 @@
+@B1|Фразовые глаголы
+come up with|придумать|to think of an idea|Идеи|I came up with a new idea.|Я придумал новую идею.
+find out|выяснить|to discover information|Информация|Let me find out.|Дай я выясню.
+give back|вернуть|to return something|Быт|I'll give it back tomorrow.|Я верну завтра.
+go on|продолжать; происходить|to continue; to happen|Разговор|What's going on?|Что происходит?
+carry on|продолжать|to continue|Разговор|Carry on, please.|Продолжай, пожалуйста.
+look after|присматривать|to take care of|Быт|Can you look after my cat?|Присмотришь за моим котом?
+look forward to|с нетерпением ждать|to be excited about the future|Переписка|I look forward to hearing from you.|С нетерпением жду ответа.
+look out|осторожно|be careful|Предупреждение|Look out! A car!|Осторожно! Машина!
+make up|придумать; помириться|to invent; to become friends again|Отношения|They made up after the argument.|Они помирились после ссоры.
+pick up|забрать; подобрать|to collect; to lift|Быт|I'll pick you up at eight.|Я заберу тебя в восемь.
+put off|откладывать|to postpone|Привычки|Don't put it off.|Не откладывай это.
+set up|настроить, организовать|to arrange or install|IT, встречи|I set up the server.|Я настроил сервер.
+show up|появиться, прийти|to arrive|Встречи|He didn't show up.|Он не пришёл.
+shut down|выключить, закрыть|to stop working|IT, бизнес|Shut down your computer.|Выключи компьютер.
+take up|начать (заниматься)|to start a hobby|Хобби|I took up running.|Я начал бегать.
+turn up|сделать громче; появиться|to increase volume; to arrive|Быт|Turn up the music!|Сделай музыку громче!
+turn down|убавить; отказать|to decrease; to refuse|Быт, работа|He turned down the offer.|Он отказался от предложения.
+work out|тренироваться; сработать|to exercise; to succeed|Спорт, решения|I hope it works out.|Надеюсь, всё получится.
+break down|сломаться|to stop working|Техника|My car broke down.|У меня сломалась машина.
+bring up|поднять (тему)|to mention a topic|Обсуждения|Why did you bring that up?|Зачем ты поднял эту тему?
+call back|перезвонить|to phone again|Телефон|I'll call you back.|Я тебе перезвоню.
+check in on|проведать|to see if someone is ok|Забота|I'm just checking in on you.|Просто хотел узнать, как ты.
+cheer on|болеть за|to support with shouts|Спорт|We cheered on our team.|Мы болели за нашу команду.
+come back|вернуться|to return|Движение|When will you come back?|Когда ты вернёшься?
+come across|наткнуться|to find by chance|Поиск|I came across an old photo.|Я наткнулся на старое фото.
+cut down on|сократить|to reduce|Привычки|I'm cutting down on sugar.|Я сокращаю сахар.
+drop by|заскочить|to visit briefly|Визиты|I'll drop by later.|Я заскочу позже.
+end up|в итоге оказаться|to finally be in a situation|События|We ended up staying home.|В итоге мы остались дома.
+fill in|заполнить|to complete a form|Документы|Fill in this form, please.|Заполните эту форму.
+get along with|ладить с|to have a good relationship|Отношения|I get along with my team.|Я лажу со своей командой.
+get over|пережить, оправиться|to recover from|Эмоции|You'll get over it.|Ты это переживёшь.
+get rid of|избавиться|to remove|Быт|I need to get rid of old stuff.|Мне нужно избавиться от старых вещей.
+get used to|привыкнуть|to become familiar|Изменения|I got used to working remotely.|Я привык работать удалённо.
+go through|пройти через; просмотреть|to experience; to review|Работа|Let's go through the code.|Давай пройдёмся по коду.
+hang up|положить трубку|to end a phone call|Телефон|Don't hang up!|Не клади трубку!
+hold on|подождать|to wait|Телефон|Hold on, please.|Подождите, пожалуйста.
+keep up|поддерживать темп|to continue at the same level|Мотивация|Keep up the good work!|Продолжай в том же духе!
+let down|подвести|to disappoint|Отношения|Don't let me down.|Не подведи меня.
+log out|выйти из системы|to leave an account|Приложения|Don't forget to log out.|Не забудь выйти из аккаунта.
+look up to|уважать, равняться на|to admire|Отношения|I look up to my father.|Я равняюсь на отца.
+pass out|потерять сознание|to faint|Здоровье|He passed out from the heat.|Он потерял сознание от жары.
+point out|указать|to show or mention|Обсуждения|Thanks for pointing that out.|Спасибо, что указал на это.
+run into|случайно встретить|to meet by chance|Встречи|I ran into an old friend.|Я случайно встретил старого друга.
+set off|отправиться|to start a journey|Путешествия|We set off early.|Мы отправились рано.
+slow down|замедлиться|to go slower|Движение|Slow down, please.|Помедленнее, пожалуйста.
+speed up|ускорить|to go faster|Процессы|We need to speed up.|Нам нужно ускориться.
+stand out|выделяться|to be noticeable|Карьера|Your CV should stand out.|Твоё резюме должно выделяться.
+take over|взять на себя|to take control|Работа|Can you take over this task?|Можешь взять эту задачу на себя?
+think over|обдумать|to consider carefully|Решения|Let me think it over.|Дай мне подумать.
+try out|опробовать|to test|Продукты|Try out the new version.|Попробуй новую версию.
+catch up|наверстать; встретиться поболтать|to reach the same level; to talk|Общение|Let's catch up soon.|Давай скоро встретимся поболтать.
+@B1|Технологии и интернет
+technology|технология|scientific knowledge used in practice|Технологии|Technology changes fast.|Технологии быстро меняются.
+device|устройство|a machine or tool|Техника|It works on all devices.|Работает на всех устройствах.
+smartphone|смартфон|a phone with a computer|Техника|I use my smartphone all day.|Я весь день пользуюсь смартфоном.
+laptop|ноутбук|a portable computer|Техника|My laptop is too slow.|Мой ноутбук слишком медленный.
+screen|экран|the display part|Техника|The screen is broken.|Экран разбит.
+keyboard|клавиатура|keys for typing|Техника|I bought a mechanical keyboard.|Я купил механическую клавиатуру.
+battery|батарея, аккумулятор|it stores power|Техника|My battery is low.|У меня садится батарея.
+charge|заряжать|to put power into a battery|Техника|I need to charge my phone.|Мне нужно зарядить телефон.
+charger|зарядка|a device for charging|Техника|Do you have a charger?|У тебя есть зарядка?
+app|приложение|a program on a phone|Технологии|Download our app.|Скачайте наше приложение.
+website|сайт|pages on the internet|Интернет|Check our website.|Загляните на наш сайт.
+link|ссылка|a connection to a web page|Интернет|Send me the link.|Скинь ссылку.
+browser|браузер|a program to open websites|Интернет|Which browser do you use?|Каким браузером пользуешься?
+search|искать; поиск|to look for information|Интернет|Search for it online.|Поищи это в интернете.
+account|аккаунт|your profile in a service|Интернет|Create an account.|Создай аккаунт.
+profile|профиль|personal page|Соцсети|Update your profile.|Обнови профиль.
+notification|уведомление|a message from an app|Приложения|Turn off notifications.|Отключи уведомления.
+message|сообщение|a short written text|Общение|I'll send you a message.|Я напишу тебе сообщение.
+text|писать сообщение|to send an SMS|Общение|Text me when you arrive.|Напиши, когда доберёшься.
+post|пост; публиковать|a message on social media|Соцсети|I posted a photo.|Я выложил фото.
+follow|подписаться|to subscribe to someone|Соцсети|Follow me on GitHub.|Подписывайся на меня на GitHub.
+subscribe|подписаться|to sign up for updates|Интернет|Subscribe to our channel.|Подпишитесь на наш канал.
+stream|стрим; транслировать|to send video live|Медиа|I stream games on Twitch.|Я стримлю игры на Twitch.
+online|онлайн|connected to the internet|Интернет|Are you online?|Ты в сети?
+offline|офлайн|not connected|Интернет|The app works offline.|Приложение работает офлайн.
+data|данные|information|Технологии|We collect user data.|Мы собираем данные пользователей.
+privacy|конфиденциальность|keeping personal info secret|Безопасность|Privacy is important.|Конфиденциальность важна.
+hack|взломать|to break into a system|Безопасность|My account was hacked.|Мой аккаунт взломали.
+virus|вирус|a harmful program|Безопасность|My computer has a virus.|У меня на компьютере вирус.
+cloud|облако|online storage|Технологии|Save it to the cloud.|Сохрани в облако.
+storage|хранилище, память|space for data|Техника|I'm out of storage.|У меня закончилась память.
+artificial intelligence|искусственный интеллект|computer systems that think|Технологии|AI is everywhere now.|ИИ теперь повсюду.
+smart|умный|connected and intelligent|Техника|I have a smart speaker.|У меня умная колонка.
+digital|цифровой|using computers|Технологии|We live in a digital world.|Мы живём в цифровом мире.
+software|программное обеспечение|computer programs|IT|We develop software.|Мы разрабатываем ПО.
+hardware|железо|physical computer parts|IT|It's a hardware problem.|Это проблема с железом.
+connect|подключить|to join|Техника|Connect to Wi-Fi.|Подключись к вай-фаю.
+plug in|подключить в розетку|to connect to power|Техника|Plug in the charger.|Подключи зарядку.
+restart|перезагрузить|to start again|Техника|Try to restart your phone.|Попробуй перезагрузить телефон.
+freeze|зависать|to stop responding|Техника|My laptop keeps freezing.|Мой ноутбук постоянно зависает.
+screenshot|скриншот|a picture of the screen|Работа|Send me a screenshot.|Скинь скриншот.
+type|печатать|to write on a keyboard|Техника|I type fast.|Я быстро печатаю.
+click|кликнуть|to press a mouse button|Компьютер|Click on the link.|Кликни по ссылке.
+scroll|прокручивать|to move a page up or down|Компьютер|Scroll down.|Прокрути вниз.
+save|сохранить|to store data|Компьютер|Don't forget to save.|Не забудь сохранить.
+delete|удалить|to remove|Компьютер|Delete this file.|Удали этот файл.
+copy|копировать|to make the same|Компьютер|Copy and paste it.|Скопируй и вставь.
+paste|вставить|to put copied text|Компьютер|Paste the link here.|Вставь ссылку сюда.
+user-friendly|удобный для пользователя|easy to use|UX|The app is very user-friendly.|Приложение очень удобное.
+up to date|актуальный|modern, latest|Технологии|Keep your software up to date.|Обновляй ПО.
+@B1|Общество и новости
+news|новости|information about recent events|Медиа|Did you see the news?|Ты видел новости?
+article|статья|a piece of writing in media|Медиа|I read an interesting article.|Я прочитал интересную статью.
+headline|заголовок|the title of a news story|Медиа|Did you see the headlines?|Ты видел заголовки?
+journalist|журналист|a person who writes news|Медиа|She works as a journalist.|Она работает журналисткой.
+government|правительство|people who run a country|Общество|The government announced new rules.|Правительство объявило новые правила.
+country|страна|a nation with its own land|Общество|What country are you from?|Из какой ты страны?
+law|закон|official rules|Общество|It's against the law.|Это противозаконно.
+rule|правило|what you must do|Общество|Follow the rules.|Следуй правилам.
+right|право|something you're allowed|Общество|Everyone has the right to vote.|У каждого есть право голоса.
+society|общество|people living together|Общество|We live in a modern society.|Мы живём в современном обществе.
+community|сообщество|a group of people|Общество|The open-source community is great.|Опенсорс-сообщество отличное.
+population|население|number of people|Общество|The population is growing.|Население растёт.
+economy|экономика|money and trade of a country|Экономика|The economy is growing slowly.|Экономика растёт медленно.
+price increase|рост цен|prices going up|Экономика|There's a price increase again.|Снова рост цен.
+tax|налог|money paid to the government|Финансы|I need to pay taxes.|Мне нужно заплатить налоги.
+crisis|кризис|a very difficult time|Общество|The country is in crisis.|Страна в кризисе.
+war|война|fighting between countries|Общество|The war changed everything.|Война изменила всё.
+peace|мир|no war|Общество|Everyone wants peace.|Все хотят мира.
+army|армия|a country's soldiers|Общество|He serves in the army.|Он служит в армии.
+volunteer|волонтёр|someone who helps for free|Общество|I volunteer on weekends.|Я волонтёрю по выходным.
+charity|благотворительность|helping people in need|Общество|We donated to charity.|Мы пожертвовали на благотворительность.
+donate|жертвовать|to give money to help|Общество|I donate every month.|Я жертвую каждый месяц.
+support|поддержка|help|Общество|Thank you for your support.|Спасибо за поддержку.
+election|выборы|choosing leaders by voting|Политика|The election is in spring.|Выборы весной.
+vote|голосовать|to choose in an election|Политика|Did you vote?|Ты проголосовал?
+public|общественный|for everyone|Общество|Public transport is cheap.|Общественный транспорт дешёвый.
+private|частный|for one person or company|Общество|It's a private company.|Это частная компания.
+international|международный|between countries|Общество|We work with international clients.|Мы работаем с международными клиентами.
+global|глобальный|worldwide|Общество|It's a global problem.|Это глобальная проблема.
+culture|культура|traditions and arts of people|Общество|I love Ukrainian culture.|Я люблю украинскую культуру.
+tradition|традиция|a custom passed down|Культура|It's a family tradition.|Это семейная традиция.
+history|история|past events|Культура|Lviv has a rich history.|У Львова богатая история.
+event|событие|something that happens|Общество|It was a big event.|Это было большое событие.
+happen|происходить|to take place|Новости|What happened yesterday?|Что вчера случилось?
+announce|объявлять|to tell publicly|Новости|They announced the results.|Они объявили результаты.
+report|сообщать|to tell news|Новости|The media reported it.|СМИ об этом сообщили.
+rumour|слух|unconfirmed news|Общение|It's just a rumour.|Это просто слух.
+fake news|фейковые новости|false information|Медиа|Don't believe fake news.|Не верь фейкам.
+source|источник|where information comes from|Медиа|What's the source?|Какой источник?
+trend|тренд|a general direction|Общество|It's a new trend.|Это новый тренд.
+popular|популярный|liked by many|Общество|This app is very popular.|Это приложение очень популярно.
+famous|знаменитый|known by many|Общество|He's a famous musician.|Он знаменитый музыкант.
+influence|влияние; влиять|power to affect|Общество|Social media has a big influence.|Соцсети сильно влияют.
+generation|поколение|people born around the same time|Общество|The young generation is different.|Молодое поколение другое.
+equal|равный|the same in value|Общество|All people are equal.|Все люди равны.
+freedom|свобода|being free|Общество|Freedom is very important.|Свобода очень важна.
+safety|безопасность|being safe|Общество|Safety comes first.|Безопасность прежде всего.
+crime|преступление|an illegal act|Общество|Crime is low here.|Здесь низкая преступность.
+police|полиция|officers who keep order|Общество|Call the police!|Вызовите полицию!
+citizen|гражданин|a member of a country|Общество|I'm a Ukrainian citizen.|Я гражданин Украины.

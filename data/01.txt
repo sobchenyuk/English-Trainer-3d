@@ -1,0 +1,153 @@
+@A1|Знакомство и о себе
+hello|привет, здравствуйте|a word you say when you meet someone|Приветствие|Hello, how are you?|Привет, как дела?
+hi|привет|an informal hello|Неформальное приветствие|Hi, I'm Andrew.|Привет, я Андрей.
+name|имя|the word you are called by|Знакомство, документы|My name is Andrew.|Меня зовут Андрей.
+introduce|представлять|to tell someone your name for the first time|Знакомство, созвоны|Let me introduce myself.|Позвольте представиться.
+nice to meet you|приятно познакомиться|a polite phrase when you first meet|Первая встреча|Nice to meet you too!|Мне тоже приятно познакомиться!
+from|из, от|showing where someone or something comes from|Откуда вы|I'm from Ukraine.|Я из Украины.
+originally|родом, изначально|at the beginning; where you first come from|Рассказ о себе|I'm originally from Lviv.|Я родом из Львова.
+live|жить|to have your home somewhere|О себе, адрес|I live in Lviv.|Я живу во Львове.
+based in|живущий / работающий в|living or working mainly in a place|Резюме, LinkedIn|I'm based in Lviv.|Я работаю во Львове.
+age|возраст|how old someone is|Анкеты, знакомство|What's your age?|Сколько вам лет?
+years old|лет (о возрасте)|used to say how old someone is|Возраст|I'm thirty-five years old.|Мне тридцать пять лет.
+job|работа, должность|the work you do to get money|Small talk|What's your job?|Кем ты работаешь?
+work as|работать кем-то|to have a particular job|Рассказ о себе|I work as a developer.|Я работаю разработчиком.
+developer|разработчик|a person who creates software|IT, резюме|I'm a full stack developer.|Я фулстек-разработчик.
+experience|опыт|knowledge from doing something|Резюме, собеседование|I have thirteen years of experience.|У меня тринадцать лет опыта.
+hobby|хобби|something you do for fun|Small talk|My hobby is music.|Моё хобби — музыка.
+free time|свободное время|time when you are not working|О себе|In my free time I play games.|В свободное время я играю в игры.
+like|нравиться, любить|to enjoy something|Вкусы, интересы|I like coffee.|Я люблю кофе.
+love|обожать, любить|to like something very much|Чувства, вкусы|I love electronic music.|Я обожаю электронную музыку.
+enjoy|получать удовольствие|to get pleasure from something|Интересы|I really enjoy coding.|Мне очень нравится программировать.
+interested in|интересоваться|wanting to know more about something|Интересы, собеседование|I'm interested in games.|Я интересуюсь играми.
+favourite|любимый|liked more than others|Вкусы|What's your favourite film?|Какой твой любимый фильм?
+grow up|расти, вырасти|to change from a child to an adult|Детство, прошлое|I grew up in a small town.|Я вырос в маленьком городе.
+born|родился|came into the world|Биография|I was born in 1990.|Я родился в 1990 году.
+married|женат, замужем|having a husband or wife|О семье|Are you married?|Ты женат?
+single|холост, не замужем|not married or in a relationship|О себе|He's single.|Он не женат.
+speak|говорить (на языке)|to use a language|Языки|I speak Ukrainian and Russian.|Я говорю по-украински и по-русски.
+language|язык|a system of words people use|Языки, учёба|English is a useful language.|Английский — полезный язык.
+a little|немного|a small amount|Языки, количество|I speak a little English.|Я немного говорю по-английски.
+learn|учить, изучать|to get knowledge or a skill|Учёба|I'm learning English.|Я учу английский.
+goal|цель|something you want to achieve|Планы|My goal is to speak fluently.|Моя цель — говорить свободно.
+dream|мечта, мечтать|something you really want|Планы, мечты|My dream is to travel.|Моя мечта — путешествовать.
+plan|план, планировать|something you intend to do|Планы|What are your plans?|Какие у тебя планы?
+usually|обычно|in the most common way|Распорядок|I usually wake up early.|Обычно я встаю рано.
+sometimes|иногда|on some occasions|Привычки|Sometimes I work at night.|Иногда я работаю ночью.
+always|всегда|every time|Привычки|I always drink coffee in the morning.|Утром я всегда пью кофе.
+never|никогда|not at any time|Привычки|I never eat fast food.|Я никогда не ем фастфуд.
+often|часто|many times|Привычки|I often listen to music.|Я часто слушаю музыку.
+weekend|выходные|Saturday and Sunday|Планы|What do you do at the weekend?|Что ты делаешь на выходных?
+actually|на самом деле|used to say what is really true|Уточнение|Actually, I'm a team lead.|Вообще-то я тимлид.
+really|действительно, очень|truly; very|Усиление|It's really interesting.|Это действительно интересно.
+about|о, про; примерно|on the subject of; around|Разговор|Tell me about yourself.|Расскажи о себе.
+myself|себя, сам|the person speaking|О себе|I taught myself to code.|Я сам научился программировать.
+person|человек|a man, woman or child|Описание людей|He's a nice person.|Он хороший человек.
+friendly|дружелюбный|kind and pleasant|Описание характера|My colleagues are friendly.|Мои коллеги дружелюбные.
+call|звать, называть; звонить|to give a name; to phone|Имена, телефон|Call me Andy.|Зови меня Энди.
+contact|связаться, контакт|to talk or write to someone|Работа, связь|How can I contact you?|Как с тобой связаться?
+phone number|номер телефона|the number you call someone on|Контакты|What's your phone number?|Какой у тебя номер телефона?
+email|электронная почта|a message sent by computer|Контакты, работа|Send me an email.|Отправь мне письмо.
+address|адрес|where someone lives|Доставка, документы|What's your address?|Какой у тебя адрес?
+@A1|Семья и люди
+family|семья|parents, children, brothers and sisters|О себе|I have a big family.|У меня большая семья.
+parents|родители|your mother and father|Семья|My parents live in Kyiv.|Мои родители живут в Киеве.
+mother|мать|a female parent|Семья|My mother is a teacher.|Моя мама учительница.
+father|отец|a male parent|Семья|My father likes fishing.|Мой отец любит рыбалку.
+brother|брат|a boy with the same parents as you|Семья|I have one brother.|У меня один брат.
+sister|сестра|a girl with the same parents as you|Семья|My sister lives abroad.|Моя сестра живёт за границей.
+son|сын|a male child|Семья|Their son is five.|Их сыну пять лет.
+daughter|дочь|a female child|Семья|She has a daughter.|У неё есть дочь.
+child|ребёнок|a young person|Семья|They have one child.|У них один ребёнок.
+children|дети|more than one child|Семья|How many children do you have?|Сколько у вас детей?
+wife|жена|the woman a man is married to|Семья|This is my wife.|Это моя жена.
+husband|муж|the man a woman is married to|Семья|Her husband is a doctor.|Её муж врач.
+grandmother|бабушка|the mother of your parent|Семья|My grandmother bakes great pies.|Бабушка печёт отличные пироги.
+grandfather|дедушка|the father of your parent|Семья|My grandfather was a pilot.|Мой дедушка был пилотом.
+cousin|двоюродный брат / сестра|the child of your aunt or uncle|Семья|My cousin is my age.|Мой двоюродный брат мой ровесник.
+uncle|дядя|the brother of your parent|Семья|My uncle lives in Poland.|Мой дядя живёт в Польше.
+aunt|тётя|the sister of your parent|Семья|My aunt visits us often.|Тётя часто нас навещает.
+relatives|родственники|people in your family|Семья, праздники|All our relatives came.|Пришли все наши родственники.
+friend|друг|a person you like and trust|Отношения|He's my best friend.|Он мой лучший друг.
+neighbour|сосед|a person who lives near you|Дом|My neighbour is very loud.|Мой сосед очень шумный.
+boyfriend|парень (в отношениях)|a man you have a romantic relationship with|Отношения|Her boyfriend is from Spain.|Её парень из Испании.
+girlfriend|девушка (в отношениях)|a woman you have a romantic relationship with|Отношения|My girlfriend loves cats.|Моя девушка любит кошек.
+partner|партнёр|a person you live with or work with|Отношения, бизнес|My partner and I run a company.|Мы с партнёром ведём компанию.
+people|люди|men, women and children|Общее|There are many people here.|Здесь много людей.
+man|мужчина|an adult male|Описание|Who is that man?|Кто этот мужчина?
+woman|женщина|an adult female|Описание|She is a strong woman.|Она сильная женщина.
+boy|мальчик|a male child|Описание|The boy is playing football.|Мальчик играет в футбол.
+girl|девочка|a female child|Описание|The girl is reading a book.|Девочка читает книгу.
+baby|младенец|a very young child|Семья|The baby is sleeping.|Малыш спит.
+teenager|подросток|a person aged 13 to 19|Возраст|My son is a teenager.|Мой сын подросток.
+adult|взрослый|a person who is fully grown|Возраст|Tickets for adults cost more.|Билеты для взрослых дороже.
+old|старый, пожилой|having lived many years|Возраст, вещи|My dog is old.|Моя собака старая.
+young|молодой|not old|Возраст|She looks very young.|Она выглядит очень молодо.
+tall|высокий|bigger than average in height|Внешность|My brother is very tall.|Мой брат очень высокий.
+short|низкий, короткий|small in height or length|Внешность|She's short and slim.|Она невысокая и стройная.
+look like|быть похожим|to be similar in appearance|Внешность|You look like your father.|Ты похож на отца.
+kind|добрый|nice and caring to others|Характер|My grandmother is very kind.|Моя бабушка очень добрая.
+funny|смешной, весёлый|making people laugh|Характер|My friend is really funny.|Мой друг очень смешной.
+smart|умный|clever, intelligent|Характер|She's a smart student.|Она умная студентка.
+shy|застенчивый|nervous with new people|Характер|He's a bit shy.|Он немного стеснительный.
+lazy|ленивый|not wanting to work|Характер|I'm lazy on Sundays.|По воскресеньям я ленивый.
+busy|занятой|having a lot to do|Работа, время|Sorry, I'm busy right now.|Извини, я сейчас занят.
+together|вместе|with each other|Отношения|We work together.|Мы работаем вместе.
+alone|один, в одиночестве|without other people|Быт|I live alone.|Я живу один.
+visit|навещать, посещать|to go and see a person or place|Семья, путешествия|We visit my parents every month.|Мы навещаем родителей каждый месяц.
+meet|встречать(ся)|to come together with someone|Встречи|Let's meet tomorrow.|Давай встретимся завтра.
+guest|гость|a person you invite to your home|Дом, праздники|We have guests tonight.|Сегодня у нас гости.
+birthday|день рождения|the day you were born each year|Праздники|Happy birthday!|С днём рождения!
+celebrate|праздновать|to do something special for an event|Праздники|How do you celebrate New Year?|Как вы празднуете Новый год?
+get along|ладить|to have a good relationship|Отношения|We get along very well.|Мы отлично ладим.
+@A1|Числа, время и дни
+time|время|minutes, hours, days|Время|What time is it?|Который час?
+o'clock|ровно (о часах)|used with exact hours|Время|It's five o'clock.|Сейчас пять часов.
+half past|половина (после часа)|thirty minutes after the hour|Время|It's half past two.|Половина третьего.
+quarter|четверть|fifteen minutes; one fourth|Время|It's a quarter to six.|Без четверти шесть.
+minute|минута|sixty seconds|Время|Wait a minute, please.|Подождите минутку.
+hour|час|sixty minutes|Время|The meeting takes an hour.|Встреча длится час.
+second|секунда; второй|a very short time; number two|Время, порядок|Just a second!|Секундочку!
+day|день|twenty-four hours|Время|Have a nice day!|Хорошего дня!
+week|неделя|seven days|Время|See you next week.|Увидимся на следующей неделе.
+month|месяц|about thirty days|Время|I moved here last month.|Я переехал сюда в прошлом месяце.
+year|год|twelve months|Время|Happy New Year!|С Новым годом!
+today|сегодня|on this day|Время|What are you doing today?|Что ты делаешь сегодня?
+tomorrow|завтра|the day after today|Время|See you tomorrow.|До завтра.
+yesterday|вчера|the day before today|Время|I was tired yesterday.|Вчера я устал.
+tonight|сегодня вечером|this evening or night|Время|Are you free tonight?|Ты свободен сегодня вечером?
+morning|утро|the early part of the day|Время|Good morning!|Доброе утро!
+afternoon|день (после полудня)|between 12 and 6 pm|Время|Let's meet in the afternoon.|Давай встретимся днём.
+evening|вечер|the end of the day|Время|Good evening!|Добрый вечер!
+night|ночь|when it is dark and people sleep|Время|Good night!|Спокойной ночи!
+now|сейчас|at this moment|Время|I'm busy now.|Я сейчас занят.
+later|позже|after this time|Время|Talk to you later.|Поговорим позже.
+soon|скоро|in a short time|Время|See you soon!|До скорого!
+early|рано|before the usual time|Время|I get up early.|Я встаю рано.
+late|поздно, опоздавший|after the usual time|Время|Sorry, I'm late.|Извините, я опоздал.
+on time|вовремя|at the right time|Работа, встречи|The train is on time.|Поезд прибывает вовремя.
+ago|назад|before now|Время|I started two years ago.|Я начал два года назад.
+already|уже|before now or sooner than expected|Время|I've already finished.|Я уже закончил.
+still|всё ещё|continuing until now|Время|Are you still at work?|Ты всё ещё на работе?
+yet|ещё (в вопросах/отрицаниях)|until now|Время|I haven't done it yet.|Я ещё этого не сделал.
+Monday|понедельник|the first working day of the week|Дни недели|The sprint starts on Monday.|Спринт начинается в понедельник.
+Tuesday|вторник|the day after Monday|Дни недели|I have a call on Tuesday.|У меня созвон во вторник.
+Wednesday|среда|the middle of the week|Дни недели|See you on Wednesday.|Увидимся в среду.
+Thursday|четверг|the day before Friday|Дни недели|The demo is on Thursday.|Демо в четверг.
+Friday|пятница|the last working day|Дни недели|Thank God it's Friday!|Слава богу, пятница!
+Saturday|суббота|the first day of the weekend|Дни недели|I sleep late on Saturday.|В субботу я сплю допоздна.
+Sunday|воскресенье|the last day of the weekend|Дни недели|We relax on Sunday.|В воскресенье мы отдыхаем.
+date|дата; свидание|a day of the month; a romantic meeting|Календарь|What's the date today?|Какое сегодня число?
+calendar|календарь|a list of days and months|Планирование|Check your calendar.|Проверь свой календарь.
+number|число, номер|a word or sign like 1, 2, 3|Числа|Choose a number.|Выбери число.
+hundred|сто|the number 100|Числа|About a hundred people came.|Пришло около ста человек.
+thousand|тысяча|the number 1,000|Числа|It costs a thousand hryvnias.|Это стоит тысячу гривен.
+million|миллион|the number 1,000,000|Числа|The app has a million users.|У приложения миллион пользователей.
+first|первый|number one in order|Порядок|This is my first time here.|Я здесь впервые.
+last|последний; прошлый|at the end; the one before now|Порядок, время|I saw him last week.|Я видел его на прошлой неделе.
+next|следующий|coming after this one|Порядок, время|Next time I'll call you.|В следующий раз я тебе позвоню.
+how long|как долго|asking about time|Вопросы|How long does it take?|Сколько это занимает времени?
+how often|как часто|asking about frequency|Вопросы|How often do you train?|Как часто ты тренируешься?
+every day|каждый день|on all days|Привычки|I practise English every day.|Я практикую английский каждый день.
+once|один раз; однажды|one time|Частота|I go to the gym once a week.|Я хожу в зал раз в неделю.
+twice|дважды|two times|Частота|We meet twice a month.|Мы встречаемся дважды в месяц.

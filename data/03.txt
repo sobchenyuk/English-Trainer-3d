@@ -1,0 +1,153 @@
+@A1|Покупки и деньги
+shop|магазин; делать покупки|a place where you buy things|Покупки|The shop closes at nine.|Магазин закрывается в девять.
+supermarket|супермаркет|a large shop for food|Покупки|I go to the supermarket on Fridays.|Я хожу в супермаркет по пятницам.
+buy|покупать|to get something for money|Покупки|I want to buy a new laptop.|Хочу купить новый ноутбук.
+sell|продавать|to give something for money|Торговля|They sell fresh fruit here.|Здесь продают свежие фрукты.
+pay|платить|to give money for something|Покупки|Can I pay by card?|Можно оплатить картой?
+price|цена|how much something costs|Покупки|The price is too high.|Цена слишком высокая.
+cost|стоить|to have a price|Покупки|How much does it cost?|Сколько это стоит?
+how much|сколько|asking about price or amount|Покупки|How much is this?|Сколько это стоит?
+cheap|дешёвый|not expensive|Покупки|This phone is cheap.|Этот телефон дешёвый.
+expensive|дорогой|costing a lot|Покупки|It's too expensive for me.|Для меня это слишком дорого.
+money|деньги|what you use to buy things|Финансы|I don't have much money.|У меня немного денег.
+cash|наличные|money in coins and notes|Оплата|Do you take cash?|Вы принимаете наличные?
+card|карта|a plastic card for paying|Оплата|I'll pay by card.|Я заплачу картой.
+change|сдача|money you get back|Оплата|Keep the change.|Сдачи не надо.
+receipt|чек|paper that shows you paid|Покупки|Can I have a receipt?|Можно чек?
+discount|скидка|a lower price|Покупки|Is there a discount?|Есть скидка?
+sale|распродажа|a time when prices are lower|Покупки|Everything is on sale.|Всё со скидкой.
+free|бесплатный; свободный|costing nothing; not busy|Покупки, время|The delivery is free.|Доставка бесплатная.
+size|размер|how big something is|Одежда|What size are you?|Какой у вас размер?
+try on|примерить|to put on clothes to check them|Магазин одежды|Can I try it on?|Можно примерить?
+fit|подходить (по размеру)|to be the right size|Одежда|These jeans don't fit.|Эти джинсы не подходят.
+bag|сумка, пакет|a container you carry things in|Покупки|Do you need a bag?|Вам нужен пакет?
+customer|покупатель, клиент|a person who buys|Торговля|The customer is always right.|Клиент всегда прав.
+open|открытый; открывать|not closed|Магазины|Is the shop open on Sunday?|Магазин открыт в воскресенье?
+closed|закрытый|not open|Магазины|Sorry, we're closed.|Извините, мы закрыты.
+queue|очередь|a line of people waiting|Магазин, касса|There's a long queue.|Там длинная очередь.
+look for|искать|to try to find|Покупки|I'm looking for a gift.|Я ищу подарок.
+just looking|просто смотрю|not planning to buy now|Магазин|No thanks, I'm just looking.|Нет, спасибо, я просто смотрю.
+return|вернуть|to give back|Покупки|I want to return this.|Я хочу это вернуть.
+refund|возврат денег|money given back|Покупки|Can I get a refund?|Можно вернуть деньги?
+deliver|доставлять|to bring goods to someone|Онлайн-покупки|Do you deliver to Lviv?|Вы доставляете во Львов?
+online|онлайн|on the internet|Покупки, работа|I buy most things online.|Большинство вещей я покупаю онлайн.
+gift|подарок|something you give someone|Праздники|It's a gift for my sister.|Это подарок сестре.
+spend|тратить|to use money|Финансы|I spend too much on coffee.|Я трачу слишком много на кофе.
+save|копить; сохранять|to keep money for later|Финансы|I'm saving for a new car.|Я коплю на новую машину.
+afford|позволить себе|to have enough money for|Финансы|I can't afford it.|Я не могу себе это позволить.
+borrow|брать взаймы|to take and give back later|Финансы|Can I borrow your pen?|Можно одолжить твою ручку?
+lend|давать взаймы|to give for a short time|Финансы|Can you lend me some money?|Можешь одолжить мне денег?
+salary|зарплата|money you get for work|Работа, финансы|The salary is good.|Зарплата хорошая.
+bank account|банковский счёт|where your money is kept in a bank|Финансы|I opened a bank account.|Я открыл банковский счёт.
+ATM|банкомат|a machine that gives cash|Город, финансы|Is there an ATM nearby?|Рядом есть банкомат?
+total|итого, общий|the full amount|Покупки|What's the total?|Сколько всего?
+each|каждый, за штуку|every one separately|Покупки|They're five dollars each.|Пять долларов за штуку.
+item|товар, предмет|one thing in a list|Покупки|Add this item to the cart.|Добавь этот товар в корзину.
+in stock|в наличии|available in the shop|Покупки|Is it in stock?|Это есть в наличии?
+brand|бренд, марка|a company's product name|Покупки|What brand is your laptop?|Какой марки твой ноутбук?
+quality|качество|how good something is|Покупки|The quality is great.|Качество отличное.
+worth|стоящий|having a certain value|Покупки, мнение|It's worth the money.|Оно того стоит.
+market|рынок|a place to buy food and goods|Покупки|I buy vegetables at the market.|Я покупаю овощи на рынке.
+order online|заказать онлайн|to buy on the internet|Онлайн-покупки|I'll order it online.|Я закажу это онлайн.
+@A1|Базовые глаголы
+be|быть|to exist; to have a quality|Основа речи|I want to be a better speaker.|Я хочу лучше говорить.
+have|иметь|to own or hold|Основа речи|I have a question.|У меня есть вопрос.
+do|делать|to perform an action|Основа речи|What do you do?|Чем ты занимаешься?
+make|делать, создавать|to create or produce|Основа речи|I'll make some coffee.|Я сделаю кофе.
+go|идти, ехать|to move to a place|Движение|I go to work by bus.|Я езжу на работу на автобусе.
+come|приходить|to move towards here|Движение|Come here, please.|Подойди сюда, пожалуйста.
+get|получать; становиться|to receive; to become|Универсальный глагол|I got your message.|Я получил твоё сообщение.
+take|брать|to get hold of something|Универсальный глагол|Take your time.|Не спеши.
+give|давать|to hand something to someone|Общение|Give me a minute.|Дай мне минуту.
+say|сказать|to speak words|Речь|What did you say?|Что ты сказал?
+tell|рассказать, сообщить|to give information to someone|Речь|Tell me more.|Расскажи подробнее.
+ask|спрашивать, просить|to say a question|Речь|Can I ask you something?|Можно тебя кое-что спросить?
+answer|отвечать; ответ|to reply|Речь|Please answer the question.|Пожалуйста, ответь на вопрос.
+know|знать|to have information|Мысли|I don't know.|Я не знаю.
+think|думать|to use your mind|Мнение|I think you're right.|Думаю, ты прав.
+want|хотеть|to wish for something|Желания|I want to speak English.|Я хочу говорить по-английски.
+need|нуждаться|to require|Желания|I need help.|Мне нужна помощь.
+see|видеть|to notice with your eyes|Восприятие|I see what you mean.|Я понимаю, о чём ты.
+look|смотреть|to turn your eyes to something|Восприятие|Look at this!|Посмотри на это!
+hear|слышать|to notice sounds|Восприятие|Can you hear me?|Ты меня слышишь?
+listen|слушать|to pay attention to sounds|Восприятие|Listen to me.|Послушай меня.
+find|находить|to discover|Поиск|I can't find my phone.|Не могу найти телефон.
+use|использовать|to do something with a tool|Работа, быт|Can I use your charger?|Можно воспользоваться твоей зарядкой?
+try|пытаться, пробовать|to make an effort|Действия|Let me try again.|Дай попробую ещё раз.
+help|помогать; помощь|to make things easier for someone|Просьбы|Can you help me?|Можешь мне помочь?
+start|начинать|to begin|Действия|Let's start the meeting.|Давайте начнём встречу.
+finish|заканчивать|to end|Действия|I'll finish it tomorrow.|Я закончу это завтра.
+stop|останавливать(ся)|to not continue|Действия|Stop the music, please.|Останови музыку, пожалуйста.
+wait|ждать|to stay until something happens|Время|Wait for me!|Подожди меня!
+open|открывать|to make something not closed|Действия|Open the file.|Открой файл.
+close|закрывать|to shut|Действия|Close the app.|Закрой приложение.
+put|класть|to place somewhere|Действия|Put it here.|Положи это сюда.
+bring|приносить|to come with something|Действия|Bring your laptop.|Возьми с собой ноутбук.
+send|отправлять|to make something go to someone|Общение|Send me the link.|Скинь мне ссылку.
+write|писать|to make words on paper or screen|Общение|Write it down.|Запиши это.
+read|читать|to look at words and understand|Учёба|I read the news every morning.|Я читаю новости каждое утро.
+understand|понимать|to know the meaning|Общение|Sorry, I don't understand.|Извините, я не понимаю.
+remember|помнить|to keep in your mind|Память|Do you remember me?|Ты меня помнишь?
+forget|забывать|to not remember|Память|Don't forget to call me.|Не забудь мне позвонить.
+feel|чувствовать|to have an emotion or sensation|Чувства|I feel tired.|Я чувствую усталость.
+leave|уходить, оставлять|to go away from a place|Движение|I have to leave now.|Мне пора уходить.
+stay|оставаться|to not leave|Движение|Stay here, please.|Останься здесь, пожалуйста.
+show|показывать|to let someone see|Общение|Show me your code.|Покажи мне свой код.
+play|играть|to do something for fun|Досуг|Do you play any sports?|Ты занимаешься каким-нибудь спортом?
+run|бегать; запускать|to move fast on foot; to start a program|Спорт, IT|Run the tests.|Запусти тесты.
+sit down|садиться|to move into a sitting position|Быт|Please sit down.|Присаживайтесь.
+stand up|вставать|to move onto your feet|Быт|Stand up, please.|Встаньте, пожалуйста.
+change|менять|to make different|Действия|I want to change my plans.|Я хочу изменить планы.
+check|проверять|to make sure something is correct|Работа|Let me check.|Дай проверю.
+let|позволять|to allow|Просьбы|Let me help you.|Давай я тебе помогу.
+@A1|Базовые прилагательные
+good|хороший|of high quality|Оценка|That's a good idea.|Это хорошая идея.
+bad|плохой|not good|Оценка|It's not bad.|Неплохо.
+big|большой|large in size|Описание|It's a big project.|Это большой проект.
+small|маленький|little in size|Описание|We're a small team.|Мы небольшая команда.
+new|новый|recently made|Описание|I have a new job.|У меня новая работа.
+long|длинный, долгий|great in length or time|Описание|It was a long day.|Это был долгий день.
+easy|лёгкий|not difficult|Оценка|English is easy if you practise.|Английский лёгкий, если практиковаться.
+difficult|трудный|not easy|Оценка|This task is difficult.|Эта задача сложная.
+hard|трудный; твёрдый|difficult; not soft|Оценка|It's hard to explain.|Это трудно объяснить.
+fast|быстрый|moving quickly|Описание|The new laptop is fast.|Новый ноутбук быстрый.
+slow|медленный|not fast|Описание|My internet is slow.|У меня медленный интернет.
+hot|горячий, жаркий|very warm|Погода, еда|It's hot today.|Сегодня жарко.
+cold|холодный|not warm|Погода, еда|It's cold outside.|На улице холодно.
+warm|тёплый|a little hot|Погода|It's warm in here.|Здесь тепло.
+beautiful|красивый|very nice to look at|Описание|What a beautiful city!|Какой красивый город!
+ugly|некрасивый|not nice to look at|Описание|The building is ugly.|Здание некрасивое.
+happy|счастливый|feeling good|Эмоции|I'm happy to help.|Рад помочь.
+sad|грустный|unhappy|Эмоции|Why are you sad?|Почему ты грустишь?
+tired|уставший|needing rest|Состояние|I'm so tired today.|Я сегодня так устал.
+ready|готовый|prepared|Действия|Are you ready?|Ты готов?
+right|правильный; правый|correct; the right side|Оценка|You're right.|Ты прав.
+wrong|неправильный|not correct|Оценка|Something is wrong.|Что-то не так.
+important|важный|having great value|Работа|This is very important.|Это очень важно.
+interesting|интересный|making you want to know more|Оценка|That's an interesting question.|Интересный вопрос.
+boring|скучный|not interesting|Оценка|The film was boring.|Фильм был скучный.
+great|отличный|very good|Оценка|Great job!|Отличная работа!
+nice|приятный, хороший|pleasant|Оценка|Have a nice weekend!|Хороших выходных!
+perfect|идеальный|without mistakes|Оценка|That's perfect!|Это идеально!
+fine|хороший, в порядке|okay; good enough|Состояние|I'm fine, thanks.|Я в порядке, спасибо.
+sure|уверенный; конечно|certain|Согласие|Are you sure?|Ты уверен?
+different|разный, другой|not the same|Сравнение|We have different opinions.|У нас разные мнения.
+same|такой же, одинаковый|not different|Сравнение|We have the same problem.|У нас та же проблема.
+full|полный|containing as much as possible|Описание|The bus is full.|Автобус полный.
+empty|пустой|with nothing inside|Описание|The fridge is empty.|Холодильник пуст.
+heavy|тяжёлый|weighing a lot|Описание|This bag is heavy.|Эта сумка тяжёлая.
+light|лёгкий; светлый|not heavy|Описание|The laptop is very light.|Ноутбук очень лёгкий.
+strong|сильный|having power|Описание|Strong coffee, please.|Крепкий кофе, пожалуйста.
+weak|слабый|not strong|Описание|The Wi-Fi signal is weak.|Сигнал вай-фая слабый.
+rich|богатый|having a lot of money|Описание|He's a rich man.|Он богатый человек.
+poor|бедный|having little money|Описание|It's a poor country.|Это бедная страна.
+safe|безопасный|not dangerous|Безопасность|Is it safe here at night?|Здесь безопасно ночью?
+dangerous|опасный|able to harm you|Безопасность|It's dangerous to drive so fast.|Опасно ездить так быстро.
+possible|возможный|able to happen|Оценка|Is it possible?|Это возможно?
+real|настоящий|existing; not fake|Описание|Is this real leather?|Это настоящая кожа?
+favourite|любимый|liked most|Вкусы|This is my favourite song.|Это моя любимая песня.
+own|собственный|belonging to you|Описание|I have my own company.|У меня своя компания.
+simple|простой|easy to understand|Оценка|Keep it simple.|Делай проще.
+main|главный|most important|Описание|What's the main problem?|В чём главная проблема?
+whole|весь, целый|complete|Описание|I worked the whole day.|Я работал весь день.
+enough|достаточно|as much as needed|Количество|That's enough for today.|На сегодня достаточно.

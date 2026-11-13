@@ -1,0 +1,153 @@
+@A1|Дом и быт
+home|дом (родной)|the place where you live|Дом|I work from home.|Я работаю из дома.
+house|дом (здание)|a building where people live|Жильё|They bought a new house.|Они купили новый дом.
+flat|квартира|rooms to live in, in a building|Жильё|I rent a flat in the centre.|Я снимаю квартиру в центре.
+room|комната|a part of a house with walls|Дом|My room is small.|Моя комната маленькая.
+kitchen|кухня|the room where you cook|Дом|Let's talk in the kitchen.|Давай поговорим на кухне.
+bedroom|спальня|the room where you sleep|Дом|The flat has two bedrooms.|В квартире две спальни.
+bathroom|ванная|the room with a bath or shower|Дом|Where's the bathroom?|Где ванная?
+living room|гостиная|the main room for relaxing|Дом|We watch TV in the living room.|Мы смотрим телевизор в гостиной.
+door|дверь|you open it to enter a room|Дом|Close the door, please.|Закрой дверь, пожалуйста.
+window|окно|glass in a wall for light|Дом|Open the window, it's hot.|Открой окно, жарко.
+floor|пол; этаж|what you walk on; a level of a building|Дом|I live on the fifth floor.|Я живу на пятом этаже.
+wall|стена|a side of a room|Дом|There's a picture on the wall.|На стене картина.
+table|стол|furniture with a flat top|Мебель|Put it on the table.|Положи это на стол.
+chair|стул|a seat for one person|Мебель|Take a chair.|Присаживайся.
+bed|кровать|furniture you sleep on|Мебель|I go to bed at midnight.|Я ложусь спать в полночь.
+sofa|диван|a soft seat for several people|Мебель|The cat sleeps on the sofa.|Кот спит на диване.
+fridge|холодильник|a machine that keeps food cold|Кухня|The milk is in the fridge.|Молоко в холодильнике.
+washing machine|стиральная машина|a machine for washing clothes|Быт|The washing machine is broken.|Стиральная машина сломалась.
+key|ключ|you use it to open a lock|Быт|I lost my keys.|Я потерял ключи.
+light|свет|what helps you see|Быт|Turn on the light.|Включи свет.
+turn on|включить|to start a machine or light|Быт, техника|Turn on the TV.|Включи телевизор.
+turn off|выключить|to stop a machine or light|Быт, техника|Turn off your phone.|Выключи телефон.
+clean|чистый; убирать|not dirty; to remove dirt|Уборка|I clean the flat on Saturdays.|Я убираю квартиру по субботам.
+dirty|грязный|not clean|Уборка|The dishes are dirty.|Посуда грязная.
+wash|мыть, стирать|to clean with water|Быт|Wash your hands.|Помой руки.
+cook|готовить; повар|to make food|Кухня|I cook dinner every evening.|Я готовлю ужин каждый вечер.
+dishes|посуда|plates, cups and bowls|Кухня|Whose turn is it to do the dishes?|Чья очередь мыть посуду?
+rubbish|мусор|things you throw away|Быт|Take out the rubbish, please.|Вынеси мусор, пожалуйста.
+rent|аренда; снимать|money paid to live somewhere|Жильё|The rent is too high.|Аренда слишком дорогая.
+move|переезжать; двигать|to change where you live|Жильё|We moved to Lviv last year.|Мы переехали во Львов в прошлом году.
+neighbourhood|район|the area around your home|Жильё|It's a quiet neighbourhood.|Это тихий район.
+wake up|просыпаться|to stop sleeping|Распорядок|I wake up at seven.|Я просыпаюсь в семь.
+get up|вставать|to get out of bed|Распорядок|I get up at half past seven.|Я встаю в полвосьмого.
+sleep|спать; сон|to rest with your eyes closed|Распорядок|I need more sleep.|Мне нужно больше спать.
+go to bed|ложиться спать|to get into bed to sleep|Распорядок|I go to bed late.|Я поздно ложусь спать.
+take a shower|принимать душ|to wash under running water|Распорядок|I take a shower every morning.|Я принимаю душ каждое утро.
+breakfast|завтрак|the first meal of the day|Еда, распорядок|I skip breakfast.|Я пропускаю завтрак.
+lunch|обед|the meal in the middle of the day|Еда, распорядок|Let's have lunch together.|Давай пообедаем вместе.
+dinner|ужин|the evening meal|Еда, распорядок|Dinner is ready!|Ужин готов!
+relax|отдыхать, расслабляться|to rest and feel calm|Отдых|I relax with music.|Я расслабляюсь под музыку.
+watch|смотреть|to look at something for a time|Досуг|I watch series in English.|Я смотрю сериалы на английском.
+TV|телевизор|a machine that shows programs|Досуг|There's nothing on TV.|По телевизору ничего нет.
+internet|интернет|the global computer network|Быт, работа|The internet is slow today.|Интернет сегодня медленный.
+Wi-Fi|вай-фай|wireless internet|Быт, кафе|What's the Wi-Fi password?|Какой пароль от вай-фая?
+pet|домашнее животное|an animal you keep at home|Дом|Do you have any pets?|У тебя есть домашние животные?
+cat|кошка|a small animal often kept as a pet|Животные|My cat is lazy.|Мой кот ленивый.
+dog|собака|an animal that barks|Животные|I walk my dog every morning.|Я выгуливаю собаку каждое утро.
+quiet|тихий|making little noise|Описание|Please be quiet.|Пожалуйста, тише.
+noisy|шумный|making a lot of noise|Описание|The street is very noisy.|Улица очень шумная.
+comfortable|удобный|pleasant to use or be in|Описание|This chair is comfortable.|Этот стул удобный.
+@A1|Еда и напитки
+food|еда|what people eat|Еда|I love Italian food.|Я люблю итальянскую кухню.
+drink|пить; напиток|to take liquid into your mouth|Еда|What would you like to drink?|Что будете пить?
+eat|есть|to put food in your mouth|Еда|Let's eat something.|Давай что-нибудь съедим.
+hungry|голодный|wanting to eat|Еда|I'm really hungry.|Я очень голоден.
+thirsty|испытывающий жажду|wanting to drink|Еда|I'm thirsty.|Я хочу пить.
+water|вода|clear liquid you drink|Напитки|A glass of water, please.|Стакан воды, пожалуйста.
+coffee|кофе|a hot dark drink|Напитки|I need a coffee.|Мне нужен кофе.
+tea|чай|a hot drink made from leaves|Напитки|Do you want some tea?|Хочешь чаю?
+milk|молоко|white drink from cows|Продукты|Coffee with milk, please.|Кофе с молоком, пожалуйста.
+juice|сок|drink made from fruit|Напитки|Orange juice, please.|Апельсиновый сок, пожалуйста.
+beer|пиво|an alcoholic drink|Напитки, бар|Let's grab a beer.|Пойдём выпьем пива.
+wine|вино|alcoholic drink from grapes|Напитки|Red or white wine?|Красное или белое вино?
+bread|хлеб|food made from flour and baked|Продукты|We need some bread.|Нам нужен хлеб.
+butter|сливочное масло|yellow fat made from milk|Продукты|Bread and butter.|Хлеб с маслом.
+cheese|сыр|food made from milk|Продукты|I love cheese.|Я обожаю сыр.
+egg|яйцо|food from a chicken|Продукты|I'll have two eggs.|Я буду два яйца.
+meat|мясо|food from animals|Продукты|I don't eat meat.|Я не ем мясо.
+chicken|курица|a bird; its meat|Продукты|Chicken with rice.|Курица с рисом.
+fish|рыба|an animal that lives in water|Продукты|Fish is healthy.|Рыба полезна.
+rice|рис|small white grains|Продукты|Rice or potatoes?|Рис или картофель?
+potato|картофель|a vegetable that grows underground|Овощи|Mashed potatoes, please.|Пюре, пожалуйста.
+vegetables|овощи|plants you eat|Продукты|Eat more vegetables.|Ешь больше овощей.
+fruit|фрукты|sweet food from plants|Продукты|I eat fruit every day.|Я ем фрукты каждый день.
+apple|яблоко|a round red or green fruit|Фрукты|An apple a day.|По яблоку в день.
+salad|салат|cold vegetables mixed together|Еда|A Greek salad, please.|Греческий салат, пожалуйста.
+soup|суп|hot liquid food|Еда|The soup is too hot.|Суп слишком горячий.
+sugar|сахар|sweet white powder|Продукты|No sugar, thanks.|Без сахара, спасибо.
+salt|соль|white powder that adds taste|Кухня|Pass the salt, please.|Передай соль, пожалуйста.
+sweet|сладкий|tasting like sugar|Вкус|This cake is too sweet.|Этот торт слишком сладкий.
+spicy|острый|having a hot taste|Вкус|I like spicy food.|Я люблю острую еду.
+delicious|очень вкусный|tasting very good|Ресторан, отзывы|This is delicious!|Это очень вкусно!
+taste|вкус; пробовать|the flavour of food|Еда|Can I taste it?|Можно попробовать?
+menu|меню|a list of food in a restaurant|Ресторан|Can I see the menu?|Можно меню?
+order|заказать; заказ|to ask for food or goods|Ресторан, доставка|Are you ready to order?|Вы готовы сделать заказ?
+would like|хотел бы|a polite way to say you want|Кафе, магазин|I'd like a cappuccino.|Я бы хотел капучино.
+bill|счёт|paper showing how much to pay|Ресторан|Can I have the bill, please?|Можно счёт, пожалуйста?
+tip|чаевые; совет|extra money for good service|Ресторан|Is the tip included?|Чаевые включены?
+waiter|официант|a person who serves food|Ресторан|Excuse me, waiter!|Официант, извините!
+restaurant|ресторан|a place where you buy meals|Город|Let's go to a restaurant.|Пойдём в ресторан.
+café|кафе|a small place for coffee and food|Город|There's a nice café nearby.|Рядом есть хорошее кафе.
+takeaway|еда навынос|food you take home|Кафе, доставка|For here or takeaway?|Здесь или с собой?
+vegetarian|вегетарианский|without meat|Ресторан|Do you have vegetarian dishes?|У вас есть вегетарианские блюда?
+allergic to|аллергия на|getting ill from something|Ресторан, здоровье|I'm allergic to nuts.|У меня аллергия на орехи.
+cup|чашка|a small container for drinks|Посуда|A cup of tea, please.|Чашку чая, пожалуйста.
+glass|стакан; стекло|a container made of glass|Посуда|A glass of wine.|Бокал вина.
+plate|тарелка|a flat dish for food|Посуда|Put it on a plate.|Положи на тарелку.
+fork|вилка|a tool with points for eating|Посуда|Can I have a fork?|Можно вилку?
+knife|нож|a tool for cutting|Посуда|This knife is sharp.|Этот нож острый.
+spoon|ложка|a tool for eating soup|Посуда|I need a spoon.|Мне нужна ложка.
+fresh|свежий|recently made or picked|Продукты|The bread is fresh.|Хлеб свежий.
+@A1|Город и транспорт
+city|город|a big town|Город|Lviv is a beautiful city.|Львов — красивый город.
+town|городок|a place smaller than a city|Город|I grew up in a small town.|Я вырос в маленьком городке.
+street|улица|a road in a town|Город|I live on this street.|Я живу на этой улице.
+centre|центр|the middle part of a city|Город|The hotel is in the centre.|Отель в центре.
+map|карта|a drawing of an area|Навигация|Can you show me on the map?|Покажете на карте?
+way|путь, дорога|the route to a place|Навигация|Which way is the station?|Как пройти к вокзалу?
+turn left|повернуть налево|to go to the left side|Навигация|Turn left at the corner.|На углу поверните налево.
+turn right|повернуть направо|to go to the right side|Навигация|Turn right after the bank.|После банка поверните направо.
+straight on|прямо|without turning|Навигация|Go straight on.|Идите прямо.
+corner|угол|where two streets meet|Навигация|The shop is on the corner.|Магазин на углу.
+near|рядом, близко|not far|Навигация|Is it near here?|Это рядом?
+nearby|поблизости|close to here|Навигация|Is there a pharmacy nearby?|Поблизости есть аптека?
+far|далеко|a long way away|Навигация|Is it far from here?|Это далеко отсюда?
+next to|рядом с|beside|Расположение|The café is next to the bank.|Кафе рядом с банком.
+opposite|напротив|on the other side|Расположение|The bus stop is opposite the park.|Остановка напротив парка.
+between|между|in the middle of two things|Расположение|It's between the shop and the bank.|Это между магазином и банком.
+behind|позади, за|at the back of|Расположение|The car park is behind the hotel.|Парковка за отелем.
+in front of|перед|facing the front of|Расположение|Meet me in front of the station.|Встретимся перед вокзалом.
+bus|автобус|a big vehicle for many people|Транспорт|I take the bus to work.|Я езжу на работу на автобусе.
+train|поезд|a vehicle on rails|Транспорт|The train leaves at nine.|Поезд отправляется в девять.
+tram|трамвай|an electric vehicle on rails in a city|Транспорт|Take tram number six.|Садитесь на шестой трамвай.
+taxi|такси|a car you pay to ride in|Транспорт|Let's take a taxi.|Давай возьмём такси.
+car|машина|a vehicle with four wheels|Транспорт|I drive my car to work.|Я езжу на работу на машине.
+bike|велосипед|a vehicle with two wheels|Транспорт|I ride my bike in summer.|Летом я катаюсь на велосипеде.
+on foot|пешком|walking|Транспорт|It's ten minutes on foot.|Это десять минут пешком.
+walk|идти пешком; прогулка|to move on foot|Транспорт, досуг|Let's go for a walk.|Пойдём прогуляемся.
+drive|водить, ехать|to control a car|Транспорт|Can you drive?|Ты умеешь водить?
+station|вокзал, станция|a place where trains stop|Транспорт|Where's the train station?|Где вокзал?
+bus stop|остановка|a place where buses stop|Транспорт|The bus stop is over there.|Остановка вон там.
+airport|аэропорт|a place for planes|Путешествия|How do I get to the airport?|Как добраться до аэропорта?
+ticket|билет|a paper that lets you travel|Транспорт|One ticket to Kyiv, please.|Один билет до Киева, пожалуйста.
+get on|садиться (в транспорт)|to enter a bus or train|Транспорт|Get on the bus here.|Садитесь в автобус здесь.
+get off|выходить (из транспорта)|to leave a bus or train|Транспорт|Get off at the next stop.|Выходите на следующей остановке.
+traffic|движение, пробки|cars on the road|Транспорт|Sorry, I'm stuck in traffic.|Извини, я стою в пробке.
+park|парк; парковаться|a green public area; to leave a car|Город|Can I park here?|Здесь можно припарковаться?
+bridge|мост|a road over a river|Город|Cross the bridge.|Перейдите мост.
+square|площадь|an open area in a city|Город|Meet me at the main square.|Встретимся на главной площади.
+building|здание|a structure with walls and a roof|Город|The office is in that building.|Офис в том здании.
+bank|банк|a place for money|Город|Is the bank open?|Банк открыт?
+pharmacy|аптека|a shop selling medicine|Город|I need to go to the pharmacy.|Мне нужно в аптеку.
+hospital|больница|a place for sick people|Город, здоровье|Where's the nearest hospital?|Где ближайшая больница?
+post office|почта|a place to send letters|Город|The post office is closed.|Почта закрыта.
+museum|музей|a building with art or history|Город, туризм|Let's visit the museum.|Давай сходим в музей.
+church|церковь|a building for Christian prayer|Город|The old church is beautiful.|Старая церковь очень красивая.
+cross|переходить|to go from one side to another|Навигация|Cross the street here.|Перейдите улицу здесь.
+lost|потерянный, заблудившийся|not knowing where you are|Навигация|Excuse me, I'm lost.|Извините, я заблудился.
+how far|как далеко|asking about distance|Навигация|How far is the station?|Как далеко вокзал?
+get to|добраться до|to arrive at a place|Навигация|How do I get to the centre?|Как добраться до центра?
+crowded|переполненный|full of people|Транспорт|The metro is crowded.|Метро переполнено.
+downtown|центр города|the centre of a city (US)|Город|Let's go downtown.|Поехали в центр.

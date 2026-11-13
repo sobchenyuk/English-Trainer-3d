@@ -1,0 +1,102 @@
+@A1|Разговорные фразы
+please|пожалуйста (просьба)|a polite word in requests|Вежливость|Help me, please.|Помоги мне, пожалуйста.
+thank you|спасибо|words to show you're grateful|Вежливость|Thank you very much!|Большое спасибо!
+thanks a lot|большое спасибо|informal strong thanks|Вежливость|Thanks a lot for your help.|Большое спасибо за помощь.
+you're welcome|пожалуйста (в ответ)|a reply to thank you|Вежливость|— Thanks! — You're welcome.|— Спасибо! — Пожалуйста.
+no problem|без проблем|it's easy, don't worry|Ответ на просьбу|No problem at all!|Совсем не проблема!
+sorry|извините, простите|a word to apologise|Извинения|Sorry, my mistake.|Извините, моя ошибка.
+excuse me|извините (обращение)|used to get attention politely|Обращение к незнакомцу|Excuse me, where is the exit?|Извините, где выход?
+could you|не могли бы вы|a polite way to ask|Просьбы|Could you help me, please?|Не могли бы вы мне помочь?
+can I|можно мне|asking for permission|Просьбы|Can I ask a question?|Можно задать вопрос?
+of course|конечно|certainly, yes|Согласие|Of course you can.|Конечно, можно.
+sure thing|конечно, без проблем|informal yes|Согласие|Sure thing, I'll do it.|Конечно, сделаю.
+okay|хорошо, ладно|all right|Согласие|Okay, let's do it.|Хорошо, давай сделаем.
+all right|хорошо, в порядке|okay|Согласие, состояние|Are you all right?|Ты в порядке?
+how are you|как дела|asking about someone's state|Приветствие|Hi, how are you?|Привет, как дела?
+I'm fine|у меня всё хорошо|a reply to how are you|Приветствие|I'm fine, thanks. And you?|Нормально, спасибо. А ты?
+not bad|неплохо|quite good|Ответ на как дела|Not bad, thanks.|Неплохо, спасибо.
+what's up|как оно, что нового|an informal greeting|Неформально|Hey, what's up?|Привет, как оно?
+see you|увидимся|goodbye, I will see you again|Прощание|See you tomorrow!|Увидимся завтра!
+goodbye|до свидания|said when leaving|Прощание|Goodbye, have a nice day!|До свидания, хорошего дня!
+bye|пока|informal goodbye|Прощание|Bye, see you later!|Пока, до встречи!
+take care|береги себя|a friendly goodbye|Прощание|Take care, see you soon!|Береги себя, до скорого!
+good luck|удачи|wishing success|Пожелания|Good luck with the interview!|Удачи на собеседовании!
+congratulations|поздравляю|said when someone succeeds|Поздравления|Congratulations on your new job!|Поздравляю с новой работой!
+cheers|ура; спасибо (брит.)|said when drinking; thanks|Тост, неформально|Cheers, mate!|Спасибо, друг!
+pardon|простите? (переспросить)|asking someone to repeat|Переспрос|Pardon? I didn't hear you.|Простите? Я не расслышал.
+repeat|повторить|to say again|Переспрос|Could you repeat that, please?|Повторите, пожалуйста.
+slowly|медленно|at a low speed|Просьбы|Could you speak more slowly?|Можете говорить помедленнее?
+what do you mean|что ты имеешь в виду|asking for explanation|Уточнение|What do you mean exactly?|Что именно ты имеешь в виду?
+I mean|я имею в виду|used to explain or correct|Уточнение|I mean, it's possible.|Я имею в виду, это возможно.
+I see|понятно|I understand|Реакция|Oh, I see.|А, понятно.
+got it|понял|I understand|Реакция, работа|Got it, thanks!|Понял, спасибо!
+no idea|без понятия|I don't know at all|Ответ|I have no idea.|Понятия не имею.
+I guess|наверное, полагаю|I think so, but not sure|Мнение|I guess you're right.|Наверное, ты прав.
+maybe|может быть|perhaps|Неуверенность|Maybe tomorrow.|Может, завтра.
+exactly|именно, точно|completely correct|Согласие|Exactly! That's what I mean.|Именно! Это я и имею в виду.
+really|правда?|showing surprise|Реакция|Really? I didn't know that.|Правда? Я не знал.
+wow|ого|showing surprise|Реакция|Wow, that's amazing!|Ого, это потрясающе!
+cool|круто|very good|Реакция, неформально|That's so cool!|Это так круто!
+awesome|потрясающе|extremely good|Реакция, неформально|Awesome, thanks!|Супер, спасибо!
+never mind|неважно, забудь|it's not important|Разговор|Never mind, it's okay.|Неважно, всё нормально.
+don't worry|не волнуйся|stop being nervous|Поддержка|Don't worry, it's fine.|Не волнуйся, всё хорошо.
+it's up to you|решать тебе|you decide|Решения|It's up to you.|Решай сам.
+I'm not sure|я не уверен|I don't know exactly|Неуверенность|I'm not sure about that.|Я в этом не уверен.
+let me think|дай подумать|I need time to decide|Разговор|Hmm, let me think.|Хм, дай подумать.
+by the way|кстати|used to add something new|Разговор|By the way, how's your project?|Кстати, как твой проект?
+anyway|в любом случае; ладно|used to continue or change topic|Разговор|Anyway, let's move on.|Ладно, идём дальше.
+so|итак, поэтому|used to start or connect ideas|Разговор|So, what do you think?|Итак, что думаешь?
+well|ну|used before you speak|Разговор|Well, it depends.|Ну, это зависит.
+you know|знаешь, понимаешь|used while speaking|Разговор|It's, you know, complicated.|Это, знаешь, сложно.
+here you are|вот, пожалуйста|said when giving something|Передача вещи|Here you are, your coffee.|Вот, ваш кофе.
+@A2|Работа и офис
+work|работа; работать|activity you do for money|Работа|I love my work.|Я люблю свою работу.
+office|офис|a room or building for work|Работа|I go to the office twice a week.|Я хожу в офис дважды в неделю.
+company|компания|a business organisation|Работа|I work for an IT company.|Я работаю в IT-компании.
+team|команда|people who work together|Работа|Our team is great.|У нас отличная команда.
+boss|начальник|the person in charge|Работа|My boss is on vacation.|Мой начальник в отпуске.
+manager|менеджер, руководитель|a person who controls a team|Работа|Ask your manager.|Спроси своего менеджера.
+colleague|коллега|a person you work with|Работа|My colleague will help you.|Мой коллега тебе поможет.
+client|клиент|a person who pays for a service|Работа, бизнес|The client wants changes.|Клиент хочет изменений.
+meeting|встреча|people meeting to discuss|Работа|I have a meeting at ten.|У меня встреча в десять.
+task|задача|a piece of work to do|Работа|I'm working on a new task.|Я работаю над новой задачей.
+deadline|крайний срок|time when work must be done|Работа|The deadline is on Friday.|Дедлайн в пятницу.
+project|проект|planned work with a goal|Работа|It's a big project.|Это большой проект.
+schedule|расписание, график|a plan of times|Работа|What's your schedule today?|Какой у тебя график сегодня?
+responsible for|отвечать за|having the job of|Роли, собеседование|I'm responsible for the frontend.|Я отвечаю за фронтенд.
+in charge of|руководить, отвечать за|controlling something|Роли|Who's in charge of this project?|Кто руководит этим проектом?
+report|отчёт; докладывать|a document with information|Работа|I need to write a report.|Мне нужно написать отчёт.
+document|документ|an official paper or file|Работа|Please sign this document.|Подпишите этот документ, пожалуйста.
+email|письмо; написать письмо|an electronic message|Переписка|I'll email you the details.|Я пришлю тебе детали письмом.
+reply|ответить|to answer a message|Переписка|Please reply by Monday.|Пожалуйста, ответь до понедельника.
+attach|прикрепить|to add a file to an email|Переписка|I've attached the file.|Я прикрепил файл.
+forward|переслать|to send a message to someone else|Переписка|Can you forward me that email?|Можешь переслать мне то письмо?
+busy|занятой|having a lot of work|Работа|I'm very busy this week.|Я очень занят на этой неделе.
+available|свободен, доступен|free to talk or meet|Планирование|Are you available tomorrow?|Ты свободен завтра?
+day off|выходной|a day when you don't work|Работа|I'm taking a day off.|Я беру выходной.
+vacation|отпуск|time off work for rest|Работа, отдых|I'm on vacation next week.|На следующей неделе я в отпуске.
+sick leave|больничный|time off because you're ill|Работа|I'm on sick leave.|Я на больничном.
+remote|удалённый|working from another place|Работа|I work remotely.|Я работаю удалённо.
+full-time|полный рабочий день|working all normal hours|Работа|It's a full-time job.|Это работа на полный день.
+part-time|неполный рабочий день|working fewer hours|Работа|She works part-time.|Она работает на полставки.
+freelance|фриланс|working for different clients|Работа|I do freelance projects.|Я делаю фриланс-проекты.
+hire|нанимать|to give someone a job|HR|We're hiring developers.|Мы нанимаем разработчиков.
+fire|увольнять|to make someone leave a job|HR|He was fired last month.|Его уволили в прошлом месяце.
+quit|уволиться, бросить|to leave a job|Работа|I quit my old job.|Я ушёл с прежней работы.
+promotion|повышение|moving to a higher position|Карьера|She got a promotion.|Её повысили.
+raise|повышение зарплаты|more money for your work|Карьера|I asked for a raise.|Я попросил повышение зарплаты.
+contract|контракт, договор|a legal work agreement|Работа|Sign the contract, please.|Подпишите контракт, пожалуйста.
+skill|навык|ability to do something well|Карьера|Communication is a key skill.|Общение — ключевой навык.
+improve|улучшать|to make better|Развитие|I want to improve my English.|Я хочу улучшить свой английский.
+achieve|достигать|to succeed in doing|Цели|We achieved our goal.|Мы достигли своей цели.
+result|результат|what happens in the end|Работа|The results are great.|Результаты отличные.
+progress|прогресс|movement towards a goal|Работа|We made good progress.|Мы хорошо продвинулись.
+priority|приоритет|the most important thing|Планирование|What's our priority today?|Что у нас в приоритете сегодня?
+urgent|срочный|needing quick action|Работа|It's urgent, please help.|Это срочно, помоги, пожалуйста.
+asap|как можно скорее|as soon as possible|Переписка|Please send it ASAP.|Пожалуйста, отправь как можно скорее.
+update|новости, обновление|new information|Стендапы|Any updates on this?|Есть новости по этому?
+feedback|обратная связь|opinion about your work|Работа|Thanks for the feedback.|Спасибо за обратную связь.
+agenda|повестка|a list of topics for a meeting|Встречи|What's on the agenda?|Что на повестке?
+coworker|сотрудник, коллега|a person you work with|Работа|My coworkers are friendly.|Мои коллеги дружелюбные.
+workplace|рабочее место|where you work|Работа|It's a modern workplace.|Это современное рабочее место.
+overtime|сверхурочно|extra hours of work|Работа|I worked overtime yesterday.|Вчера я работал сверхурочно.

@@ -1,0 +1,148 @@
+@B1|Проекты и планирование
+plan ahead|планировать заранее|to plan for the future|Планирование|We need to plan ahead.|Нужно планировать заранее.
+roadmap|дорожная карта|a plan of future steps|Продукт|Here's our product roadmap.|Вот наша дорожная карта продукта.
+milestone|веха, этап|an important point in a project|Проекты|We reached the first milestone.|Мы прошли первую веху.
+sprint|спринт|a short work cycle|Agile|The sprint lasts two weeks.|Спринт длится две недели.
+backlog|бэклог|a list of tasks to do later|Agile|Add it to the backlog.|Добавь это в бэклог.
+scope|объём работ|what a project includes|Проекты|That's out of scope.|Это вне рамок проекта.
+requirement|требование|something that is needed|Проекты|We need clear requirements.|Нам нужны чёткие требования.
+budget|бюджет|money planned for something|Проекты|We're over budget.|Мы превысили бюджет.
+resources|ресурсы|people, money, time|Проекты|We don't have enough resources.|У нас недостаточно ресурсов.
+timeline|сроки, таймлайн|a schedule of events|Проекты|What's the timeline?|Какие сроки?
+on track|по плану|going as planned|Статус|We're on track.|Мы идём по плану.
+behind schedule|отстаём от графика|later than planned|Статус|We're behind schedule.|Мы отстаём от графика.
+ahead of schedule|опережаем график|earlier than planned|Статус|We're ahead of schedule.|Мы опережаем график.
+assign|назначить|to give a task to someone|Задачи|I'll assign it to Anna.|Я назначу это на Анну.
+in progress|в работе|being done now|Статус|The task is in progress.|Задача в работе.
+done|сделано|finished|Статус|It's done!|Готово!
+blocked|заблокировано|cannot continue|Статус|I'm blocked by the backend.|Я заблокирован бэкендом.
+dependency|зависимость|something that must come first|Проекты|This task has a dependency.|У этой задачи есть зависимость.
+risk|риск|a chance of something bad|Проекты|What are the risks?|Какие риски?
+goal|цель|what you want to achieve|Проекты|What's the main goal?|Какая главная цель?
+target|цель, ориентир|a result you aim for|Метрики|We hit our target.|Мы достигли цели.
+measure|измерять|to find the size or amount|Метрики|How do we measure success?|Как мы измеряем успех?
+track|отслеживать|to follow progress|Проекты|We track all tasks in Jira.|Мы отслеживаем все задачи в Jira.
+stakeholder|заинтересованное лицо|a person with interest in a project|Бизнес|Let's update the stakeholders.|Давай сообщим заинтересованным сторонам.
+launch|запуск; запускать|to start a product|Продукт|We launch next month.|Запуск в следующем месяце.
+MVP|MVP, минимальный продукт|minimum viable product|Стартапы|Let's build an MVP first.|Сначала сделаем MVP.
+prototype|прототип|an early model|Продукт|Here's a quick prototype.|Вот быстрый прототип.
+iteration|итерация|one cycle of work|Agile|We'll improve it in the next iteration.|Улучшим в следующей итерации.
+workload|нагрузка|amount of work|Работа|My workload is too high.|У меня слишком большая нагрузка.
+delegate|делегировать|to give work to others|Менеджмент|Learn to delegate.|Учись делегировать.
+prioritise|приоритизировать|to decide what's most important|Планирование|We need to prioritise.|Нужно расставить приоритеты.
+focus on|сосредоточиться на|to give attention to|Планирование|Let's focus on the main feature.|Давай сосредоточимся на главной функции.
+estimate time|оценить время|to guess duration|Планирование|It's hard to estimate time.|Трудно оценить время.
+approve|утвердить|to officially accept|Процессы|The design was approved.|Дизайн утвердили.
+plan B|запасной план|a backup plan|Планирование|Do we have a plan B?|У нас есть запасной план?
+in advance|заранее|before something happens|Планирование|Tell me in advance.|Скажи мне заранее.
+due date|срок сдачи|the date something is due|Задачи|What's the due date?|Какой срок сдачи?
+extend|продлить|to make longer|Сроки|Can we extend the deadline?|Можем продлить дедлайн?
+deliver|сдать, доставить|to give finished work|Проекты|We'll deliver it on Friday.|Сдадим в пятницу.
+deliverable|результат работы|something to be delivered|Проекты|What are the deliverables?|Какие результаты сдаём?
+outcome|итог|the final result|Проекты|We're happy with the outcome.|Мы довольны итогом.
+efficient|эффективный|working well without waste|Процессы|It's a more efficient way.|Это более эффективный способ.
+process|процесс|a series of steps|Процессы|Let's improve the process.|Давай улучшим процесс.
+step|шаг|one action in a process|Процессы|Step by step.|Шаг за шагом.
+phase|фаза, этап|a stage|Проекты|We're in the testing phase.|Мы на этапе тестирования.
+kick off|начать (проект)|to start|Проекты|Let's kick off the project.|Давайте стартанём проект.
+on hold|на паузе|stopped for now|Статус|The project is on hold.|Проект на паузе.
+cut corners|халтурить|to do it badly to save time|Работа|Let's not cut corners.|Давай не будем халтурить.
+@B1|Проблемы и решения
+problem|проблема|something difficult|Решения|What's the problem?|В чём проблема?
+solve|решать|to find an answer|Решения|We solved the problem.|Мы решили проблему.
+solution|решение|an answer to a problem|Решения|I have a solution.|У меня есть решение.
+workaround|обходной путь|a temporary way around a problem|Разработка|There's a workaround for now.|Пока есть обходной путь.
+cause|причина; вызывать|what makes something happen|Анализ|What caused the error?|Что вызвало ошибку?
+root cause|первопричина|the main reason of a problem|Анализ|We found the root cause.|Мы нашли первопричину.
+figure out|разобраться|to understand or solve|Решения|I'll figure it out.|Я разберусь.
+sort out|уладить|to fix a problem|Решения|We need to sort this out.|Нужно это уладить.
+deal with|разобраться с|to handle|Решения|I'll deal with it.|Я с этим разберусь.
+investigate|расследовать, изучить|to look into carefully|Анализ|Let me investigate.|Дай я изучу.
+look into|изучить, разобраться|to examine|Решения|I'll look into it.|Я посмотрю, в чём дело.
+reproduce|воспроизвести|to make happen again|Баги|I can't reproduce the bug.|Не могу воспроизвести баг.
+broken|сломанный|not working|Проблемы|The link is broken.|Ссылка битая.
+work|работать (о вещах)|to function|Проблемы|It doesn't work.|Это не работает.
+go wrong|пойти не так|to fail|Проблемы|What went wrong?|Что пошло не так?
+fail|не удаться|to not succeed|Проблемы|The test failed.|Тест упал.
+failure|неудача, сбой|lack of success|Проблемы|It was a total failure.|Это был полный провал.
+mistake|ошибка|a wrong action|Проблемы|It's my mistake.|Это моя ошибка.
+blame|винить|to say someone is responsible|Конфликты|Don't blame yourself.|Не вини себя.
+fault|вина|responsibility for a mistake|Конфликты|It's not your fault.|Это не твоя вина.
+apologise|извиниться|to say sorry|Извинения|I apologise for the delay.|Приношу извинения за задержку.
+complaint|жалоба|saying you're unhappy|Сервис|We received a complaint.|Мы получили жалобу.
+handle|справляться|to manage|Решения|Can you handle it?|Справишься?
+avoid|избегать|to stay away from|Решения|We should avoid this risk.|Стоит избежать этого риска.
+prevent|предотвращать|to stop from happening|Решения|How can we prevent it?|Как это предотвратить?
+improve|улучшить|to make better|Решения|We improved the speed.|Мы улучшили скорость.
+temporary|временный|not permanent|Решения|It's a temporary fix.|Это временное исправление.
+permanent|постоянный|lasting forever|Решения|We need a permanent solution.|Нам нужно постоянное решение.
+quick fix|быстрое исправление|a fast but simple fix|Разработка|It's just a quick fix.|Это просто быстрый фикс.
+check|проверить|to make sure|Решения|Let me double-check.|Дай перепроверю.
+double-check|перепроверить|to check again|Решения|Please double-check the numbers.|Перепроверь цифры, пожалуйста.
+issue|проблема|a problem|Работа|We have an issue with payments.|У нас проблема с платежами.
+risky|рискованный|possibly dangerous|Решения|It's too risky.|Это слишком рискованно.
+trouble|неприятность, проблема|difficulty|Проблемы|Sorry for the trouble.|Извини за беспокойство.
+in trouble|в беде, в неприятностях|having problems|Проблемы|We're in trouble.|У нас проблемы.
+complicated|сложный, запутанный|hard to understand|Проблемы|It's complicated.|Всё сложно.
+simplify|упростить|to make simpler|Решения|Let's simplify it.|Давай упростим.
+alternative|альтернатива|another option|Решения|Is there an alternative?|Есть альтернатива?
+ask for help|попросить помощи|to request help|Решения|Don't be afraid to ask for help.|Не бойся просить помощи.
+step back|сделать шаг назад|to look at it from distance|Решения|Let's step back and think.|Давай отступим и подумаем.
+give up|сдаться|to stop trying|Мотивация|Never give up.|Никогда не сдавайся.
+try again|попробовать снова|to make another attempt|Решения|Try again later.|Попробуй позже.
+attempt|попытка|a try|Решения|It was my third attempt.|Это была моя третья попытка.
+it's not a big deal|ничего страшного|it's not important|Поддержка|Relax, it's not a big deal.|Расслабься, ничего страшного.
+under control|под контролем|being managed|Статус|Everything is under control.|Всё под контролем.
+out of order|не работает (о машинах)|broken|Быт|The lift is out of order.|Лифт не работает.
+run out of|закончиться (о запасах)|to have no more|Проблемы|We ran out of time.|У нас закончилось время.
+@B1|Связки и наречия
+also|также|in addition|Связки|I also speak Polish.|Я также говорю по-польски.
+too|тоже; слишком|also; more than needed|Связки|Me too!|Я тоже!
+either|тоже (в отрицании)|also, in negatives|Связки|I don't like it either.|Мне это тоже не нравится.
+but|но|showing contrast|Связки|It's good, but expensive.|Хорошо, но дорого.
+or|или|showing choice|Связки|Tea or coffee?|Чай или кофе?
+and|и|joining words|Связки|You and me.|Ты и я.
+then|затем; тогда|after that|Последовательность|First code, then test.|Сначала код, потом тесты.
+after that|после этого|next|Последовательность|After that, we had lunch.|После этого мы пообедали.
+finally|наконец|at last|Последовательность|Finally, it works!|Наконец-то работает!
+first of all|прежде всего|before anything else|Последовательность|First of all, thanks for coming.|Прежде всего, спасибо, что пришли.
+in addition|кроме того|also|Связки|In addition, it's free.|Кроме того, это бесплатно.
+besides|к тому же|also; anyway|Связки|Besides, I'm tired.|К тому же я устал.
+moreover|более того|in addition (formal)|Письмо|Moreover, it's secure.|Более того, это безопасно.
+therefore|поэтому|for that reason|Логика|It's late, therefore we stop.|Поздно, поэтому мы заканчиваем.
+so that|чтобы|with the purpose|Цель|I save money so that I can travel.|Я коплю, чтобы путешествовать.
+in order to|для того чтобы|for the purpose of|Цель|In order to improve, practise daily.|Чтобы стать лучше, практикуйся каждый день.
+unless|если не|except if|Условия|I'll come unless it rains.|Я приду, если не будет дождя.
+if|если|on condition that|Условия|If you need help, call me.|Если нужна помощь, звони.
+while|пока; в то время как|during the time that|Время, контраст|I listen to music while I work.|Я слушаю музыку, пока работаю.
+until|до тех пор пока|up to the time|Время|Wait until I'm back.|Подожди, пока я вернусь.
+since|с тех пор как; так как|from a time; because|Время, причина|I've lived here since 2015.|Я живу здесь с 2015 года.
+instead|вместо этого|in place of|Связки|Let's walk instead.|Давай лучше пройдёмся.
+instead of|вместо|in place of|Связки|Tea instead of coffee.|Чай вместо кофе.
+even|даже|surprisingly|Усиление|Even my mom uses it.|Даже моя мама этим пользуется.
+even though|хотя, несмотря на то что|although|Контраст|Even though it's late, I'm working.|Хотя уже поздно, я работаю.
+despite|несмотря на|without being affected by|Контраст|Despite the rain, we went out.|Несмотря на дождь, мы вышли.
+anyway|всё равно|in any case|Связки|I'll do it anyway.|Я всё равно это сделаю.
+otherwise|иначе|if not|Условия|Hurry, otherwise we'll be late.|Поторопись, иначе опоздаем.
+almost|почти|nearly|Наречия|I'm almost done.|Я почти закончил.
+quite|довольно|fairly|Наречия|It's quite good.|Довольно неплохо.
+pretty|довольно|quite (informal)|Наречия|It's pretty easy.|Это довольно легко.
+especially|особенно|more than usual|Наречия|I love fruit, especially apples.|Обожаю фрукты, особенно яблоки.
+mostly|в основном|mainly|Наречия|I work mostly from home.|Я в основном работаю из дома.
+just|просто; только что|only; very recently|Наречия|I just finished.|Я только что закончил.
+only|только|no more than|Наречия|It takes only five minutes.|Это занимает всего пять минут.
+quickly|быстро|fast|Наречия|Let's do it quickly.|Давай сделаем быстро.
+carefully|осторожно, внимательно|with attention|Наречия|Read it carefully.|Прочитай внимательно.
+suddenly|внезапно|unexpectedly|Наречия|Suddenly the lights went out.|Внезапно погас свет.
+recently|недавно|not long ago|Время|I recently moved.|Я недавно переехал.
+nowadays|в наши дни|at the present time|Время|Nowadays everyone has a phone.|Сейчас у всех есть телефон.
+eventually|в конце концов|in the end|Время|Eventually, it worked.|В конце концов всё заработало.
+immediately|немедленно|right now|Время|Call me immediately.|Позвони мне немедленно.
+at least|по крайней мере|not less than|Наречия|At least try it.|Хотя бы попробуй.
+at first|сначала|in the beginning|Последовательность|At first it was hard.|Сначала было трудно.
+in fact|на самом деле|actually|Уточнение|In fact, it's very simple.|На самом деле это очень просто.
+anyway|короче, в общем|to summarise|Разговор|Anyway, that's the story.|В общем, вот такая история.
+as well|тоже, также|also (at the end)|Связки|I'd like a coffee as well.|Мне тоже кофе.
+though|хотя, впрочем|however (at the end)|Разговор|It's nice, though.|Хотя, это мило.
+whether|ли|if (choice)|Связки|I don't know whether it works.|Не знаю, работает ли это.
+as soon as|как только|immediately when|Время|Call me as soon as you arrive.|Позвони, как только приедешь.
