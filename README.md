@@ -23,6 +23,28 @@ python3 -m http.server 8000
 # открыть http://localhost:8000
 ```
 
+## Docker (свой сервер)
+
+Контейнер на `nginx:alpine` раздаёт статику с gzip, в нём есть healthcheck `/healthz`, файловая система только для чтения.
+
+**Вариант 1. Собрать на сервере:**
+```bash
+git clone https://github.com/sobchenyuk/English-Trainer-3d.git
+cd English-Trainer-3d
+docker compose up -d --build
+# http://<сервер>:8080
+```
+
+**Вариант 2. Готовый образ.** GitHub Actions собирает `ghcr.io/sobchenyuk/english-trainer-3d:latest` (amd64 + arm64) при каждом push в `main`:
+```bash
+docker compose pull && docker compose up -d
+```
+Если пакет в GHCR приватный, сделайте его публичным: GitHub → Packages → english-trainer-3d → Package settings → Change visibility. Второй способ — выполнить `docker login ghcr.io` на сервере.
+
+**Домен.** Для распознавания речи нужен HTTPS (браузер не даёт микрофон по http). С Cloudflare Tunnel: Zero Trust → Networks → Tunnels → ваш туннель → Public Hostname → `english.ваш-домен` → Service `http://localhost:8080`. Если `cloudflared` запущен в Docker в общей сети, укажите `http://english-trainer-3d:80`.
+
+**Обновление:** `git pull && docker compose up -d --build`. Прогресс пользователей хранится в их браузерах, поэтому при обновлении он не пропадает.
+
 ## Публикация на GitHub Pages
 
 Settings → Pages → Source: **Deploy from a branch** → Branch: `main` / `/ (root)` → Save.
