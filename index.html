@@ -189,6 +189,9 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 .cres{font-size:14px;margin-top:6px;line-height:1.5}
 .cres:empty{display:none}
 .cres .w-ok{color:var(--ok)} .cres .w-close{color:var(--mid)} .cres .w-no{color:var(--bad);text-decoration:line-through} .cres .w-skip{color:var(--mut);font-style:italic}
+.seg{display:inline-flex;margin-top:10px;padding:4px;border-radius:999px;background:#0b0e1c;border:1px solid var(--line);gap:4px}
+.seg button{padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;color:var(--mut);transition:.2s}
+.seg button.on{background:linear-gradient(135deg,var(--a1),#5b3fd9);color:#fff;box-shadow:0 6px 14px -6px var(--a1)}
 .toast{position:fixed;top:16px;left:50%;transform:translate(-50%,-80px);background:var(--card2);border:1px solid var(--line);padding:10px 16px;border-radius:14px;font-size:14px;font-weight:600;z-index:9;transition:transform .35s}
 .toast.on{transform:translate(-50%,0)}
 </style>
@@ -345,17 +348,24 @@ function setMic(m){
   setMic(DICT||browserDict());
 })();
 let enVoice=null;
-function pickVoice(){ try{ const vs=speechSynthesis.getVoices(); enVoice=vs.find(v=>/en[-_]US/i.test(v.lang)&&/Google|Samantha|Natural/i.test(v.name))||vs.find(v=>/^en/i.test(v.lang))||null; }catch(e){} }
+// prefer voices installed on the device: Chrome's online "Google" voices may ignore the speech rate
+function pickVoice(){ try{ const vs=speechSynthesis.getVoices().filter(v=>/^en/i.test(v.lang)); const us=v=>/en[-_]US/i.test(v.lang);
+  enVoice=vs.find(v=>us(v)&&v.localService&&/Samantha|Natural|Aria|Jenny|Zira|David/i.test(v.name))||vs.find(v=>us(v)&&v.localService)||vs.find(v=>v.localService)||vs.find(us)||vs[0]||null; }catch(e){} }
 try{ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }catch(e){}
 function browserSay(text,rate){
   return new Promise(res=>{
-    try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.lang="en-US"; if(enVoice)u.voice=enVoice; u.rate=rate; u.onend=res; u.onerror=res; speechSynthesis.speak(u);}catch(e){res();}
+    try{
+      const busy=speechSynthesis.speaking||speechSynthesis.pending; speechSynthesis.cancel();
+      const u=new SpeechSynthesisUtterance(text); u.lang="en-US"; if(enVoice)u.voice=enVoice; u.rate=rate; u.onend=res; u.onerror=res;
+      // Chrome can drop an utterance queued right after cancel(), so wait a moment when something was playing
+      if(busy) setTimeout(()=>speechSynthesis.speak(u),80); else speechSynthesis.speak(u);
+    }catch(e){res();}
   });
 }
 let slow=false;
 async function say(text,btn){
   if(btn) btn.classList.add("playing");
-  const rate=slow?0.75:(S.set.rate||0.95);
+  const rate=slow?0.6:(S.set.rate||0.95);
   try{
     if(TTS){ await TTS.speak(text,{language:"en",rate}); }
     else await browserSay(text,rate);
@@ -553,12 +563,16 @@ function renderListen(){
   $("#listenBox").innerHTML=`
     <div class="qcard"><div class="note">Послушайте фразу и выберите перевод</div>
       <button class="spk bigspk" id="lplay" data-say="${esc(w[5])}">${SPK}</button>
-      <button class="chip" id="slowBtn" style="margin-top:6px">${slow?"🐢 медленно":"🐇 обычная скорость"}</button>
+      <div class="seg" id="speedSeg"><button data-slow="1" class="${slow?"on":""}">🐢 Медленно</button><button data-slow="0" class="${slow?"":"on"}">🐇 Обычно</button></div>
       <div class="acts" style="justify-content:center;align-items:center;margin-top:12px"><button class="spk mic2" id="lMic" title="Повторить услышанное">${MIC}</button><span class="note">повторите услышанное</span></div>
       <div class="cres" id="lRes" style="text-align:center"></div></div>
     <div class="opts">${o.map(k=>`<button class="opt" data-k="${k}">${esc(W[k][6])}</button>`).join("")}</div>
     <div class="reveal" id="lrev"></div><button class="next" id="lnext">Дальше →</button>`;
-  $("#slowBtn").addEventListener("click",()=>{slow=!slow; $("#slowBtn").textContent=slow?"🐢 медленно":"🐇 обычная скорость";});
+  $("#speedSeg").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+    slow=b.dataset.slow==="1";
+    $("#speedSeg").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+    say(w[5],$("#lplay"));   // replay right away so the change is audible
+  }));
   bindChoice("#listenBox",i,"#lrev",`<b>${esc(w[5])}</b>`,renderListen,"l");
   attachRepeat($("#lMic"),$("#lRes"),w[5]);
 }
