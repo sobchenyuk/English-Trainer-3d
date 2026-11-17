@@ -101,8 +101,9 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
   transform:perspective(900px) rotateX(6deg);box-shadow:0 24px 40px -18px #000}
 .qcard .word{font-size:34px;font-weight:800}
 .qcard .ipa{margin-top:4px}
-.qcard .bigspk{width:84px;height:84px;border-radius:26px;margin:4px auto 6px}
-.qcard .bigspk svg{width:36px;height:36px}
+.qcard .bigspk{width:72px;height:72px;border-radius:22px;margin:4px auto 6px}
+.qcard .acts .bigspk{margin:0}
+.qcard .bigspk svg{width:32px;height:32px}
 .opts{display:grid;gap:10px}
 .opt{text-align:left;padding:15px 16px;border-radius:16px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:15px;box-shadow:0 5px 0 #0b0e1c;transition:transform .12s}
 .opt:active{transform:translateY(3px)}
@@ -564,9 +565,8 @@ function renderListen(){
   $("#listenScore").textContent=ls.all?ls.ok+" / "+ls.all:"";
   $("#listenBox").innerHTML=`
     <div class="qcard"><div class="note">Послушайте фразу и выберите перевод</div>
-      <button class="spk bigspk" id="lplay" data-say="${esc(w[5])}">${SPK}</button>
+      <div class="acts" style="justify-content:center;gap:14px;margin:6px 0"><button class="spk bigspk" id="lplay" data-say="${esc(w[5])}" title="Прослушать">${SPK}</button><button class="spk bigspk mic2" id="lMic" title="Повторить услышанное">${MIC}</button></div>
       <div class="seg" id="speedSeg"><button data-slow="1" class="${slow?"on":""}">🐢 Медленно</button><button data-slow="0" class="${slow?"":"on"}">🐇 Обычно</button></div>
-      <div class="acts" style="justify-content:center;align-items:center;margin-top:12px"><button class="spk mic2" id="lMic" title="Повторить услышанное">${MIC}</button><span class="note">повторите услышанное</span></div>
       <div class="cres" id="lRes" style="text-align:center"></div></div>
     <div class="opts">${o.map(k=>`<button class="opt" data-k="${k}">${esc(W[k][6])}</button>`).join("")}</div>
     <div class="reveal" id="lrev"></div><button class="next" id="lnext">Дальше →</button>`;
@@ -728,6 +728,7 @@ function renderDict(){
   renderDictList();
 }
 function renderDictList(){
+  stopCardMic();
   const q=dq.q.trim().toLowerCase();
   const ids=W.map((_,i)=>i).filter(i=>(dq.t<0||W[i][7]===dq.t)&&(!q||W[i][0].toLowerCase().includes(q)||W[i][2].toLowerCase().includes(q)));
   $("#dCount").textContent="Найдено: "+ids.length;
@@ -736,11 +737,12 @@ function renderDictList(){
       <div class="rw"><div><b>${esc(w[0])}</b> <span class="ipa" style="font-size:12px">${esc(w[1])}</span></div>
         <div class="ru2">${esc(w[2])}</div>
         <div class="ex">${esc(w[5])}<br><span>${esc(w[6])}</span></div>
-        <div class="ex"><span>📍 ${esc(w[4])} · ${esc(w[3])}</span></div></div>
-      <div class="rs"><i class="dot" style="background:${col}" title="${st}"></i><button class="spk sm" data-say="${esc(w[0])}">${SPK}</button></div>
+        <div class="ex"><span>📍 ${esc(w[4])} · ${esc(w[3])}</span></div><div class="cres" data-res="${i}"></div></div>
+      <div class="rs"><i class="dot" style="background:${col}" title="${st}"></i><button class="spk sm" data-say="${esc(w[0])}" title="Прослушать">${SPK}</button><button class="spk sm mic2" data-mic="${i}" title="Произнести">${MIC}</button></div>
     </div>`; }).join("")+(ids.length>dq.limit?`<button class="next on" id="dMore" style="background:var(--card2);color:var(--tx);border:1px solid var(--line)">Показать ещё (${ids.length-dq.limit})</button>`:"");
   $("#dList").querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",e=>{ e.stopPropagation(); say(b.dataset.say,b); }));
-  $("#dList").querySelectorAll(".row").forEach(r=>r.addEventListener("click",()=>r.classList.toggle("open")));
+  $("#dList").querySelectorAll(".row").forEach(r=>r.addEventListener("click",e=>{ if(e.target.closest(".cres")) return; r.classList.toggle("open"); }));
+  $("#dList").querySelectorAll("[data-mic]").forEach(b=>{ const i=+b.dataset.mic; attachRepeat(b,$(`#dList [data-res="${i}"]`),W[i][0]); });
   const m=$("#dMore"); if(m) m.addEventListener("click",()=>{ dq.limit+=100; renderDictList(); });
 }
 
