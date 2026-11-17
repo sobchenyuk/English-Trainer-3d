@@ -366,6 +366,8 @@ let slow=false;
 async function say(text,btn){
   if(btn) btn.classList.add("playing");
   const rate=slow?0.6:(S.set.rate||0.95);
+  // Some voices ignore the rate, so in slow mode also put a pause between words: works with any voice
+  if(slow) text=text.replace(/[.,!?;:]+/g,"").trim().split(/\s+/).join(", ")+".";
   try{
     if(TTS){ await TTS.speak(text,{language:"en",rate}); }
     else await browserSay(text,rate);
@@ -571,7 +573,6 @@ function renderListen(){
   $("#speedSeg").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
     slow=b.dataset.slow==="1";
     $("#speedSeg").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
-    say(w[5],$("#lplay"));   // replay right away so the change is audible
   }));
   bindChoice("#listenBox",i,"#lrev",`<b>${esc(w[5])}</b>`,renderListen,"l");
   attachRepeat($("#lMic"),$("#lRes"),w[5]);
