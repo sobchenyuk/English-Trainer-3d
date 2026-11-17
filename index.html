@@ -65,7 +65,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 .face::before{content:"";position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(135deg,rgba(124,92,255,.8),transparent 40%,rgba(34,211,238,.6));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .face .shine{position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,30%),rgba(255,255,255,.12),transparent 50%);pointer-events:none}
-.back{transform:rotateY(180deg)}
+.back{transform:rotateY(180deg);overflow-y:auto}
 /* the hidden side must not catch taps (Safari keeps routing clicks to it) */
 .card3d:not(.flip) .back{pointer-events:none}
 .card3d.flip .front{pointer-events:none}
@@ -183,6 +183,12 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 .rs{display:flex;align-items:center;gap:10px}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
 .nav button{font-size:10px}
+.acts{display:flex;gap:8px;flex:none}
+.mic2{background:radial-gradient(circle at 35% 30%,#ff8fa3,#e11d48);box-shadow:0 8px 20px -6px #e11d48}
+.mic2.rec{animation:pulse2 1.2s infinite}
+.cres{font-size:14px;margin-top:6px;line-height:1.5}
+.cres:empty{display:none}
+.cres .w-ok{color:var(--ok)} .cres .w-close{color:var(--mid)} .cres .w-no{color:var(--bad);text-decoration:line-through} .cres .w-skip{color:var(--mut);font-style:italic}
 .toast{position:fixed;top:16px;left:50%;transform:translate(-50%,-80px);background:var(--card2);border:1px solid var(--line);padding:10px 16px;border-radius:14px;font-size:14px;font-weight:600;z-index:9;transition:transform .35s}
 .toast.on{transform:translate(-50%,0)}
 </style>
@@ -398,7 +404,44 @@ function buildQueue(){
   const tp=S.set.topic; const fresh=W.map((_,i)=>i).filter(i=>(tp<0||W[i][7]===tp)&&!(S.cards[KEY[i]]&&S.cards[KEY[i]].seen)).slice(0,Math.max(0,NEW()-(r.n||0)));
   queue=due.concat(fresh); qi=0;
 }
+function stopCardMic(){ if(spH.rep){ try{ MICE&&MICE.stop().catch(()=>{}); }catch(e){} spH={}; } }
+function attachRepeat(btn,res,target){
+  if(!btn||!res) return;
+  let text="", extra=[], listening=false, done=false;
+  btn.addEventListener("click",e=>{
+    e.stopPropagation();
+    if(!MICE){ toast("Микрофон здесь недоступен — откройте тренажёр в Chrome или Edge"); return; }
+    if(listening){ MICE.stop().catch(()=>{}); return; }
+    text=""; extra=[]; done=false;
+    res.innerHTML='<span class="note">Говорите…</span>';
+    spH={
+      rep:true,
+      state:({state,reason})=>{
+        listening=state==="listening"; btn.classList.toggle("rec",listening);
+        if(listening||done) return;
+        if(text){ done=true; evaluate(); }
+        else if(reason&&reason!=="viewer_stopped") res.innerHTML='<span class="note">Ничего не услышал — нажмите 🎤 ещё раз</span>';
+        else res.innerHTML="";
+      },
+      partial:({text:t})=>{ res.innerHTML='<span class="note">'+esc((text+" "+t).trim())+'</span>'; },
+      final:({text:t,alts})=>{ text=(text+" "+t).trim(); if(alts) extra.push(...alts); res.innerHTML='<span class="note">'+esc(text)+'</span>'; }
+    };
+    MICE.start().catch(err=>{
+      if(err&&err.code==="not_granted"){ MICE=null; toast("Нет доступа к микрофону"); }
+      else toast("Не удалось включить микрофон");
+      res.innerHTML=""; spH={};
+    });
+  });
+  function evaluate(){
+    const {marks,sc}=compare(target,text,extra);
+    const col=sc>=80?"var(--ok)":sc>=50?"var(--mid)":"var(--bad)";
+    res.innerHTML=`<b style="color:${col}">${sc}%</b> `+marks.map(m=>`<span class="w-${m.st}">${esc(m.x)}</span>`).join(" ")+
+      `<div class="note" style="text-align:inherit;margin-top:2px">${sc>=80?"Отлично! Вас поняли.":"Послушайте ещё раз и повторите."}</div>`;
+    logAnswer(sc>=80); save(); refreshHeader();
+  }
+}
 function renderLearn(){
+  stopCardMic();
   const box=$("#learnBox");
   if(qi>=queue.length) buildQueue();
   if(!queue.length){
@@ -427,7 +470,7 @@ function renderLearn(){
         <span class="tag">${esc(w[0])} ${esc(w[1])}</span>
         <div class="ru">${esc(w[2])}</div>
         <div class="def">${esc(w[3])}</div>
-        <div class="blk"><div class="l">Пример</div><div class="p"><span>${esc(w[5])}</span><button class="spk sm" data-say="${esc(w[5])}">${SPK}</button></div><div class="pr">${esc(w[6])}</div></div>
+        <div class="blk"><div class="l">Пример — послушайте и повторите</div><div class="p"><span>${esc(w[5])}</span><span class="acts"><button class="spk sm" data-say="${esc(w[5])}">${SPK}</button><button class="spk sm mic2" id="cardMic" title="Повторить пример">${MIC}</button></span></div><div class="pr">${esc(w[6])}</div><div class="cres" id="cardRes"></div></div>
         <div class="blk"><div class="l">Где применяется</div><div class="pr" style="color:var(--tx);font-size:14px">${esc(w[4])}</div></div>
       </div>
     </div>
@@ -439,10 +482,11 @@ function renderLearn(){
   </div>`;
   const fc=$("#fc");
   fc.addEventListener("click",e=>{
-    if(e.target.closest("[data-say]")) return;
-    fc.classList.toggle("flip"); $("#grades").classList.remove("off");
+    if(e.target.closest("[data-say],.mic2,.cres")) return;
+    fc.style.transform=""; fc.classList.toggle("flip"); $("#grades").classList.remove("off");
   });
   tilt(fc);
+  attachRepeat($("#cardMic"),$("#cardRes"),w[5]);
   box.querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",e=>{e.stopPropagation();say(b.dataset.say,b);}));
   box.querySelectorAll("[data-g]").forEach(b=>b.addEventListener("click",()=>grade(i,+b.dataset.g)));
 }
@@ -458,7 +502,8 @@ function grade(i,g){
 }
 function tilt(el){
   const inner=el.querySelector(".inner");
-  const move=(x,y)=>{ const r=el.getBoundingClientRect(); const px=(x-r.left)/r.width, py=(y-r.top)/r.height;
+  const move=(x,y)=>{ if(el.classList.contains("flip")){ el.style.transform=""; return; } // tilt only the front: a tilted back face breaks hit-testing of its buttons
+    const r=el.getBoundingClientRect(); const px=(x-r.left)/r.width, py=(y-r.top)/r.height;
     el.style.transform=`rotateY(${(px-.5)*16}deg) rotateX(${(.5-py)*12}deg)`;
     el.querySelectorAll(".face").forEach(f=>{f.style.setProperty("--mx",px*100+"%");f.style.setProperty("--my",py*100+"%");}); };
   el.addEventListener("pointermove",e=>move(e.clientX,e.clientY));
@@ -470,14 +515,17 @@ let qs={ok:0,all:0};
 function pool(){ const s=seenIdx(); return s.length>=4?s:W.map((_,i)=>i).slice(0,Math.max(8,s.length)); }
 function opts(i,field){ const ok=k=>k!==i&&W[k][field]!==W[i][field]; const same=shuffle(W.map((_,k)=>k).filter(k=>ok(k)&&W[k][7]===W[i][7])); const rest=shuffle(W.map((_,k)=>k).filter(ok)); const pick=[...new Set(same.slice(0,3).concat(rest.slice(0,6)))].slice(0,3); return shuffle([i,...pick]); }
 function renderQuiz(){
+  stopCardMic();
   const p=pool(), i=p[Math.random()*p.length|0], w=W[i], o=opts(i,2);
   $("#quizScore").textContent=qs.all?qs.ok+" / "+qs.all:"";
   $("#quizBox").innerHTML=`
     <div class="qcard"><span class="tag">${TOPICS[w[7]]}</span><div class="word" style="margin-top:10px">${esc(w[0])}</div><div class="ipa">${esc(w[1])}</div>
-    <button class="spk" style="margin:12px auto 0" data-say="${esc(w[0])}">${SPK}</button></div>
+    <div class="acts" style="justify-content:center;margin-top:12px"><button class="spk" data-say="${esc(w[0])}">${SPK}</button><button class="spk mic2" id="qMic" title="Произнести слово">${MIC}</button></div>
+    <div class="cres" id="qRes" style="text-align:center"></div></div>
     <div class="opts">${o.map(k=>`<button class="opt" data-k="${k}">${esc(W[k][2])}</button>`).join("")}</div>
     <div class="reveal" id="qrev"></div><button class="next" id="qnext">Дальше →</button>`;
   bindChoice("#quizBox",i,"#qrev",`<b>${esc(w[5])}</b> — ${esc(w[6])}`,renderQuiz,"q");
+  attachRepeat($("#qMic"),$("#qRes"),w[0]);
 }
 function bindChoice(root,i,rev,revHtml,next,kind){
   const box=$(root);
@@ -499,16 +547,20 @@ function bindChoice(root,i,rev,revHtml,next,kind){
 /* ===== LISTEN ===== */
 let ls={ok:0,all:0};
 function renderListen(){
+  stopCardMic();
   const p=pool(), i=p[Math.random()*p.length|0], w=W[i], o=opts(i,6);
   $("#listenScore").textContent=ls.all?ls.ok+" / "+ls.all:"";
   $("#listenBox").innerHTML=`
     <div class="qcard"><div class="note">Послушайте фразу и выберите перевод</div>
       <button class="spk bigspk" id="lplay" data-say="${esc(w[5])}">${SPK}</button>
-      <button class="chip" id="slowBtn" style="margin-top:6px">${slow?"🐢 медленно":"🐇 обычная скорость"}</button></div>
+      <button class="chip" id="slowBtn" style="margin-top:6px">${slow?"🐢 медленно":"🐇 обычная скорость"}</button>
+      <div class="acts" style="justify-content:center;align-items:center;margin-top:12px"><button class="spk mic2" id="lMic" title="Повторить услышанное">${MIC}</button><span class="note">повторите услышанное</span></div>
+      <div class="cres" id="lRes" style="text-align:center"></div></div>
     <div class="opts">${o.map(k=>`<button class="opt" data-k="${k}">${esc(W[k][6])}</button>`).join("")}</div>
     <div class="reveal" id="lrev"></div><button class="next" id="lnext">Дальше →</button>`;
   $("#slowBtn").addEventListener("click",()=>{slow=!slow; $("#slowBtn").textContent=slow?"🐢 медленно":"🐇 обычная скорость";});
   bindChoice("#listenBox",i,"#lrev",`<b>${esc(w[5])}</b>`,renderListen,"l");
+  attachRepeat($("#lMic"),$("#lRes"),w[5]);
 }
 
 /* ===== SPEAK ===== */
@@ -719,6 +771,7 @@ function bindSettings(){
 let cur="learn";
 const R={learn:renderLearn,quiz:renderQuiz,listen:renderListen,speak:renderSpeak,dict:renderDict,stats:renderStats};
 function go(v){
+  stopCardMic();
   cur=v; document.querySelectorAll(".view").forEach(s=>s.classList.toggle("on",s.id==="v-"+v));
   document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
   try{ if(TTS) TTS.stop(); else speechSynthesis.cancel(); }catch(e){}
