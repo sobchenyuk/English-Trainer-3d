@@ -119,7 +119,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 .mic.on{animation:pulse2 1.2s infinite}
 @keyframes pulse2{50%{box-shadow:0 0 0 16px rgba(225,29,72,.18),0 14px 30px -8px #e11d48}}
 .heard{min-height:48px;font-size:17px;text-align:center;margin:8px 0;color:var(--tx)}
-.heard .w-ok{color:var(--ok)} .heard .w-no{color:var(--bad);text-decoration:line-through}
+.heard .w-ok{color:var(--ok)} .heard .w-close{color:var(--mid)} .heard .w-no{color:var(--bad);text-decoration:line-through} .heard .w-skip{color:var(--mut);font-style:italic}
 .score{font-size:40px;font-weight:800;text-align:center}
 .note{font-size:13px;color:var(--mut);text-align:center;line-height:1.5}
 .self{display:none;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
@@ -319,9 +319,9 @@ function browserDict(){
   return {
     onState(f){cb.state=f}, onPartial(f){cb.partial=f}, onFinal(f){cb.final=f},
     start(){ return new Promise((res,rej)=>{ try{
-      r=new SR(); r.lang="en-US"; r.interimResults=true; r.continuous=false; r.maxAlternatives=1;
+      r=new SR(); r.lang="en-US"; r.interimResults=true; r.continuous=false; r.maxAlternatives=5;
       r.onstart=()=>{ cb.state({state:"listening"}); res(); };
-      r.onresult=e=>{ let interim=""; for(let k=e.resultIndex;k<e.results.length;k++){ const t=e.results[k][0].transcript; if(e.results[k].isFinal) cb.final({text:t}); else interim+=t; } if(interim) cb.partial({text:interim}); };
+      r.onresult=e=>{ let interim=""; for(let k=e.resultIndex;k<e.results.length;k++){ const res=e.results[k], t=res[0].transcript; if(res.isFinal){ const alts=[]; for(let a=1;a<res.length;a++) alts.push(res[a].transcript); cb.final({text:t,alts}); } else interim+=t; } if(interim) cb.partial({text:interim}); };
       r.onerror=e=>{ if(e.error==="not-allowed"||e.error==="service-not-allowed"){ rej({code:"not_granted"}); } cb.state({state:"idle",reason:e.error}); };
       r.onend=()=>cb.state({state:"idle",reason:"stopped"});
       r.start(); }catch(e){ rej({code:"error"}); } }); },
@@ -514,10 +514,35 @@ function renderListen(){
 /* ===== SPEAK ===== */
 let sp={i:null,heard:"",best:[]};
 const norm=s=>s.toLowerCase().replace(/[’']/g,"'").replace(/[^a-z' ]/g," ").replace(/\s+/g," ").trim();
-function expand(s){ return norm(s).replace(/\bi'm\b/g,"i am").replace(/\bi'd\b/g,"i would").replace(/\bi'll\b/g,"i will").replace(/\blet's\b/g,"let us").replace(/\bwhat's\b/g,"what is").replace(/\bthere's\b/g,"there is").replace(/\bdon't\b/g,"do not").replace(/\bwe're\b/g,"we are"); }
-function compare(target,heard){
-  const t=expand(target).split(" "), h=new Set(expand(heard).split(" "));
-  const marks=t.map(x=>({x,ok:h.has(x)})); const sc=Math.round(marks.filter(m=>m.ok).length/t.length*100);
+function expand(s){ return norm(s).replace(/\bi'm\b/g,"i am").replace(/\bim\b/g,"i am").replace(/\bi've\b/g,"i have").replace(/\byou're\b/g,"you are").replace(/\bit's\b/g,"it is").replace(/\bthat's\b/g,"that is").replace(/\bcan't\b/g,"can not").replace(/\bwon't\b/g,"will not").replace(/\bdoesn't\b/g,"does not").replace(/\bdidn't\b/g,"did not").replace(/\bisn't\b/g,"is not").replace(/\bhaven't\b/g,"have not").replace(/\bi'll\b/g,"i will").replace(/\bcannot\b/g,"can not").replace(/\bits\b/g,"it is").replace(/\bi'd\b/g,"i would").replace(/\bi'll\b/g,"i will").replace(/\blet's\b/g,"let us").replace(/\bwhat's\b/g,"what is").replace(/\bthere's\b/g,"there is").replace(/\bdon't\b/g,"do not").replace(/\bwe're\b/g,"we are"); }
+function lev(a,b){
+  const m=a.length,n=b.length; if(!m) return n; if(!n) return m;
+  let prev=Array.from({length:n+1},(_,j)=>j);
+  for(let i=1;i<=m;i++){ const cur=[i]; for(let j=1;j<=n;j++) cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1)); prev=cur; }
+  return prev[n];
+}
+// how close a target word is to anything heard: 2 exact, 1 close enough, 0 missed
+// recognisers often pick a homophone ("two" for "too"); compare such words by one spelling
+const HOMO={two:"too",to:"too",four:"for",write:"right",there:"their",theyre:"their",youre:"your",no:"know",here:"hear",buy:"by",bye:"by",meat:"meet",weight:"wait",hole:"whole",sun:"son",sea:"see",won:"one",ate:"eight",knew:"new",would:"wood",hour:"our",weather:"whether",week:"weak",flower:"flour"};
+const hom=x=>HOMO[x]||x;
+function nearness(x,heard){
+  x=hom(x);
+  if(heard.has(x)) return 2;
+  const tol=x.length<=3?0:x.length<=6?1:2;
+  if(!tol) return 0;
+  for(const h of heard){ if(Math.abs(h.length-x.length)<=tol&&lev(x,h)<=tol) return 1; }
+  return 0;
+}
+// names and places (capitalised, not first word, not "I") are not scored: recognisers rarely know them
+function compare(target,heard,alts){
+  const heardSet=new Set(expand([heard].concat(alts||[]).join(" ")).split(" ").filter(Boolean).map(hom));
+  const marks=[];
+  target.split(/\s+/).forEach((tok,idx)=>{
+    const proper=idx>0&&/^[A-Z]/.test(tok)&&!/^I(\b|')/.test(tok);
+    expand(tok).split(" ").filter(Boolean).forEach(x=>marks.push(proper?{x,st:"skip"}:{x,st:["no","close","ok"][nearness(x,heardSet)]}));
+  });
+  const counted=marks.filter(m=>m.st!=="skip");
+  const sc=counted.length?Math.round(counted.filter(m=>m.st!=="no").length/counted.length*100):100;
   return {marks,sc};
 }
 function renderSpeak(){
@@ -544,7 +569,7 @@ function renderSpeak(){
   $("#showAns").addEventListener("click",()=>{ $("#ans").style.display="block"; $("#showAns").classList.remove("on"); $("#selfBox").classList.add("on"); say(w[5]); });
   box.querySelectorAll("[data-sg]").forEach(b=>b.addEventListener("click",()=>{ const ok=b.dataset.sg==="1"; finishSpeak(ok, ok?"✅ Отлично!":"Послушайте и повторите вслух 3 раза"); }));
   if(!hasMic){ spH={}; return; }
-  const btn=$("#micBtn"); let text="", listening=false, done=false;
+  const btn=$("#micBtn"); let text="", listening=false, done=false, extra=[];
   spH={
     state:({state,reason})=>{
       listening=state==="listening"; btn.classList.toggle("on",listening);
@@ -553,18 +578,18 @@ function renderSpeak(){
       if(!listening&&!text&&reason&&reason!=="stopped"&&reason!=="viewer_stopped") $("#micNote").textContent="Ничего не услышал — попробуйте ещё раз";
     },
     partial:({text:t})=>{ $("#heard").textContent=(text+" "+t).trim(); },
-    final:({text:t})=>{ text=(text+" "+t).trim(); $("#heard").textContent=text; }
+    final:({text:t,alts})=>{ text=(text+" "+t).trim(); if(alts) extra.push(...alts); $("#heard").textContent=text; }
   };
   btn.addEventListener("click",()=>{
     if(listening){ MICE.stop().catch(()=>{}); return; }
-    text=""; done=false; $("#heard").textContent=""; $("#spRes").innerHTML="";
+    text=""; extra=[]; done=false; $("#heard").textContent=""; $("#spRes").innerHTML="";
     MICE.start().catch(e=>{ const code=e&&e.code; if(code==="not_granted"){ MICE=null; toast("Микрофон недоступен — оценивайте себя сами"); renderSpeak(); } else toast("Не удалось включить микрофон"); });
   });
   function evaluate(){
     done=true;
-    const {marks,sc}=compare(w[5],text);
-    $("#heard").innerHTML=marks.map(m=>`<span class="${m.ok?"w-ok":"w-no"}">${esc(m.x)}</span>`).join(" ");
-    finishSpeak(sc>=80, `<div class="score" style="color:${sc>=80?"var(--ok)":sc>=50?"var(--mid)":"var(--bad)"}">${sc}%</div><div class="note">${sc>=80?"Отлично, вас поняли!":"Зачёркнутые слова не распознались — послушайте и повторите"}</div>`);
+    const {marks,sc}=compare(w[5],text,extra);
+    $("#heard").innerHTML=marks.map(m=>`<span class="w-${m.st}">${esc(m.x)}</span>`).join(" ");
+    finishSpeak(sc>=80, `<div class="score" style="color:${sc>=80?"var(--ok)":sc>=50?"var(--mid)":"var(--bad)"}">${sc}%</div><div class="note">${sc>=80?"Отлично, вас поняли!":"Зачёркнутые слова не распознались — послушайте и повторите"}${marks.some(m=>m.st==="close")?"<br>Жёлтые — засчитаны примерно.":""}${marks.some(m=>m.st==="skip")?"<br>Серые имена и названия не проверяются.":""}</div>`);
   }
 }
 let spStat={ok:0,all:0};
