@@ -1,11 +1,16 @@
 services:
   english-trainer:
     build: .
-    image: ghcr.io/sobchenyuk/english-trainer-3d:latest
-    container_name: english-trainer-3d
+    image: ${IMAGE:-ghcr.io/sobchenyuk/english-trainer-3d:latest}
+    container_name: ${CONTAINER_NAME:-english-trainer-3d}
     restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      TZ: ${TZ:-Europe/Kyiv}
     ports:
-      - "8080:80"   # поменяйте 8080, если порт занят
+      - "${BIND_ADDRESS:-0.0.0.0}:${HOST_PORT:-38417}:80"
     read_only: true
     tmpfs:
       - /var/cache/nginx
