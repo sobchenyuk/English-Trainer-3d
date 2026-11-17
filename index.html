@@ -74,6 +74,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 .stagebadge{position:absolute;top:22px;right:22px;display:flex;gap:3px}
 .stagebadge i{width:7px;height:7px;border-radius:2px;background:var(--line)}
 .stagebadge i.f{background:var(--ok)}
+.front .ru-front{font-size:20px;font-weight:600;color:var(--tx);opacity:.85;margin-top:10px}
 .front .word{font-size:clamp(34px,10vw,46px);font-weight:800;letter-spacing:-.02em;margin-top:auto;transform:translateZ(40px);text-shadow:0 10px 30px rgba(124,92,255,.5)}
 .ipa{font-family:"JetBrains Mono",monospace;color:var(--a2);font-size:16px;margin-top:6px}
 .hint{margin-top:auto;font-size:13px;color:var(--mut);display:flex;align-items:center;justify-content:space-between}
@@ -477,6 +478,7 @@ function renderLearn(){
         <div class="stagebadge">${dots}</div>
         <div class="word">${esc(w[0])}</div>
         <div class="ipa">${esc(w[1])}</div>
+        <div class="ru-front">${esc(w[2])}</div>
         <div class="hint"><span>Нажмите, чтобы перевернуть ↻</span><button class="spk" data-say="${esc(w[0])}">${SPK}</button></div>
       </div>
       <div class="face back"><div class="shine"></div>
